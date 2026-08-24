@@ -238,6 +238,10 @@ export const homeData = {
           src="/new_images/industry_warehouse_1786134258340.webp"
           alt="Interactive Warehouse Scene"
           fill
+          displayHeight={540}
+          displayWidth={1080}
+          safeAreaHeight={540}
+          safeAreaWidth={1080}
           className="object-cover"
           description="Interactive warehouse scene showing forklifts charging."
         />

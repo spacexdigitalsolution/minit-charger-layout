@@ -46,7 +46,7 @@ export default function SplitFeatureDark({
           <p className="mt-4 leading-relaxed text-mist">
             {description}
           </p>
-          
+
           {listItems && listItems.length > 0 && (
             <ul className="mt-6 space-y-3 text-sm text-mist">
               {listItems.map((item) => (
@@ -57,11 +57,15 @@ export default function SplitFeatureDark({
             </ul>
           )}
         </div>
-        
+
         <div className={`overflow-hidden rounded-[2rem] ring-1 ring-white/10 bg-ink-850 flex items-center justify-center p-10 h-[400px] lg:h-[600px] relative ${imagePosition === 'left' ? 'lg:order-1' : ''}`}>
           <SmartImage
             src={imageSrc}
             alt={imageAlt}
+            displayHeight={1080}
+            displayWidth={1080}
+            safeAreaHeight={1080}
+            safeAreaWidth={1080}
             description={imageDescription}
             fill
             className="object-contain"

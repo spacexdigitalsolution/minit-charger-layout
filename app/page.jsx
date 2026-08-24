@@ -37,11 +37,6 @@ export default function HomePage() {
         <LightFeatureGrid {...homeData.lightFeatureGrid} />
         <DarkUseCasesGrid {...homeData.darkUseCasesGrid} />
         <BentoFeatureGrid {...homeData.bentoFeatureGrid} />
-        {/**
-      * 
-      <TallImageCardGrid {...homeData.tallImageCardGrid} />
-      * 
-      */}
         <InteractiveSceneTabs {...homeData.interactiveSceneTabs} />
         <ComparisonSplit {...homeData.comparisonSplit} />
         <PillStrip {...homeData.pillStrip} />

@@ -45,18 +45,18 @@ export default function SplitFeatureLight({
             {heading}
           </h2>
           <p className="mt-4 leading-relaxed text-[#4C5C54]">{description}</p>
-          
+
           {listItems && listItems.length > 0 && (
             <ul className="mt-6 space-y-3 text-sm text-[#4C5C54]">
               {listItems.map((item) => (
                 <li key={item.id} className="flex gap-2">
-                  <span className="font-bold text-volt-dim">✓</span> 
+                  <span className="font-bold text-volt-dim">✓</span>
                   {item.text}
                 </li>
               ))}
             </ul>
           )}
-          
+
           {cta && (
             <div className="mt-8">
               <Button href={cta.href}>
@@ -65,13 +65,17 @@ export default function SplitFeatureLight({
             </div>
           )}
         </div>
-        
+
         <div className={`overflow-hidden rounded-[2rem] bg-ink-900 ring-1 ring-black/10 h-[400px] lg:h-[600px] relative ${imagePosition === 'left' ? 'lg:order-1' : ''}`}>
           <SmartImage
             src={imageSrc}
             alt={imageAlt}
             description={imageDescription}
             fill
+            displayHeight={1080}
+            displayWidth={1080}
+            safeAreaHeight={1080}
+            safeAreaWidth={1080}
             className="object-cover"
           />
         </div>

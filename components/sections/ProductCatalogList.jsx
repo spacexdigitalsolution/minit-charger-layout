@@ -87,6 +87,10 @@ export default function ProductCatalogList({
                       <SmartImage
                         src={product.imageSrc}
                         alt={product.imageAlt}
+                        displayHeight={720}
+                        displayWidth={1080}
+                        safeAreaHeight={720}
+                        safeAreaWidth={1080}
                         description={product.imageDescription}
                         fill
                         className="mx-auto object-contain p-8"
@@ -162,6 +166,10 @@ export default function ProductCatalogList({
                                 src={child.imageSrc}
                                 alt={child.title}
                                 description={child.title}
+                                displayHeight={720}
+                                displayWidth={1080}
+                                safeAreaHeight={720}
+                                safeAreaWidth={1080}
                                 fill
                                 className="object-contain p-4"
                               />
@@ -173,7 +181,7 @@ export default function ProductCatalogList({
                             </div>
                             <div className="flex-1 flex flex-col">
                               <h5 className="font-display font-semibold text-ink-950 text-[15px]">{child.title}</h5>
-                              
+
                               {child.specs && child.specs.length > 0 && (
                                 <div className="mt-3 mb-1 grid grid-cols-2 gap-x-2 gap-y-2 border-t border-black/5 pt-3">
                                   {child.specs.map((spec, idx) => (

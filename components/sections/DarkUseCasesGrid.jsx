@@ -41,6 +41,10 @@ export default function DarkUseCasesGrid({
                     src={card.imageSrc}
                     alt={card.imageAlt}
                     description={card.imageDescription}
+                    displayHeight={540}
+                    displayWidth={540}
+                    safeAreaHeight={540}
+                    safeAreaWidth={540}
                     fill
                     className="object-cover transition duration-700 group-hover:scale-105"
                   />

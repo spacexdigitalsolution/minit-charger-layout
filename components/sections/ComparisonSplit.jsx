@@ -43,7 +43,7 @@ export default function ComparisonSplit({
           </h2>
           <p className="mt-4 text-mist">{description}</p>
         </div>
-        
+
         <div className="grid gap-6 lg:grid-cols-2">
           {cards.map((card) => (
             <article key={card.id} className="rounded-[2rem] bg-ink-850 p-8 ring-1 ring-white/10">
@@ -51,6 +51,10 @@ export default function ComparisonSplit({
                 <SmartImage
                   src={card.imageSrc}
                   alt={card.imageAlt}
+                  displayHeight={540}
+                  displayWidth={1080}
+                  safeAreaHeight={540}
+                  safeAreaWidth={1080}
                   description={card.imageDescription}
                   fill
                   className="mx-auto object-contain"

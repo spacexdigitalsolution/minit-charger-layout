@@ -25,9 +25,13 @@ export default function SmartImage({
   alt,
   width,
   height,
+  safeAreaHeight,
+  safeAreaWidth,
+  displayHeight,
+  displayWidth,
   description,
   className = '',
-  mode = 'placeholder',
+  mode = 'dimensions',
   ...props
 }) {
   // Environment variable can override the default mode across the app
@@ -35,8 +39,8 @@ export default function SmartImage({
 
   if (currentMode === 'dimensions') {
     // Compute safe area dimensions (90% of width and height)
-    const safeAreaWidth = width ? Math.round(width * 0.9) : 0;
-    const safeAreaHeight = height ? Math.round(height * 0.9) : 0;
+    safeAreaWidth = safeAreaWidth || (width ? Math.round(width * 0.9) : 0);
+    safeAreaHeight = safeAreaHeight || (height ? Math.round(height * 0.9) : 0);
 
     return (
       <div
@@ -44,7 +48,7 @@ export default function SmartImage({
         style={{ width: width ? `${width}px` : '100%', height: height ? `${height}px` : '100%' }}
       >
         <div className="text-sm font-semibold text-gray-700">
-          {width}x{height} (Safe: {safeAreaWidth}x{safeAreaHeight})
+          {displayWidth}x{displayHeight} (Safe: {safeAreaWidth}x{safeAreaHeight})
         </div>
         <div className="text-xs font-mono bg-white px-2 py-1 rounded shadow-sm break-all mt-2">
           {src}
@@ -53,7 +57,7 @@ export default function SmartImage({
           Alt: {alt || 'MISSING'}
         </div>
         {description && (
-          <div className="text-xs text-gray-500 mt-2 italic max-w-full truncate px-2">
+          <div className="text-xs text-gray-500 mt-2 italic max-w-full px-2">
             {description}
           </div>
         )}

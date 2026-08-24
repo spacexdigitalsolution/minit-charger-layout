@@ -36,6 +36,10 @@ export default function HeroBanner({
           description={imageDescription}
           fill
           priority
+          displayHeight={1080}
+          displayWidth={1920}
+          safeAreaHeight={1080}
+          safeAreaWidth={1280}
           className="h-full w-full object-cover object-center"
         />
       </div>
