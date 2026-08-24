@@ -28,24 +28,28 @@ export const industryAviationData = {
         id: "p1",
         title: "Charger downtime becomes gate delay",
         description: "Most GSE chargers were built for warehouse floors, then bolted onto a ramp. When one goes down mid-shift, the fix is a maintenance ticket — while your tug sits dead 200 feet from an aircraft that's ready to push.",
+        fix: "Altus II is outdoor-rated (IP65) from day one, with remote diagnostics that flag a fault before your ground crew finds it the hard way.",
         icon: <svg className="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
       },
       {
         id: "p2",
         title: "Electrical upgrades hold projects hostage",
         description: "Every new charger installation runs into the same wall: the airport's existing power feed wasn't sized for a fleet of fast chargers, and infrastructure upgrades can take a construction season you don't have.",
+        fix: "Bridge Power Manager (BPM) intelligently shares power across chargers on a single feed, so you can add chargers without waiting on a utility upgrade.",
         icon: <svg className="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M13 2 4 14h6l-1 8 9-12h-6l1-8Z" strokeLinejoin="round" /></svg>
       },
       {
         id: "p3",
         title: "Mixed battery chemistries, one charger that can't keep up",
         description: "Lead-acid tugs, a lithium belt loader pilot, a battery vendor change halfway through a fleet refresh — most chargers force you to standardize equipment before they'll support it.",
+        fix: "Altus II charges lead-acid, lithium, and EV chemistries from the same dual-port unit, so procurement isn't boxed in by the charger.",
         icon: <svg className="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M12 3l7 3v6c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V6l7-3Z" strokeLinejoin="round" /></svg>
       },
       {
         id: "p4",
         title: "No visibility until a vehicle strands mid-shift",
         description: "By the time someone notices a battery is failing, it's already stranded a tug on the tarmac — and pulled a tech off another job to go retrieve it.",
+        fix: "CellTrac and AssetPro 360 track battery health and location in real time, flagging a failing battery before it fails your operation.",
         icon: <svg className="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><circle cx="12" cy="12" r="2.4" /><path d="M7 9a7 7 0 0 0 0 6M17 9a7 7 0 0 1 0 6M4 6a11 11 0 0 0 0 12M20 6a11 11 0 0 1 0 12" strokeLinecap="round" /></svg>
       }
     ]
@@ -95,7 +99,7 @@ export const industryAviationData = {
       {
         id: "f1",
         title: "CellTrac wireless BMS",
-        description: "Know exactly which batteries in your fleet are failing before they strand a vehicle.",
+        description: "Know exactly which batteries in your fleet are failing before they strand a vehicle. AssetPro 360 tells you before your driver finds out.",
         icon: <svg className="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><circle cx="12" cy="12" r="2.4" /><path d="M7 9a7 7 0 0 0 0 6M17 9a7 7 0 0 1 0 6M4 6a11 11 0 0 0 0 12M20 6a11 11 0 0 1 0 12" strokeLinecap="round" /></svg>
       },
       {
@@ -104,6 +108,12 @@ export const industryAviationData = {
         description: "One screen for every charger and every vehicle on the ramp — not a spreadsheet someone updates after a tug already broke down.",
         icon: <svg className="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="m12 3 9 5-9 5-9-5 9-5Z" strokeLinejoin="round" /><path d="m3 13 9 5 9-5" strokeLinejoin="round" /></svg>
       }
+    ],
+    features: [
+      "Real-time battery health",
+      "GPS / asset location on every unit",
+      "Predictive maintenance alerts",
+      "One dashboard across every charger"
     ]
   },
   rampVsHangar: {
@@ -160,10 +170,21 @@ export const industryAviationData = {
       },
       {
         id: "t2",
-        quote: "Quote from a regional airport ops manager about winter reliability.",
+        quote: "Quote highlighting reduced downtime or turnaround reliability goes here.",
+        authorName: "Name",
+        authorRole: "Title — Organization"
+      },
+      {
+        id: "t3",
+        quote: "Quote highlighting fleet visibility / CellTrac / AssetPro 360 goes here.",
         authorName: "Name",
         authorRole: "Title — Organization"
       }
+    ],
+    badges: [
+      "UL / CE compliance options",
+      "Airport systems / SCADA integration",
+      "Multi-chemistry certified"
     ]
   },
   faq: {
@@ -198,10 +219,11 @@ export const industryAviationData = {
     ]
   },
   cta: {
-    heading: "Ready to electrify your ramp?",
-    description: "Get a charging assessment for your fleet today.",
+    heading: "Ready to stop losing gate time to a charger?",
+    description: "Talk to an engineer about your fleet, your ramp power, and whether BPM can get you charging without an infrastructure upgrade.",
     buttons: [
-      { id: "b1", text: "Talk to an Engineer", href: "#assessment", variant: "primary" }
+      { id: "b1", text: "Request a Quote", href: "#assessment", variant: "primary" },
+      { id: "b2", text: "Download the Airport Ops Guide", href: "#guide", variant: "outline" }
     ]
   },
   specs: {
@@ -247,5 +269,61 @@ export const industryAviationData = {
     eyebrow: "Put a number on downtime",
     heading: "What is charger downtime actually costing your ramp?",
     description: "Move the sliders to match your operation. This is your estimate, built from your numbers — not ours."
+  },
+  resources: {
+    eyebrow: "Recommended resources",
+    heading: "Go deeper before your assessment call.",
+    guides: [
+      { id: "r1", title: "The Airport GSE Charging Guide", description: "Sizing, power feeds, and the infrastructure question every airport asks.", ctaText: "Read Guide", ctaHref: "#guide" },
+      { id: "r2", title: "GSE Downtime & ROI Calculator", description: "See what charger downtime is costing your ramp today.", ctaText: "Use Tool", ctaHref: "#calculator" },
+      { id: "r3", title: "Altus II Spec Sheet (PDF)", description: "Full technical specifications for procurement and engineering. [Client to confirm link.]", ctaText: "Download PDF", ctaHref: "/resources/altus-ii-spec-sheet/" }
+    ],
+    exploreHeading: "Explore other fleets we power",
+    explorePills: [
+      { id: "e1", label: "Warehouse & Manufacturing", href: "/industries/warehouse-manufacturing/" },
+      { id: "e2", label: "Low Speed Vehicles", href: "/industries/low-speed-vehicles/" },
+      { id: "e3", label: "Vehicle & Asset Tracking", href: "/industries/vehicle-asset-tracking/" }
+    ]
+  },
+  leadMagnet: {
+    eyebrow: "Free download",
+    heading: "The Airport GSE Charging Guide",
+    description: "What ops directors need to know before their next fleet electrification project — sizing a charger fleet, reading a power feed, and the infrastructure question every airport asks before signing off. [Client to confirm final guide content before this goes live.]",
+    checklist: [
+      "How to size a charger fleet to your GSE mix",
+      "What BPM does and does not eliminate",
+      "A checklist for your first site survey call"
+    ]
+  },
+  specStory: {
+    eyebrow: "Product deep-dive",
+    heading: "Altus II, translated from engineering spec to ramp reality.",
+    description: "Minit Charger's technical depth is a competitive advantage — if it's communicated in terms an ops director actually feels.",
+    cards: [
+      {
+        id: "ss1",
+        title: "Dual-port DC fast charging, 30–80 kW",
+        description: "Two tugs charge at once, off the same pedestal — so your ground crew isn't rationing which vehicle gets power first during a bank push.",
+        icon: <svg className="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M13 2 4 14h6l-1 8 9-12h-6l1-8Z" strokeLinejoin="round" /></svg>
+      },
+      {
+        id: "ss2",
+        title: "Outdoor-rated IP65 enclosure",
+        description: "The Altus II runs in the rain, the cold, and the heat of a tarmac summer — because airport GSE doesn't get to take weather days.",
+        icon: <svg className="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M12 3l7 3v6c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V6l7-3Z" strokeLinejoin="round" /></svg>
+      },
+      {
+        id: "ss3",
+        title: "Lead acid, lithium & EV chemistry support",
+        description: "Your fleet doesn't have to match your charger. Standardize on whatever battery makes sense for each vehicle — the Altus II keeps up either way.",
+        icon: <svg className="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="m12 3 9 5-9 5-9-5 9-5Z" strokeLinejoin="round" /><path d="m3 13 9 5 9-5" strokeLinejoin="round" /></svg>
+      },
+      {
+        id: "ss4",
+        title: "Remote diagnostics, cellular / Wi-Fi / OTA",
+        description: "You find out about a fault from a dashboard alert — not a stranded tug and a call from the ramp.",
+        icon: <svg className="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><circle cx="12" cy="12" r="2.4" /><path d="M7 9a7 7 0 0 0 0 6M17 9a7 7 0 0 1 0 6M4 6a11 11 0 0 0 0 12M20 6a11 11 0 0 1 0 12" strokeLinecap="round" /></svg>
+      }
+    ]
   }
 };

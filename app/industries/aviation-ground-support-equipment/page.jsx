@@ -1,20 +1,27 @@
 import React from 'react';
 import Navbar from '@/components/layout/Navbar';
 import Footer from '@/components/layout/Footer';
-import DarkHeroBanner from '@/components/sections/DarkHeroBanner';
-import ProseSection from '@/components/sections/ProseSection';
-import BentoFeatureGrid from '@/components/sections/BentoFeatureGrid';
-import IconCardsGrid from '@/components/sections/IconCardsGrid';
-import ProcessStepsGrid from '@/components/sections/ProcessStepsGrid';
-import SplitFeatureLight from '@/components/sections/SplitFeatureLight';
-import SplitFeatureDark from '@/components/sections/SplitFeatureDark';
-import TextComparisonSplit from '@/components/sections/TextComparisonSplit';
-import ProductCatalogGrid from '@/components/sections/ProductCatalogGrid';
-import TestimonialGridLight from '@/components/sections/TestimonialGridLight';
-import FaqAccordion from '@/components/sections/FaqAccordion';
-import SimpleCtaBanner from '@/components/sections/SimpleCtaBanner';
-import ContactFormSection from '@/components/sections/ContactFormSection';
+
+// Custom Sections
+import AviationHero from '@/components/sections/AviationHero';
+import PainPointsGrid from '@/components/sections/PainPointsGrid';
+import CausalChainSection from '@/components/sections/CausalChainSection';
+import ValuePropBand from '@/components/sections/ValuePropBand';
+import SpecStoryGrid from '@/components/sections/SpecStoryGrid';
+import BpmCallout from '@/components/sections/BpmCallout';
+import EnvironmentCompareGrid from '@/components/sections/EnvironmentCompareGrid';
+
+// Existing Sections
 import TechSpecsTable from '@/components/sections/TechSpecsTable';
+import ProcessStepsGrid from '@/components/sections/ProcessStepsGrid';
+import LeadMagnet from '@/components/sections/LeadMagnet';
+import RoiCalculator from '@/components/sections/RoiCalculator';
+import FaqAccordion from '@/components/sections/FaqAccordion';
+import ResourceGuideGrid from '@/components/sections/ResourceGuideGrid';
+import PillStrip from '@/components/sections/PillStrip';
+import CtaBanner from '@/components/sections/CtaBanner';
+import ContactFormSection from '@/components/sections/ContactFormSection';
+
 import { industryAviationData } from '@/data/industryAviationData';
 
 export const metadata = {
@@ -29,79 +36,89 @@ export default function AviationIndustryPage() {
     <>
       <Navbar />
       <main>
-        <DarkHeroBanner 
-          heading={data.hero.heading}
-          description={data.hero.description}
-          imageSrc={data.hero.imageSrc}
-          imageAlt={data.hero.imageAlt}
-          imageDescription={data.hero.imageDescription}
-          primaryCta={data.hero.primaryCta}
-          secondaryCta={data.hero.secondaryCta}
-        />
         
-        {/* We place the Contact Form here since we couldn't embed it perfectly inline in the Hero without a custom component */}
-        <div id="assessment" className="bg-paper-dim py-12 border-b border-black/5">
-          <div className="mx-auto max-w-[1240px] px-6 lg:px-8">
-            <h2 className="text-3xl font-display font-semibold mb-2">Get a charging plan for your ramp</h2>
-            <p className="text-mist-dark mb-8">One call. We&apos;ll size a charger fleet to your GSE mix and your existing power feed.</p>
-            {/* The standard contact form provides the inputs we need. */}
-            <ContactFormSection contactDetails={[]} />
-          </div>
-        </div>
+        <AviationHero 
+          eyebrow={data.hero.eyebrow || "Aviation & Ground Support"}
+          heading="Your ramp doesn't stop for a"
+          headingHighlight="dead charger."
+          description={data.hero.description}
+          tagsLabel="Engineered for"
+          tags={[
+            "Baggage tractors", "Belt loaders", "Tow tractors", 
+            "Pushback tugs", "Air-start units", "De-icing trucks"
+          ]}
+          proofText="Deployment count, airport / ground-handler logos, or years-in-service line goes here once approved."
+        />
 
-        <div className="bg-white py-16 text-center">
+        {/* AEO Quick-Answer Block */}
+        <div className="bg-white py-24 text-left">
           <div className="mx-auto max-w-[820px] px-6 lg:px-8">
              <span className="font-mono text-volt-dim uppercase tracking-widest text-xs font-bold block mb-2">{data.quickAnswer.eyebrow}</span>
-             <h2 className="font-display font-bold text-3xl mb-4">{data.quickAnswer.heading}</h2>
-             <p className="text-[#4C5C54] text-lg leading-relaxed">{data.quickAnswer.description}</p>
+             <h2 className="font-display font-bold text-2xl mb-4 text-ink-950">{data.quickAnswer.heading}</h2>
+             <p className="text-[#4C5C54] text-[16.5px] leading-relaxed font-medium">{data.quickAnswer.description}</p>
           </div>
         </div>
 
-        <IconCardsGrid 
-          id="pain-points"
+        <PainPointsGrid 
           eyebrow={data.painPoints.eyebrow}
           heading={data.painPoints.heading}
           description={data.painPoints.description}
-          cards={data.painPoints.cards}
+          painPoints={data.painPoints.cards}
         />
 
-        <ProcessStepsGrid 
+        <CausalChainSection 
           eyebrow={data.causalChain.eyebrow}
           heading={data.causalChain.heading}
-          description="Every link in that chain starts with the charger. See what it's worth to break the chain — use the ramp downtime calculator below."
-          steps={data.causalChain.steps.map((s, i) => ({ ...s, number: `0${i+1}` }))}
+          steps={data.causalChain.steps}
+          footerText="Every link in that chain starts with the charger. See what it's worth to break the chain — use the ramp downtime calculator below."
         />
 
-        <SplitFeatureLight 
+        <ValuePropBand 
           eyebrow={data.valueProp.eyebrow}
           heading={data.valueProp.heading}
           description={data.valueProp.description}
-          features={data.valueProp.features.map((f, i) => ({ id: `vf${i}`, text: f }))}
-          imageSrc={data.valueProp.imageSrc}
-          imageAlt={data.valueProp.imageAlt}
-          imageDescription={data.valueProp.imageDescription}
+          features={data.valueProp.features}
           primaryCta={data.valueProp.primaryCta}
+          secondaryCta={{ text: "Talk to an Engineer", href: "#assessment" }}
         />
 
-        <SplitFeatureDark 
+        <SpecStoryGrid 
+          eyebrow={data.specStory.eyebrow}
+          heading={data.specStory.heading}
+          description={data.specStory.description}
+          cards={data.specStory.cards}
+        />
+
+        <BpmCallout 
           eyebrow={data.bpmCallout.eyebrow}
           heading={data.bpmCallout.heading}
           description={data.bpmCallout.description}
-          features={data.bpmCallout.features.map((f, i) => ({ id: `bf${i}`, text: f }))}
-          imageSrc={data.bpmCallout.imageSrc}
-          imageAlt={data.bpmCallout.imageAlt}
-          imageDescription={data.bpmCallout.imageDescription}
-          primaryCta={{ text: "Ask About BPM for Your Ramp", href: "#assessment" }}
+          features={data.bpmCallout.features}
         />
 
-        <IconCardsGrid 
+        {/* Fleet Intelligence uses SpecStoryGrid because it shares the same HTML layout classes (.story-grid) */}
+        <SpecStoryGrid 
           eyebrow={data.fleetIntelligence.eyebrow}
           heading={data.fleetIntelligence.heading}
           description={data.fleetIntelligence.description}
-          cards={data.fleetIntelligence.cards}
+          cards={data.fleetIntelligence.cards.map(c => ({
+            title: c.title,
+            description: c.description
+          }))}
         />
+        {/* Fleet intelligence pills to match ValueProp chips */}
+        <div className="bg-white pb-24 -mt-16 px-6 lg:px-8">
+          <div className="mx-auto max-w-[1240px] flex flex-wrap gap-2.5">
+            {data.fleetIntelligence.features.map((feature, i) => (
+              <span key={i} className="inline-flex items-center gap-2 font-mono text-[11px] font-semibold tracking-[0.05em] uppercase bg-volt/10 text-green-900 border border-volt/30 rounded-full px-3.5 py-1.5">
+                <svg className="w-3.5 h-3.5 text-volt-dim" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                {feature}
+              </span>
+            ))}
+          </div>
+        </div>
 
-        <TextComparisonSplit 
+        <EnvironmentCompareGrid 
           eyebrow={data.rampVsHangar.eyebrow}
           heading={data.rampVsHangar.heading}
           leftTitle={data.rampVsHangar.leftTitle}
@@ -109,6 +126,8 @@ export default function AviationIndustryPage() {
           rightTitle={data.rampVsHangar.rightTitle}
           rightItems={data.rampVsHangar.rightItems}
         />
+
+        {/* Growth Path and Testimonials removed as they are not in the target industry.html design */}
 
         <TechSpecsTable 
           eyebrow={data.specs.eyebrow}
@@ -125,58 +144,17 @@ export default function AviationIndustryPage() {
           steps={data.process.steps}
         />
 
-        {/* Lead Magnet Block */}
-        <section className="bg-ink-950 py-24 text-white">
-          <div className="mx-auto max-w-[1240px] px-6 lg:px-8 grid md:grid-cols-2 gap-12 items-center">
-            <div>
-              <span className="font-mono text-volt uppercase tracking-widest text-xs font-bold block mb-2">{data.leadMagnet.eyebrow}</span>
-              <h2 className="font-display font-bold text-4xl mb-4">{data.leadMagnet.heading}</h2>
-              <p className="text-mist text-lg leading-relaxed mb-6">{data.leadMagnet.description}</p>
-              <ul className="space-y-4">
-                {data.leadMagnet.features.map((f, i) => (
-                  <li key={i} className="flex gap-3 text-mist">
-                    <svg className="w-5 h-5 text-volt flex-shrink-0 mt-1" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
-                    {f}
-                  </li>
-                ))}
-              </ul>
-            </div>
-            <div className="bg-ink-900 border border-white/10 rounded-2xl p-8">
-              <h3 className="font-display font-bold text-2xl mb-6 text-white">Send Me the Guide</h3>
-              <ContactFormSection contactDetails={[]} />
-            </div>
-          </div>
-        </section>
-
-        {/* ROI Calculator Block */}
-        <section className="bg-paper-dim py-24 border-y border-black/5" id="calculator">
-          <div className="mx-auto max-w-[1240px] px-6 lg:px-8">
-            <div className="mb-12 text-center max-w-2xl mx-auto">
-              <span className="font-mono text-volt-dim uppercase tracking-widest text-xs font-bold block mb-2">{data.calculator.eyebrow}</span>
-              <h2 className="font-display font-semibold text-3xl sm:text-4xl text-ink-950 mb-4">{data.calculator.heading}</h2>
-              <p className="text-[#4C5C54] text-lg leading-relaxed">{data.calculator.description}</p>
-            </div>
-            <div className="bg-white rounded-[2rem] p-8 md:p-12 shadow-[0_24px_60px_-30px_rgba(11,20,15,0.45)] ring-1 ring-black/5 max-w-4xl mx-auto text-center">
-               <h3 className="text-2xl font-display font-bold mb-6">Interactive Calculator</h3>
-               <p className="text-mist-dark mb-8">Talk to an engineer for a tailored estimate specific to your ramp.</p>
-               <a href="#assessment" className="inline-flex items-center justify-center gap-2 font-semibold text-[15px] px-[26px] py-[14px] rounded-full bg-volt text-ink-950 hover:bg-volt-dark transition-colors">
-                 Get My Tailored Estimate
-               </a>
-            </div>
-          </div>
-        </section>
-
-        {/* Growth Path */}
-        <ProductCatalogGrid 
-          eyebrow={data.growthPath.eyebrow}
-          heading={data.growthPath.heading}
-          description={data.growthPath.description}
-          products={data.growthPath.cards}
+        <LeadMagnet
+          eyebrow={data.leadMagnet.eyebrow}
+          heading={data.leadMagnet.heading}
+          description={data.leadMagnet.description}
+          checklist={data.leadMagnet.checklist}
         />
 
-        <TestimonialGridLight 
-          heading={data.testimonials.heading}
-          testimonials={data.testimonials.testimonials}
+        <RoiCalculator
+          eyebrow={data.calculator.eyebrow}
+          heading={data.calculator.heading}
+          description={data.calculator.description}
         />
 
         <FaqAccordion 
@@ -185,11 +163,31 @@ export default function AviationIndustryPage() {
           faqs={data.faq.items}
         />
 
-        <SimpleCtaBanner 
+        <ResourceGuideGrid 
+          eyebrow={data.resources.eyebrow}
+          heading={data.resources.heading}
+          guides={data.resources.guides}
+        />
+        
+        <PillStrip 
+          eyebrow={data.resources.exploreHeading}
+          items={data.resources.explorePills.map(p => p.label)}
+        />
+
+        <CtaBanner 
           heading={data.cta.heading}
           description={data.cta.description}
-          buttons={data.cta.buttons}
+          primaryCta={data.cta.buttons[0]}
+          secondaryCta={data.cta.buttons[1]}
         />
+
+        <div id="assessment" className="bg-paper-dim border-b border-black/5">
+          <ContactFormSection 
+            heading="Get a charging plan for your ramp"
+            description="One call. We'll size a charger fleet to your GSE mix and your existing power feed."
+            contactDetails={[]} 
+          />
+        </div>
 
       </main>
       <Footer />
