@@ -31,7 +31,7 @@ export default function SmartImage({
   displayWidth,
   description,
   className = '',
-  mode = 'dimensions',
+  mode = 'placeholder',
   ...props
 }) {
   // Environment variable can override the default mode across the app
