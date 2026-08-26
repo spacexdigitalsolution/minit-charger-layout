@@ -13,9 +13,28 @@ export const homeData = {
     description: "Smart industrial battery chargers and Cumulus visibility for warehouses, airports, and distribution centers, built for mixed fleets that cannot afford downtime.",
     primaryCta: { text: "Get a Quote", href: "#quote" },
     secondaryCta: { text: "Explore Solutions", href: "#solutions" },
-    imageSrc: "/crafted_images/Momentus Benner.png",
-    imageAlt: "Momentus rapid charger banner",
-    imageDescription: "A wide banner showing a dynamic industrial environment with an electric fleet rapidly charging."
+    images: [
+      {
+        src: "/crafted_images/Home Page Slider 1.png",
+        alt: "Momentus rapid charger banner",
+        description: "A wide banner showing a dynamic industrial environment with an electric fleet rapidly charging."
+      },
+      {
+        src: "/crafted_images/Home Page Slider 2.png",
+        alt: "Airport tarmac operations banner",
+        description: "An airport tarmac with ground support equipment parked near an aircraft."
+      },
+      {
+        src: "/crafted_images/Home Page Slider 3.png",
+        alt: "Fleet charging slider image 3",
+        description: "A wide landscape view of an industrial environment showcasing fleet chargers in action."
+      },
+      {
+        src: "/crafted_images/Home Page Slider 4.png",
+        alt: "Fleet charging slider image 4",
+        description: "A landscape view showing chargers providing power to industrial vehicles."
+      }
+    ]
   },
   logoStripFeatureGrid: {
     eyebrow: 'Trusted by industry leaders',
@@ -111,7 +130,7 @@ export const homeData = {
         id: 'uc2',
         title: 'Airports',
         href: '#',
-        imageSrc: '/crafted_images/Airport view-02.png',
+        imageSrc: '/crafted_images/Magnus Airport View 1_!.png',
         imageAlt: 'Airports',
         imageDescription: "An airport tarmac with ground support equipment parked near an aircraft."
       },
@@ -127,7 +146,7 @@ export const homeData = {
         id: 'uc4',
         title: 'Industrial & Commercial',
         href: '#',
-        imageSrc: '/crafted_images/ChatGPT Image Aug 25, 2026, 06_30_25 PM.png',
+        imageSrc: '/crafted_images/Turbocharging warehouse MHE-01.png',
         imageAlt: 'Industrial & Commercial',
         imageDescription: "An industrial manufacturing facility showing heavy commercial equipment."
       }
@@ -204,7 +223,7 @@ export const homeData = {
         id: 'tc2',
         title: 'Airports',
         description: 'Clean mobility for a smarter infrastructure.',
-        imageSrc: '/crafted_images/ALTUS for Airport vehicle-01.png',
+        imageSrc: '/crafted_images/ALTUS for Airport vehicle 16_9.png',
         imageAlt: 'Airport',
         imageDescription: "Airport runway at dusk with ground support vehicles in operation.",
         icon: (
@@ -251,7 +270,7 @@ export const homeData = {
     airportScene: (
       <div className="relative w-full aspect-video rounded-xl overflow-hidden shadow-2xl border-4 border-white">
         <SmartImage
-          src="/new_images/industry_airport_1786134268548.webp"
+          src="/crafted_images/Magnus Airport View 1_!.png"
           alt="Interactive Airport Scene"
           fill
           className="object-cover"
@@ -268,7 +287,7 @@ export const homeData = {
     cards: [
       {
         id: 'cs1',
-        imageSrc: '/crafted_images/MAXIMUS_GEN2-01.png',
+        imageSrc: '/crafted_images/Maximus Indoor.png',
         imageAlt: 'Maximus indoor high-capacity forklift battery charger',
         imageDescription: "Detailed front view of the Maximus charger unit emphasizing its robust build.",
         title: 'Indoor material handling',
@@ -281,7 +300,7 @@ export const homeData = {
       },
       {
         id: 'cs2',
-        imageSrc: '/product-images/Altus II/ALTUS II.14.webp',
+        imageSrc: '/crafted_images/ALTUS for Airport vehicle 16_9.png',
         imageAlt: 'Altus II outdoor dual-port eGSE airport charger',
         imageDescription: "The Altus II dual-port eGSE charger shown in an outdoor setting.",
         title: 'Outdoor eGSE & yards',
@@ -319,35 +338,35 @@ export const homeData = {
     gallery: [
       {
         id: 'g1',
-        imageSrc: '/new_images/angle_1_hr.webp',
+        imageSrc: '/crafted_images/MAGNUS-  Front view.png',
         imageAlt: 'Front View',
         imageDescription: "Front elevation of the charging unit showing the main interface screen.",
         label: 'Front View'
       },
       {
         id: 'g2',
-        imageSrc: '/new_images/angle_2_hr.webp',
+        imageSrc: '/crafted_images/MAGNUS-  45 view-.png',
         imageAlt: '45° View',
         imageDescription: "Three-quarter perspective view highlighting the depth and side vents.",
         label: '45° View'
       },
       {
         id: 'g3',
-        imageSrc: '/new_images/angle_3_hr.webp',
+        imageSrc: '/crafted_images/MAGNUS-  side view.png',
         imageAlt: 'Side View',
         imageDescription: "Direct side profile showing the slim form factor and mounting brackets.",
         label: 'Side View'
       },
       {
         id: 'g4',
-        imageSrc: '/new_images/angle_4_hr.webp',
+        imageSrc: '/crafted_images/MAGNUS-  Close up view.png',
         imageAlt: 'Close-Up',
         imageDescription: "Macro shot focusing on the high-quality finish and durable materials.",
         label: 'Close-Up'
       },
       {
         id: 'g5',
-        imageSrc: '/new_images/angle_5_hr.webp',
+        imageSrc: '/crafted_images/MAGNUS-  top view-02.png',
         imageAlt: 'Top Isometric',
         imageDescription: "Elevated isometric view providing a sense of scale and cable management.",
         label: 'Top Isometric'
