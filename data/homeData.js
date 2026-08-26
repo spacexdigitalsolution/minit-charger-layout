@@ -25,7 +25,7 @@ export const homeData = {
         description: "An airport tarmac with ground support equipment parked near an aircraft."
       },
       {
-        src: "/crafted_images/Home Page Slider 3.png",
+        src: "/new_images/banner_image.webp",
         alt: "Fleet charging slider image 3",
         description: "A wide landscape view of an industrial environment showcasing fleet chargers in action."
       },
