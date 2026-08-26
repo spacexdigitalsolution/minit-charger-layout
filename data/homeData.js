@@ -13,8 +13,8 @@ export const homeData = {
     description: "Smart industrial battery chargers and Cumulus visibility for warehouses, airports, and distribution centers, built for mixed fleets that cannot afford downtime.",
     primaryCta: { text: "Get a Quote", href: "#quote" },
     secondaryCta: { text: "Explore Solutions", href: "#solutions" },
-    imageSrc: "/new_images/banner_image.webp",
-    imageAlt: "Missing",
+    imageSrc: "/crafted_images/Momentus Benner.png",
+    imageAlt: "Momentus rapid charger banner",
     imageDescription: "A wide banner showing a dynamic industrial environment with an electric fleet rapidly charging."
   },
   logoStripFeatureGrid: {
@@ -103,7 +103,7 @@ export const homeData = {
         id: 'uc1',
         title: 'Warehouses',
         href: '#',
-        imageSrc: '/new_images/industry_warehouse_1786134258340.webp',
+        imageSrc: '/crafted_images/MOMENTUS for warehouse-01.png',
         imageAlt: 'Warehouses',
         imageDescription: "A bustling warehouse interior showing rows of shelving and electric forklifts."
       },
@@ -111,7 +111,7 @@ export const homeData = {
         id: 'uc2',
         title: 'Airports',
         href: '#',
-        imageSrc: '/new_images/industry_airport_1786134268548.webp',
+        imageSrc: '/crafted_images/Airport view-02.png',
         imageAlt: 'Airports',
         imageDescription: "An airport tarmac with ground support equipment parked near an aircraft."
       },
@@ -119,7 +119,7 @@ export const homeData = {
         id: 'uc3',
         title: 'LSEVs',
         href: '#',
-        imageSrc: '/new_images/industry_lsev_1786134282031.webp',
+        imageSrc: '/crafted_images/Durus-01.png',
         imageAlt: 'LSEVs',
         imageDescription: "A low-speed electric vehicle navigating through a large resort campus."
       },
@@ -127,7 +127,7 @@ export const homeData = {
         id: 'uc4',
         title: 'Industrial & Commercial',
         href: '#',
-        imageSrc: '/new_images/industry_commercial_1786134294460.webp',
+        imageSrc: '/crafted_images/ChatGPT Image Aug 25, 2026, 06_30_25 PM.png',
         imageAlt: 'Industrial & Commercial',
         imageDescription: "An industrial manufacturing facility showing heavy commercial equipment."
       }
@@ -191,7 +191,7 @@ export const homeData = {
         id: 'tc1',
         title: 'Warehouses',
         description: 'Uninterrupted power for round-the-clock operations.',
-        imageSrc: '/new_images/warehouse_bg.webp',
+        imageSrc: '/crafted_images/MOMENTUS for warehouse-02.png',
         imageAlt: 'Warehouse',
         imageDescription: "Dark warehouse setting with glowing accents highlighting a charging forklift.",
         icon: (
@@ -204,7 +204,7 @@ export const homeData = {
         id: 'tc2',
         title: 'Airports',
         description: 'Clean mobility for a smarter infrastructure.',
-        imageSrc: '/new_images/airport_bg.webp',
+        imageSrc: '/crafted_images/ALTUS for Airport vehicle-01.png',
         imageAlt: 'Airport',
         imageDescription: "Airport runway at dusk with ground support vehicles in operation.",
         icon: (
@@ -217,7 +217,7 @@ export const homeData = {
         id: 'tc3',
         title: 'Low-Speed Electric Vehicles (LSEVs)',
         description: 'Clean energy for campus, resort and community mobility.',
-        imageSrc: '/new_images/lsev_bg.webp',
+        imageSrc: '/crafted_images/Durus-02.png',
         imageAlt: 'LSEV',
         imageDescription: "Scenic view of a low-speed electric vehicle parked outdoors.",
         icon: (
@@ -235,7 +235,7 @@ export const homeData = {
     warehouseScene: (
       <div className="relative w-full aspect-video rounded-xl overflow-hidden shadow-2xl border-4 border-white">
         <SmartImage
-          src="/new_images/industry_warehouse_1786134258340.webp"
+          src="/crafted_images/MOMENTUS for warehouse-03.png"
           alt="Interactive Warehouse Scene"
           fill
           displayHeight={540}
@@ -268,7 +268,7 @@ export const homeData = {
     cards: [
       {
         id: 'cs1',
-        imageSrc: '/product-images/Maximus/MAXIMUS.webp',
+        imageSrc: '/crafted_images/MAXIMUS_GEN2-01.png',
         imageAlt: 'Maximus indoor high-capacity forklift battery charger',
         imageDescription: "Detailed front view of the Maximus charger unit emphasizing its robust build.",
         title: 'Indoor material handling',
@@ -301,7 +301,7 @@ export const homeData = {
     ]
   },
   productSpotlight: {
-    imageSrc: '/product-images/Momentus/Momentus.2100.webp',
+    imageSrc: '/crafted_images/Meet MOMENTUs-01.png',
     imageAlt: 'Momentus industrial battery charger product view',
     imageDescription: "A sleek, industrial design of the Momentus mid-level forklift battery charger.",
     eyebrow: 'Flagship · Industrial MHE',

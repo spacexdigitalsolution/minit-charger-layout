@@ -220,7 +220,7 @@ export const homeData3 = {
       },
       {
         id: "cb2",
-        src: "/product-images/Maximus/MAXIMUS.webp",
+        src: "/crafted_images/MAXIMUS_GEN2-03.png",
         alt: "Maximus charger",
         description: "The Maximus charger positioned centrally.",
         hiddenOnMobile: true

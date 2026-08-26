@@ -63,7 +63,7 @@ export const homeData2 = {
                 description: "A completely portable, temporary charging unit for remote aprons and yards that lack immediate fixed electrical infrastructure.",
                 ctaText: "View Mobilus",
                 href: "/product/mobile-charging-unit",
-                imageSrc: "/product-images/Mobilus/3D MODLE.10.webp"
+                imageSrc: "/crafted_images/MOBILUS.png"
               },
               {
                 id: "c-celltrac-1",
@@ -102,7 +102,7 @@ export const homeData2 = {
           {
             id: "p-maximus",
             badge: "Indoor · High-capacity",
-            imageSrc: "/product-images/Maximus/MAXIMUS.webp",
+            imageSrc: "/crafted_images/MAXIMUS_GEN2-02.png",
             imageAlt: "Maximus high-capacity indoor dual-port charger",
             imageDescription: "A high-capacity indoor charger station suited for demanding warehouse floors.",
             eyebrow: "Indoor · High-capacity",
@@ -279,7 +279,7 @@ export const homeData2 = {
                 description: "A rugged, portable outdoor charger that comes natively equipped with integrated GPS and Asset Tracking right out of the box.",
                 ctaText: "View Mobilus",
                 href: "/product/mobile-charging-unit",
-                imageSrc: "/product-images/Mobilus/3D MODLE.10.webp"
+                imageSrc: "/crafted_images/MOBILUS.png"
               }
             ]
           }
