@@ -49,18 +49,22 @@ export default function CtaBanner({
             )}
           </div>
         </div>
-        
+
         {images && images.length > 0 && (
           <div className="flex justify-center gap-4">
             {images.map((image) => (
-              <div 
-                key={image.id} 
+              <div
+                key={image.id}
                 className={`relative w-[140px] sm:w-[280px] h-48 sm:h-56 ${image.hiddenOnMobile ? 'hidden sm:block' : ''}`}
               >
                 <SmartImage
                   src={image.src}
                   alt={image.alt}
-                  description={image.description}
+                  displayHeight={540}
+                  displayWidth={540}
+                  safeAreaHeight={540}
+                  safeAreaWidth={540}
+                  description={`${image.description}. Images should have transparent backgrounds inorder to blend with the background.`}
                   fill
                   className="object-contain"
                 />

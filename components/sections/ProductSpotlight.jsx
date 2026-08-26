@@ -39,6 +39,10 @@ export default function ProductSpotlight({
           <SmartImage
             src={imageSrc}
             alt={imageAlt}
+            displayHeight={540}
+            displayWidth={1080}
+            safeAreaHeight={540}
+            safeAreaWidth={1080}
             description={imageDescription}
             fill
             className="object-contain"
@@ -49,7 +53,7 @@ export default function ProductSpotlight({
           aria-hidden="true"
         ></div>
       </div>
-      
+
       <div className="flex flex-col justify-center bg-ink-900 px-8 py-16 text-[#EEF5F0] sm:px-12 lg:px-16">
         <p className="font-mono mb-4 inline-flex items-center gap-2 text-[12.5px] uppercase tracking-[0.08em] text-volt">
           <span className="h-1.5 w-1.5 rounded-full bg-volt shadow-[0_0_0_4px_rgba(92,242,160,0.35)]"></span>
@@ -61,7 +65,7 @@ export default function ProductSpotlight({
         <p className="mt-4 max-w-md leading-relaxed text-mist">
           {description}
         </p>
-        
+
         {badges && badges.length > 0 && (
           <ul className="mt-6 flex flex-wrap gap-2">
             {badges.map((badge, index) => (
@@ -71,7 +75,7 @@ export default function ProductSpotlight({
             ))}
           </ul>
         )}
-        
+
         {(primaryCta || secondaryCta) && (
           <div className="mt-8 flex flex-wrap gap-3">
             {primaryCta && (

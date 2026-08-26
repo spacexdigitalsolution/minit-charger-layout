@@ -20,7 +20,7 @@ export default function GalleryFeaturesGrid({
   return (
     <section className="bg-[#07100C] py-24 border-t border-white/5" id={id}>
       <div className="mx-auto max-w-[1400px] px-6 lg:px-8">
-        
+
         {/* 5 Angles Gallery */}
         {gallery && gallery.length > 0 && (
           <div className="grid grid-cols-2 md:grid-cols-5 gap-4">
@@ -31,6 +31,10 @@ export default function GalleryFeaturesGrid({
                     src={item.imageSrc}
                     alt={item.imageAlt}
                     description={item.imageDescription}
+                    displayHeight={1080}
+                    displayWidth={540}
+                    safeAreaHeight={1080}
+                    safeAreaWidth={540}
                     fill
                     className="object-cover"
                   />
@@ -59,7 +63,7 @@ export default function GalleryFeaturesGrid({
             ))}
           </div>
         )}
-        
+
       </div>
     </section>
   );

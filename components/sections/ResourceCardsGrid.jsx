@@ -36,7 +36,7 @@ export default function ResourceCardsGrid({
       <p className="mx-auto mt-3 max-w-xl text-center text-[#4C5C54]">
         {description}
       </p>
-      
+
       <div className="mt-12 grid gap-6 md:grid-cols-3">
         {resources.map((resource) => (
           <article key={resource.id} className="overflow-hidden rounded-3xl bg-white ring-1 ring-black/5 flex flex-col h-full">
@@ -44,6 +44,10 @@ export default function ResourceCardsGrid({
               <SmartImage
                 src={resource.imageSrc}
                 alt={resource.imageAlt}
+                displayHeight={540}
+                displayWidth={1080}
+                safeAreaHeight={540}
+                safeAreaWidth={1080}
                 description={resource.imageDescription}
                 fill
                 className={resource.imageContain ? 'object-contain' : 'object-cover'}
