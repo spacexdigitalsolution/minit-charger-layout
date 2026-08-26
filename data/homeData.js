@@ -270,7 +270,7 @@ export const homeData = {
     airportScene: (
       <div className="relative w-full aspect-video rounded-xl overflow-hidden shadow-2xl border-4 border-white">
         <SmartImage
-          src="/crafted_images/Magnus Airport View 1_!.png"
+          src="/crafted_images/ALTUS for Airport vehicle 16_9.png"
           alt="Interactive Airport Scene"
           fill
           className="object-cover"

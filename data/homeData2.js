@@ -17,7 +17,7 @@ export const homeData2 = {
           {
             id: "p-altus",
             badge: "Outdoor rated",
-            imageSrc: "/crafted_images/ALTUS for Airport vehicle 16_9.png",
+            imageSrc: "/product-images/Altus II/ALTUS II.14.webp",
             imageAlt: "Altus II outdoor dual-port eGSE charger",
             imageDescription: "A robust outdoor charger unit featuring intuitive screen diagnostics.",
             eyebrow: "Outdoor · EV-ready",
@@ -50,7 +50,7 @@ export const homeData2 = {
                 description: "Our largest, most resilient outdoor pedestal engineered specifically for high-traffic airport hubs. Features fully integrated Cumulus reporting.",
                 ctaText: "View Magnus",
                 href: "/product/magnus",
-                imageSrc: "/crafted_images/MAGNUS- hardware-01.png"
+                imageSrc: "/product-images/Ultimate/9.1918.webp"
               },
               {
                 id: "c-mobilus",
@@ -63,7 +63,7 @@ export const homeData2 = {
                 description: "A completely portable, temporary charging unit for remote aprons and yards that lack immediate fixed electrical infrastructure.",
                 ctaText: "View Mobilus",
                 href: "/product/mobile-charging-unit",
-                imageSrc: "/crafted_images/MOBILUS Hardware-01.png"
+                imageSrc: "/crafted_images/MOBILUS.png"
               },
               {
                 id: "c-celltrac-1",
@@ -76,7 +76,7 @@ export const homeData2 = {
                 description: "An advanced onboard Battery Management System providing high-resolution GPS and State of Charge (SoC) monitoring for all GSE equipment.",
                 ctaText: "View CellTrac",
                 href: "/product/celltrac",
-                imageSrc: "/crafted_images/MAGNUS-  Top view-01.png"
+                imageSrc: "/product-images/Cell trac/Render.2055.webp"
               },
               {
                 id: "c-cumulus-1",
@@ -89,7 +89,7 @@ export const homeData2 = {
                 description: "Comprehensive fleet-wide monitoring and analytics software layered directly on top of your airport charging ecosystem.",
                 ctaText: "View Cumulus",
                 href: "/product/cumulus",
-                imageSrc: "/crafted_images/Two decades of leading...-01.png"
+                imageSrc: "/product-images/CMS/CMS.1.webp"
               }
             ]
           }
@@ -102,7 +102,7 @@ export const homeData2 = {
           {
             id: "p-maximus",
             badge: "Indoor · High-capacity",
-            imageSrc: "/crafted_images/MAXIMUS_GEN2-01.png",
+            imageSrc: "/crafted_images/MAXIMUS_GEN2-02.png",
             imageAlt: "Maximus high-capacity indoor dual-port charger",
             imageDescription: "A high-capacity indoor charger station suited for demanding warehouse floors.",
             eyebrow: "Indoor · High-capacity",
@@ -135,7 +135,7 @@ export const homeData2 = {
                 description: "A highly reliable mid-level indoor forklift charger balancing performance and fast installation for standard indoor warehouse fleets.",
                 ctaText: "View Momentus",
                 href: "/product/momentus",
-                imageSrc: "/crafted_images/Meet MOMENTUs-01.png"
+                imageSrc: "/product-images/Momentus/Momentus.2100.webp"
               },
               {
                 id: "c-celltrac-2",
@@ -148,7 +148,7 @@ export const homeData2 = {
                 description: "Onboard telematics unit for per-vehicle battery and asset tracking, ensuring your material handling fleets stay fully operational.",
                 ctaText: "View CellTrac",
                 href: "/product/celltrac",
-                imageSrc: "/crafted_images/MAXIMUS_GEN2-02.png"
+                imageSrc: "/product-images/Cell trac/Render.2055.webp"
               },
               {
                 id: "c-cumulus-2",
@@ -161,7 +161,7 @@ export const homeData2 = {
                 description: "The centralized cloud analytics and reporting layer, giving warehouse operators full operational transparency and proactive alerts.",
                 ctaText: "View Cumulus",
                 href: "/product/cumulus",
-                imageSrc: "/crafted_images/MAXIMUS_GEN2-03.png"
+                imageSrc: "/product-images/CMS/CMS.1.webp"
               }
             ]
           }
@@ -174,7 +174,7 @@ export const homeData2 = {
           {
             id: "p-durus",
             badge: "Compact · Mobility",
-            imageSrc: "/crafted_images/Durus-01.png",
+            imageSrc: "/product-images/Durus/DCXC.webp",
             imageAlt: "Durus compact charger for low-speed electric vehicles",
             imageDescription: "A small, highly portable charging device designed for mobility.",
             eyebrow: "Compact · Built-in BMS",
@@ -207,7 +207,7 @@ export const homeData2 = {
                 description: "Seamlessly integrates with lighter industrial mobility fleets to provide an additional layer of critical GPS tracking and SoC visibility.",
                 ctaText: "View CellTrac",
                 href: "/product/celltrac",
-                imageSrc: "/crafted_images/Durus-02.png"
+                imageSrc: "/product-images/Cell trac/Render.2055.webp"
               },
               {
                 id: "c-cumulus-3",
@@ -220,7 +220,7 @@ export const homeData2 = {
                 description: "Fleet-level reporting and health monitoring dashboard that centralizes data for widely distributed low speed vehicle fleets.",
                 ctaText: "View Cumulus",
                 href: "/product/cumulus",
-                imageSrc: "/crafted_images/Home Page Slider 1.png"
+                imageSrc: "/product-images/CMS/CMS.1.webp"
               }
             ]
           }
@@ -233,7 +233,7 @@ export const homeData2 = {
           {
             id: "p-celltrac-parent",
             badge: "Onboard · Telematics",
-            imageSrc: "/crafted_images/Two decades of leading...-01.png",
+            imageSrc: "/product-images/Cell trac/Render.2055.webp",
             imageAlt: "CellTrac onboard smart battery management module",
             imageDescription: "A compact, intelligent battery management module with connected wires.",
             eyebrow: "Onboard · Tracking",
@@ -266,7 +266,7 @@ export const homeData2 = {
                 description: "The primary command center and dashboard that natively consumes all of CellTrac's onboard data to deliver actionable real-time insights.",
                 ctaText: "View Cumulus",
                 href: "/product/cumulus",
-                imageSrc: "/crafted_images/Home Page Slider 2.png"
+                imageSrc: "/product-images/CMS/CMS.1.webp"
               },
               {
                 id: "c-mobilus-2",
@@ -279,7 +279,7 @@ export const homeData2 = {
                 description: "A rugged, portable outdoor charger that comes natively equipped with integrated GPS and Asset Tracking right out of the box.",
                 ctaText: "View Mobilus",
                 href: "/product/mobile-charging-unit",
-                imageSrc: "/crafted_images/MOBILUS Hardware-01.png"
+                imageSrc: "/crafted_images/MOBILUS.png"
               }
             ]
           }
