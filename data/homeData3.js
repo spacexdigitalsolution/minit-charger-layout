@@ -36,7 +36,7 @@ export const homeData3 = {
       "Lead-acid — proven chemistry still dominant across many MHE fleets",
       "AGM — sealed batteries common in specialty and lighter-duty equipment"
     ],
-    imageSrc: "/crafted_images/Meet MOMENTUs-01.png",
+    imageSrc: "/product-images/Momentus/Momentus.2100.webp",
     imageAlt: "Momentus industrial forklift battery charger supporting mixed chemistries",
     imageDescription: "A charger unit positioned indoors connected to multiple vehicles.",
     ctaText: "Ask about your chemistry mix",
@@ -53,7 +53,7 @@ export const homeData3 = {
       "Proactive issue detection to minimize downtime",
       "ERP / CMMS-friendly integration paths"
     ],
-    imageSrc: "/crafted_images/Home Page Slider 3.png",
+    imageSrc: "/new_images/Generated image_ Futuristic EV Charger at Sunset.webp",
     imageAlt: "Industrial Minit Charger hardware connected to Cumulus fleet operations",
     imageDescription: "A high-tech digital dashboard displaying fleet charging analytics over a sunset.",
     ctaText: "Request a Cumulus walkthrough",
@@ -143,7 +143,7 @@ export const homeData3 = {
     resources: [
       {
         id: "rr1",
-        imageSrc: "/crafted_images/MAGNUS-  Top view-01.png",
+        imageSrc: "/product-images/Cell trac/Render.2055.webp",
         imageAlt: "Battery management system for material handling",
         imageDescription: "An isolated product view of the CellTrac module.",
         imageContain: true,
@@ -154,7 +154,7 @@ export const homeData3 = {
       },
       {
         id: "rr2",
-        imageSrc: "/crafted_images/Turbocharging warehouse MHE-01.png",
+        imageSrc: "/product-images/Industry Image Renders/Material handeling.webp",
         imageAlt: "Warehouse material handling rapid charging",
         imageDescription: "An overhead shot of a fast-charging electric forklift moving a pallet.",
         imageContain: false,
@@ -165,7 +165,7 @@ export const homeData3 = {
       },
       {
         id: "rr3",
-        imageSrc: "/crafted_images/Durus-01.png",
+        imageSrc: "/product-images/Durus/DCXC.webp",
         imageAlt: "Low-speed electric vehicle charging",
         imageDescription: "The Durus low-speed charging station viewed from an angle.",
         imageContain: true,
@@ -213,14 +213,14 @@ export const homeData3 = {
     images: [
       {
         id: "cb1",
-        src: "/crafted_images/MAGNUS-  Close up view.png",
+        src: "/product-images/Altus II/ALTUS II.14.webp",
         alt: "Altus II charger",
         description: "A close-up view of the Altus II charger port.",
         hiddenOnMobile: false
       },
       {
         id: "cb2",
-        src: "/crafted_images/MAXIMUS_GEN2-03.png",
+        src: "/product-images/Maximus/MAXIMUS.webp",
         alt: "Maximus charger",
         description: "The Maximus charger positioned centrally.",
         hiddenOnMobile: true
