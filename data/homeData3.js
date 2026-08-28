@@ -213,17 +213,10 @@ export const homeData3 = {
     images: [
       {
         id: "cb1",
-        src: "/product-images/Altus II/ALTUS II.14.webp",
-        alt: "Altus II charger",
-        description: "A close-up view of the Altus II charger port.",
+        src: "/crafted_images/All product-01.png",
+        alt: "All products",
+        description: "A comprehensive view of all Minit Charger products.",
         hiddenOnMobile: false
-      },
-      {
-        id: "cb2",
-        src: "/product-images/Maximus/MAXIMUS.webp",
-        alt: "Maximus charger",
-        description: "The Maximus charger positioned centrally.",
-        hiddenOnMobile: true
       }
     ]
   },

@@ -21,7 +21,6 @@ import ResourceGuideGrid from '@/components/sections/ResourceGuideGrid';
 import PillStrip from '@/components/sections/PillStrip';
 import CtaBanner from '@/components/sections/CtaBanner';
 import ContactFormSection from '@/components/sections/ContactFormSection';
-
 import { industryAviationData } from '@/data/industryAviationData';
 
 export const metadata = {
@@ -36,15 +35,14 @@ export default function AviationIndustryPage() {
     <>
       <Navbar />
       <main>
-        
-        <AviationHero 
+        <AviationHero
           eyebrow={data.hero.eyebrow || "Aviation & Ground Support"}
           heading="Your ramp doesn't stop for a"
           headingHighlight="dead charger."
           description={data.hero.description}
           tagsLabel="Engineered for"
           tags={[
-            "Baggage tractors", "Belt loaders", "Tow tractors", 
+            "Baggage tractors", "Belt loaders", "Tow tractors",
             "Pushback tugs", "Air-start units", "De-icing trucks"
           ]}
           proofText="Deployment count, airport / ground-handler logos, or years-in-service line goes here once approved."
@@ -53,27 +51,27 @@ export default function AviationIndustryPage() {
         {/* AEO Quick-Answer Block */}
         <div className="bg-white py-24 text-left">
           <div className="mx-auto max-w-[820px] px-6 lg:px-8">
-             <span className="font-mono text-volt-dim uppercase tracking-widest text-xs font-bold block mb-2">{data.quickAnswer.eyebrow}</span>
-             <h2 className="font-display font-bold text-2xl mb-4 text-ink-950">{data.quickAnswer.heading}</h2>
-             <p className="text-[#4C5C54] text-[16.5px] leading-relaxed font-medium">{data.quickAnswer.description}</p>
+            <span className="font-mono text-volt-dim uppercase tracking-widest text-xs font-bold block mb-2">{data.quickAnswer.eyebrow}</span>
+            <h2 className="font-display font-bold text-2xl mb-4 text-ink-950">{data.quickAnswer.heading}</h2>
+            <p className="text-[#4C5C54] text-[16.5px] leading-relaxed font-medium">{data.quickAnswer.description}</p>
           </div>
         </div>
 
-        <PainPointsGrid 
+        <PainPointsGrid
           eyebrow={data.painPoints.eyebrow}
           heading={data.painPoints.heading}
           description={data.painPoints.description}
           painPoints={data.painPoints.cards}
         />
 
-        <CausalChainSection 
+        <CausalChainSection
           eyebrow={data.causalChain.eyebrow}
           heading={data.causalChain.heading}
           steps={data.causalChain.steps}
           footerText="Every link in that chain starts with the charger. See what it's worth to break the chain — use the ramp downtime calculator below."
         />
 
-        <ValuePropBand 
+        <ValuePropBand
           eyebrow={data.valueProp.eyebrow}
           heading={data.valueProp.heading}
           description={data.valueProp.description}
@@ -82,14 +80,14 @@ export default function AviationIndustryPage() {
           secondaryCta={{ text: "Talk to an Engineer", href: "#assessment" }}
         />
 
-        <SpecStoryGrid 
+        <SpecStoryGrid
           eyebrow={data.specStory.eyebrow}
           heading={data.specStory.heading}
           description={data.specStory.description}
           cards={data.specStory.cards}
         />
 
-        <BpmCallout 
+        <BpmCallout
           eyebrow={data.bpmCallout.eyebrow}
           heading={data.bpmCallout.heading}
           description={data.bpmCallout.description}
@@ -97,7 +95,7 @@ export default function AviationIndustryPage() {
         />
 
         {/* Fleet Intelligence uses SpecStoryGrid because it shares the same HTML layout classes (.story-grid) */}
-        <SpecStoryGrid 
+        <SpecStoryGrid
           eyebrow={data.fleetIntelligence.eyebrow}
           heading={data.fleetIntelligence.heading}
           description={data.fleetIntelligence.description}
@@ -117,8 +115,7 @@ export default function AviationIndustryPage() {
             ))}
           </div>
         </div>
-
-        <EnvironmentCompareGrid 
+        <EnvironmentCompareGrid
           eyebrow={data.rampVsHangar.eyebrow}
           heading={data.rampVsHangar.heading}
           leftTitle={data.rampVsHangar.leftTitle}
@@ -126,10 +123,8 @@ export default function AviationIndustryPage() {
           rightTitle={data.rampVsHangar.rightTitle}
           rightItems={data.rampVsHangar.rightItems}
         />
-
         {/* Growth Path and Testimonials removed as they are not in the target industry.html design */}
-
-        <TechSpecsTable 
+        <TechSpecsTable
           eyebrow={data.specs.eyebrow}
           heading={data.specs.heading}
           description={data.specs.footer}
@@ -137,13 +132,11 @@ export default function AviationIndustryPage() {
           column2Label="Specification"
           specs={data.specs.items.map((item, i) => ({ id: `spec${i}`, capability: item.label, value: item.value }))}
         />
-
-        <ProcessStepsGrid 
+        <ProcessStepsGrid
           eyebrow={data.process.eyebrow}
           heading={data.process.heading}
           steps={data.process.steps}
         />
-
         <LeadMagnet
           eyebrow={data.leadMagnet.eyebrow}
           heading={data.leadMagnet.heading}
@@ -157,24 +150,24 @@ export default function AviationIndustryPage() {
           description={data.calculator.description}
         />
 
-        <FaqAccordion 
+        <FaqAccordion
           heading={data.faq.heading}
           description={data.faq.description}
           faqs={data.faq.items}
         />
 
-        <ResourceGuideGrid 
+        <ResourceGuideGrid
           eyebrow={data.resources.eyebrow}
           heading={data.resources.heading}
           guides={data.resources.guides}
         />
-        
-        <PillStrip 
+
+        <PillStrip
           eyebrow={data.resources.exploreHeading}
           items={data.resources.explorePills.map(p => p.label)}
         />
 
-        <CtaBanner 
+        <CtaBanner
           heading={data.cta.heading}
           description={data.cta.description}
           primaryCta={data.cta.buttons[0]}
@@ -182,10 +175,10 @@ export default function AviationIndustryPage() {
         />
 
         <div id="assessment" className="bg-paper-dim border-b border-black/5">
-          <ContactFormSection 
+          <ContactFormSection
             heading="Get a charging plan for your ramp"
             description="One call. We'll size a charger fleet to your GSE mix and your existing power feed."
-            contactDetails={[]} 
+            contactDetails={[]}
           />
         </div>
 

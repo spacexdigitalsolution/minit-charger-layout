@@ -55,7 +55,7 @@ export default function CtaBanner({
             {images.map((image) => (
               <div
                 key={image.id}
-                className={`relative w-[140px] sm:w-[280px] h-48 sm:h-56 ${image.hiddenOnMobile ? 'hidden sm:block' : ''}`}
+                className={`relative w-[280px] sm:w-[480px] lg:w-[540px] h-64 sm:h-80 lg:h-[480px] ${image.hiddenOnMobile ? 'hidden sm:block' : ''}`}
               >
                 <SmartImage
                   src={image.src}
