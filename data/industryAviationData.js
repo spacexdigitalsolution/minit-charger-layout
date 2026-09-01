@@ -8,8 +8,9 @@ export const industryAviationData = {
       </>
     ),
     description: "A gate delay caused by a charger — not a plane — is still a gate delay. Minit Charger builds outdoor-rated, dual-port fast chargers engineered for the pace of airside operations, so your ground crew isn't the reason for a slow turn.",
-    imageSrc: "/product-images/Altus II/ALTUS II.14.webp", // placeholder
+    imageSrc: "/product-images/Altus II/ALTUS II.14.webp",
     imageAlt: "Aviation eGSE Charging",
+    bgImage: "/assets/Industries/Aviation/Banner/Banner-Aviation page.webp",
     imageDescription: "Tug silhouette parked next to a Minit Charger Altus II pedestal on an airport tarmac.",
     primaryCta: { text: "Get Your Free Charging Assessment", href: "#assessment" },
     secondaryCta: { text: "Download the Airport Ops Guide", href: "#guide" }
