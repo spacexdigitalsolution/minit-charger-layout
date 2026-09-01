@@ -1,6 +1,16 @@
 import React from 'react';
 
 export default function SpecStoryGrid({ eyebrow, heading, description, cards }) {
+  const cardsLength = cards.length;
+  const gridColumnsClass =
+    cardsLength === 1
+      ? 'grid-cols-1'
+      : cardsLength === 2
+        ? 'grid-cols-1 md:grid-cols-2'
+        : cardsLength === 4 ? 'grid-cols-1 md:grid-cols-2 lg:grid-cols-2' : 'grid-cols-1 md:grid-cols-2 lg:grid-cols-3';
+
+
+
   return (
     <section className="bg-white py-24" id="altus-deep-dive">
       <div className="mx-auto max-w-[1240px] px-6 lg:px-8">
@@ -19,7 +29,7 @@ export default function SpecStoryGrid({ eyebrow, heading, description, cards }) 
           )}
         </div>
 
-        <div className="grid md:grid-cols-2 gap-6">
+        <div className={`grid ${gridColumnsClass} gap-6`}>
           {cards.map((card, i) => (
             <div key={i} className="bg-paper-dim border border-black/5 rounded-3xl p-8 lg:p-10 shadow-sm transition-shadow hover:shadow-md">
               <div className="flex gap-4 items-start pb-6 mb-6 border-b border-dashed border-black/10">

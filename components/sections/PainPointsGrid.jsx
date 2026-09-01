@@ -1,6 +1,16 @@
 import React from 'react';
 
 export default function PainPointsGrid({ eyebrow, heading, description, painPoints }) {
+  const cardsLength = painPoints.length;
+  const gridColumnsClass =
+    cardsLength === 1
+      ? 'grid-cols-1'
+      : cardsLength === 2
+        ? 'grid-cols-1 md:grid-cols-2'
+        : cardsLength === 4 ? 'grid-cols-1 md:grid-cols-2 lg:grid-cols-2' : 'grid-cols-1 md:grid-cols-2 lg:grid-cols-3';
+
+
+
   return (
     <section className="bg-paper-dim py-24" id="pain-points">
       <div className="mx-auto max-w-[1240px] px-6 lg:px-8">
@@ -19,25 +29,25 @@ export default function PainPointsGrid({ eyebrow, heading, description, painPoin
           )}
         </div>
 
-        <div className="grid md:grid-cols-2 gap-6">
+        <div className={`grid ${gridColumnsClass} gap-6`}>
           {painPoints.map((point) => (
             <div key={point.id} className="bg-white border border-black/5 rounded-2xl p-7 relative overflow-hidden shadow-sm">
               <div className="absolute left-0 top-0 bottom-0 w-1.5 bg-amber"></div>
-              
+
               <div className="inline-flex items-center gap-1.5 font-mono text-[11px] font-bold tracking-[0.1em] uppercase text-amber-deep bg-amber-wash px-2.5 py-1 rounded-full">
                 Pain point
               </div>
-              
+
               <h3 className="font-body font-bold text-[19px] text-ink-950 mt-4">
                 {point.title}
               </h3>
-              
+
               <p className="mt-2.5 text-[15px] text-[#5B6A5C] leading-relaxed">
                 {point.description}
               </p>
-              
+
               {point.fix && (
-                <div className="mt-5 pt-4 border-t border-dashed border-black/10 flex flex-col sm:flex-row gap-3 sm:items-start">
+                <div className="mt-5 pt-4 border-t border-dashed border-black/10 flex flex-col gap-3 sm:items-start">
                   <div className="flex-none font-mono text-[11px] font-bold tracking-[0.1em] uppercase text-green-800 bg-[#e3f4e8] px-2.5 py-1 rounded-full w-fit">
                     Minit response
                   </div>

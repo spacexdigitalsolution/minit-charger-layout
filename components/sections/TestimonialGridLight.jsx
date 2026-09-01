@@ -13,16 +13,25 @@ import React from 'react';
  */
 export default function TestimonialGridLight({
   id,
+  eyebrow,
   heading,
   testimonials
 }) {
   return (
     <section className="bg-white py-24" id={id}>
       <div className="mx-auto max-w-[1240px] px-6 lg:px-8">
-        <h2 className="font-display text-3xl font-semibold text-center tracking-tight sm:text-4xl mb-16 text-ink-950">
-          {heading}
-        </h2>
-        <div className="grid gap-8 md:grid-cols-2">
+        <div className="text-center mb-16">
+          {eyebrow && (
+            <p className="font-mono inline-flex items-center gap-2 text-[12.5px] uppercase tracking-[0.08em] text-volt-dim">
+              <span className="h-1.5 w-1.5 rounded-full bg-volt shadow-[0_0_0_4px_rgba(92,242,160,0.35)]"></span>
+              {eyebrow}
+            </p>
+          )}
+          <h2 className="font-display mt-3 text-3xl font-semibold tracking-tight sm:text-4xl text-ink-950">
+            {heading}
+          </h2>
+        </div>
+        <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
           {testimonials.map((t) => (
             <div key={t.id} className="rounded-3xl bg-paper-dim p-10 ring-1 ring-black/5 relative">
               <svg className="absolute top-8 right-8 h-12 w-12 text-black/5" fill="currentColor" viewBox="0 0 32 32">

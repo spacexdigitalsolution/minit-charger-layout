@@ -16,6 +16,15 @@ export default function IconCardsGrid({
   description,
   cards
 }) {
+  const cardsLength = cards.length;
+  const gridColumnsClass =
+    cardsLength === 1
+      ? 'grid-cols-1'
+      : cardsLength === 2
+        ? 'grid-cols-1 md:grid-cols-2'
+        : cardsLength === 4 ? 'grid-cols-1 md:grid-cols-2 lg:grid-cols-2' : 'grid-cols-1 md:grid-cols-2 lg:grid-cols-3';
+
+
   return (
     <section className="bg-paper-dim py-24" id={id}>
       <div className="mx-auto max-w-[1240px] px-6 lg:px-8">
@@ -35,7 +44,7 @@ export default function IconCardsGrid({
             </p>
           )}
         </div>
-        <div className="grid gap-8 sm:grid-cols-3">
+        <div className={`grid ${gridColumnsClass} gap-6`}>
           {cards.map((card) => (
             <div key={card.id} className="rounded-3xl bg-white p-8 ring-1 ring-black/5">
               <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-volt-dim/10 text-volt-dim">

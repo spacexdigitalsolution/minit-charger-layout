@@ -27,7 +27,7 @@ export const productsData = {
         id: 'p1',
         title: "MAXIMUS",
         description: "High-capacity indoor dual-port charger.",
-        imageSrc: "/product-images/Altus II/ALTUS II.14.webp", // Maximus placeholder
+        imageSrc: "/new_images/industry_warehouse_1786134258340.webp", // Maximus
         imageAlt: "MAXIMUS",
         imageDescription: "Placeholder for /product-images/Maximus/MAXIMUS.webp",
         href: "/product/maximus"
@@ -36,16 +36,16 @@ export const productsData = {
         id: 'p2',
         title: "ALTUS II",
         description: "Outdoor dual-port eGSE charger.",
-        imageSrc: "/product-images/Altus II/ALTUS II.14.webp", // Altus II placeholder
+        imageSrc: "/assets/Products/Altus II/Altus II Listing.webp", // Altus II
         imageAlt: "ALTUS II",
         imageDescription: "Placeholder for /product-images/Altus II/ALTUS II.14.webp",
-        href: "/product/altus-ii"
+        href: "/products/altus-ii"
       },
       {
         id: 'p3',
         title: "MOMENTUS",
         description: "Mid-level single-port MHE charger.",
-        imageSrc: "/product-images/Altus II/ALTUS II.14.webp", // Momentus placeholder
+        imageSrc: "/assets/Products/Momentus/MOMENTUs Hardware Listing.webp", // Momentus
         imageAlt: "MOMENTUS",
         imageDescription: "Placeholder for /product-images/Momentus/Momentus.2100.webp",
         href: "/product/momentus"
@@ -54,34 +54,34 @@ export const productsData = {
         id: 'p4',
         title: "DURUS",
         description: "Compact charger for LSEV.",
-        imageSrc: "/product-images/Altus II/ALTUS II.14.webp", // Durus placeholder
+        imageSrc: "/assets/Products/Durus/Durus Listing.webp", // Durus
         imageAlt: "DURUS",
         imageDescription: "Placeholder for /product-images/Durus/DCXC.webp",
-        href: "/product/durus"
+        href: "/products/durus"
       },
       {
         id: 'p5',
         title: "CELLTRAC",
         description: "Onboard BMS telemetry and monitoring.",
-        imageSrc: "/product-images/Altus II/ALTUS II.14.webp", // CellTrac placeholder
+        imageSrc: "/new_images/celltrac_dash.webp", // CellTrac
         imageAlt: "CELLTRAC",
         imageDescription: "Placeholder for /product-images/Cell trac/Render.2055.webp",
-        href: "/product/celltrac"
+        href: "/products/celltrac"
       },
       {
         id: 'p6',
         title: "CUMULUS",
         description: "Cloud fleet charging analytics platform.",
-        imageSrc: "/product-images/CMS/CMS.1.webp", // Cumulus placeholder
+        imageSrc: "/assets/Products/Cumulus/Cumulus Software Lisitng.webp", // Cumulus
         imageAlt: "CUMULUS",
         imageDescription: "Placeholder for /product-images/CMS/CMS.3.webp",
-        href: "/product/cumulus"
+        href: "/products/cumulus"
       },
       {
         id: 'p7',
         title: "MOBILUS",
         description: "Mobile and adaptable rapid charger.",
-        imageSrc: "/product-images/Altus II/ALTUS II.14.webp", // Mobilus placeholder
+        imageSrc: "/assets/Products/Mobilus/MOBILUS Hardware Listing.webp", // Mobilus
         imageAlt: "MOBILUS",
         imageDescription: "Placeholder for /product-images/Mobilus/3D MODLE.10.webp",
         href: "/product/mobilus"
@@ -90,7 +90,7 @@ export const productsData = {
         id: 'p8',
         title: "MAGNUS",
         description: "Versatile heavy-duty industrial unit.",
-        imageSrc: "/product-images/Altus II/ALTUS II.14.webp", // Magnus placeholder
+        imageSrc: "/assets/Products/Magnus/Magnus Hardware Listing.webp", // Magnus
         imageAlt: "MAGNUS",
         imageDescription: "Placeholder for /product-images/Industry Image Renders/work platforms.webp",
         href: "/products/magnus"
@@ -106,7 +106,7 @@ export const productsData = {
       { label: "Actionable analytics", value: "" },
       { label: "ERP Integration", value: "" }
     ],
-    imageSrc: "/product-images/CMS/CMS.1.webp",
+    imageSrc: "/assets/Products/Cumulus/Cumulus Software Lisitng.webp",
     imageAlt: "Cumulus Dashboard",
     imageDescription: "Placeholder for /product-images/CMS/CMS.2.webp"
   },
@@ -150,13 +150,13 @@ export const productsData = {
     images: [
       {
         id: 'i1',
-        src: "/product-images/Altus II/ALTUS II.14.webp",
+        src: "/assets/Products/Altus II/Altus II Listing.webp",
         alt: "Altus II",
         description: "Placeholder for /product-images/Altus II/ALTUS II.14.webp"
       },
       {
         id: 'i2',
-        src: "/product-images/Altus II/ALTUS II.14.webp",
+        src: "/new_images/industry_warehouse_1786134258340.webp",
         alt: "Maximus",
         description: "Placeholder for /product-images/Maximus/MAXIMUS.webp",
         hiddenOnMobile: true

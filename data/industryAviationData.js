@@ -142,6 +142,7 @@ export const industryAviationData = {
       {
         id: "g1",
         title: "Magnus",
+        specLine: "100–200 kW · 24–1000 VDC · GSE + CCS/NACS EV connectors",
         description: "When your fleet adds electric shuttle buses or passenger EVs alongside your GSE, you don't need a second charging system. Magnus covers both from one platform — one charging ecosystem from GSE to EV.",
         imageSrc: "/product-images/Magnus/MAGNUS.15.webp",
         imageAlt: "Magnus",
@@ -151,6 +152,7 @@ export const industryAviationData = {
       {
         id: "g2",
         title: "Mobilus",
+        specLine: "Mobile DC fast charging · trailer / skid platform · outdoor rated",
         description: "A de-icing pad two runways over, a temporary gate during construction, a charger that needs to move before the infrastructure can catch up — Mobilus brings fast charging to wherever the ramp actually needs it.",
         imageSrc: "/product-images/Mobilus/MOBILUS.30.webp",
         imageAlt: "Mobilus",
@@ -160,6 +162,7 @@ export const industryAviationData = {
     ]
   },
   testimonials: {
+    eyebrow: "From the ramp",
     heading: "What fleets running on Minit Charger say.",
     testimonials: [
       {

@@ -102,7 +102,8 @@ export const productAltusData = {
       { icon: "plug", text: "Dual port" },
       { icon: "battery", text: "Lead acid, lithium & EV" },
       { icon: "cloud", text: "AssetPro 360 connected" }
-    ]
+    ],
+    cta: { text: "Download Spec Sheet", href: "/resources/altus-ii-spec-sheet" }
   },
 
   infrastructure: {

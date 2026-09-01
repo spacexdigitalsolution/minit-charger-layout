@@ -3,7 +3,7 @@ import Navbar from '@/components/layout/Navbar';
 import Footer from '@/components/layout/Footer';
 
 // Custom Sections
-import IndustryHero from '@/components/sections/AviationHero'; // Reusing AviationHero as IndustryHero
+import StandardHero from '@/components/sections/StandardHero';
 import PainPointsGrid from '@/components/sections/PainPointsGrid';
 import CausalChainSection from '@/components/sections/CausalChainSection';
 import ValuePropBand from '@/components/sections/ValuePropBand';
@@ -12,7 +12,7 @@ import BpmCallout from '@/components/sections/BpmCallout';
 import EnvironmentCompareGrid from '@/components/sections/EnvironmentCompareGrid';
 
 // Existing Sections
-import TechSpecsTable from '@/components/sections/TechSpecsTable';
+import ComparisonTable from '@/components/sections/ComparisonTable';
 import ProcessStepsGrid from '@/components/sections/ProcessStepsGrid';
 import LeadMagnet from '@/components/sections/LeadMagnet';
 import RoiCalculator from '@/components/sections/RoiCalculator';
@@ -35,14 +35,21 @@ export default function WarehouseManufacturingPage() {
     <>
       <Navbar />
       <main>
-        <IndustryHero
+        <StandardHero
+          breadcrumbs={data.hero.breadcrumbs}
           eyebrow={data.hero.eyebrow}
           heading={data.hero.heading}
           description={data.hero.description}
-          tagsLabel={data.hero.tagsLabel}
-          tags={data.hero.tags}
-          proofText="Deployment count, warehouse / 3PL logos, or years-in-service line goes here once approved for this vertical."
+          bgImage={data.hero.bgImage}
+          primaryCta={data.hero.primaryCta}
+          secondaryCta={data.hero.secondaryCta}
         />
+
+        {/* Proof Strip */}
+        <div className="bg-paper-dim border-b border-black/5 py-4 text-center font-mono text-[11.5px] uppercase tracking-wider text-[#5B6A5C] font-semibold">
+          <span className="text-amber mx-2">[CLIENT TO CONFIRM]</span>
+          <span>Deployment count, warehouse / 3PL logos, or years-in-service line goes here once approved for this vertical.</span>
+        </div>
 
         {/* AEO Quick-Answer Block */}
         <div className="bg-white py-24 text-left">
@@ -121,13 +128,23 @@ export default function WarehouseManufacturingPage() {
           rightItems={data.environmentCompare.rightItems}
         />
 
-        <TechSpecsTable
+        {data.comparison && (
+          <ComparisonTable
+            eyebrow={data.comparison.eyebrow}
+            heading={data.comparison.heading}
+            description={data.comparison.description}
+            columns={data.comparison.columns}
+            rows={data.comparison.rows}
+            footer={data.comparison.footer}
+          />
+        )}
+
+        <ComparisonTable
           eyebrow={data.specs.eyebrow}
           heading={data.specs.heading}
-          description={data.specs.footer}
-          column1Label="Capability"
-          column2Label="Specification"
-          specs={data.specs.items.map((item, i) => ({ id: `spec${i}`, capability: item.label, value: item.value }))}
+          description={data.specs.description}
+          columns={data.specs.columns}
+          rows={data.specs.rows}
         />
 
         <ProcessStepsGrid
@@ -163,6 +180,7 @@ export default function WarehouseManufacturingPage() {
 
         {data.relatedProducts && (
           <RelatedProducts
+            eyebrow={data.relatedProducts.eyebrow}
             heading={data.relatedProducts.heading}
             products={data.relatedProducts.products}
             theme="light"
@@ -175,6 +193,7 @@ export default function WarehouseManufacturingPage() {
           description={data.cta.description}
           primaryCta={data.cta.buttons[0]}
           secondaryCta={data.cta.buttons[1]}
+          contactText={data.cta.contact}
         />
 
         <div id="assessment" className="bg-paper-dim border-b border-black/5">

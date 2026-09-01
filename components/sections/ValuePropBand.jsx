@@ -6,7 +6,10 @@ export default function ValuePropBand({ eyebrow, heading, description, features,
     <section className="bg-gradient-to-b from-[#F2F5F0] to-white py-24 border-y border-black/5">
       <div className="mx-auto max-w-[1240px] px-6 lg:px-8 grid lg:grid-cols-2 gap-16 items-center">
         <div>
-          <span className="font-mono text-[13.5px] uppercase tracking-[0.12em] text-volt-dim">{eyebrow}</span>
+          <p className="font-mono inline-flex items-center gap-2 text-[12.5px] uppercase tracking-[0.08em] text-volt-dim">
+            <span className="h-1.5 w-1.5 rounded-full bg-volt shadow-[0_0_0_4px_rgba(92,242,160,0.35)]"></span>
+            {eyebrow}
+          </p>
           <h2 className="font-display mt-4 text-3xl font-semibold tracking-tight sm:text-4xl text-ink-950">
             {heading}
           </h2>

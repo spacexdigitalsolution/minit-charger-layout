@@ -9,7 +9,7 @@ export const industryWarehouseData = {
       </>
     ),
     description: "Every minute a forklift spends parked for a battery swap is a minute it isn't picking, staging, or loading. Minit Charger builds compact, multi-chemistry fast chargers built for multi-shift warehouse floors — so opportunity charging replaces the swap-and-wait routine.",
-    imageSrc: "/assets/Home Page/industry_warehouse_1786134258340.webp", // placeholder path assuming assets-optimize output
+    bgImage: "/assets/Industries/Warehouse/Banner/Banner-Warehouse-Page.webp",
     imageAlt: "Warehouse fleet charging",
     imageDescription: "A bustling warehouse interior showing rows of shelving and electric forklifts charging.",
     primaryCta: { text: "Get Your Free Charging Assessment", href: "#assessment" },
@@ -79,7 +79,7 @@ export const industryWarehouseData = {
       "Dual-port efficiency",
       "Drop-in installation"
     ],
-    imageSrc: "/assets/Home Page/MOMENTUS for warehouse-01.webp",
+    bgImage: "/assets/Industries/Warehouse/Banner/Banner-Warehouse-Page.webp",
     imageAlt: "Momentus / Maximus Dual Port Wall Mount",
     imageDescription: "Momentus and Maximus wall mount configuration.",
     primaryCta: { text: "See Momentus & Maximus Specs", href: "#specs" }
@@ -183,18 +183,44 @@ export const industryWarehouseData = {
       "GPS / asset tracking via CellTrac"
     ]
   },
-  specs: {
+  comparison: {
     eyebrow: "Why not just buy a traditional dual-vehicle charger",
     heading: "Maximus vs. a typical high-throughput charger",
-    items: [
-      { label: "Power output", value: "40 kW, dual port" },
-      { label: "Efficiency", value: "Up to 94%" },
-      { label: "Mounting", value: "Wall or pedestal mountable" },
-      { label: "Chemistry", value: "Agnostic (Lead-acid, Lithium, AGM, EV)" },
-      { label: "Diagnostics", value: "On-screen touch display + cloud monitoring" },
-      { label: "Footprint", value: "Compact enclosure, saves floor space" }
+    description: "Most 40 kW-class dual-vehicle chargers on the market are built around a large traditional cabinet design. Here's what that comparison looks like on published specifications.",
+    columns: [
+      { id: "c1", name: "Typical high-throughput charger" },
+      { id: "c2", name: "Maximus", highlight: true }
     ],
-    footer: "Most 40 kW-class dual-vehicle chargers on the market are built around a large traditional cabinet design. Maximus provides the same power in a compact wall-mountable form."
+    rows: [
+      { id: "r1", feature: "Power output", values: ["~40 kW dual-vehicle class", "40 kW, dual port"] },
+      { id: "r2", feature: "Efficiency", values: ["Around 90% in published dual-vehicle chargers of this class", "Up to 94%"] },
+      { id: "r3", feature: "Architecture", values: ["Large floor-standing cabinet", "Compact SiC electronics - wall or pedestal"] },
+      { id: "r4", feature: "Battery chemistry support", values: ["Typically fixed to one or two chemistries", "Lead acid, lithium, EV, AGM"] },
+      { id: "r5", feature: "Connector flexibility", values: ["Fixed connector, brand-specific", "Interchangeable - SB350, Euro, REMA"] }
+    ],
+    footer: "Figures reflect Maximus's published specifications compared to typical dual-vehicle charging equipment in this power class. [Client to confirm before publishing any named-competitor comparison; exact competitor weight/dimension figures require separate confirmation before public use.]"
+  },
+  specs: {
+    eyebrow: "Specifications",
+    heading: "Industrial forklift charger specs buyers search for.",
+    description: "Figures reflect Maximus's published specifications compared to typical dual-vehicle charging equipment in this power class.",
+    columns: [
+      { id: "c1", name: "Momentus" },
+      { id: "c2", name: "Maximus", highlight: true }
+    ],
+    rows: [
+      { id: "r1", feature: "Charging Type", values: ["DC Fast", "DC Fast"] },
+      { id: "r2", feature: "Power Output", values: ["20 kW", "40 kW"] },
+      { id: "r3", feature: "Input Voltage", values: ["208-480 VAC, 3-phase", "208-480 VAC, 3-phase"] },
+      { id: "r4", feature: "Output Voltage", values: ["24-100 VDC", "24-100 VDC"] },
+      { id: "r5", feature: "Port Configuration", values: ["Single Port", "Dual Port"] },
+      { id: "r6", feature: "Battery Chemistry", values: ["Lead Acid, Lithium, EV, AGM", "Lead Acid, Lithium, EV, AGM"] },
+      { id: "r7", feature: "Connector Options", values: ["SB350, Euro, REMA", "SB350, Euro, REMA"] },
+      { id: "r8", feature: "Max Efficiency", values: ["94%", "94%"] },
+      { id: "r9", feature: "Operating Temp", values: ["-25°C to 50°C", "-25°C to 50°C"] },
+      { id: "r10", feature: "Regulatory Compliance", values: ["UL 1564", "UL 1564"] },
+      { id: "r11", feature: "Mounting", values: ["Wall or Pedestal", "Wall or Pedestal"] }
+    ]
   },
   process: {
     eyebrow: "From first call to fully installed",
@@ -217,7 +243,7 @@ export const industryWarehouseData = {
     guides: [
       { id: "r1", title: "The Warehouse Fleet Charging Guide", description: "Sizing a charger fleet, mapping power feeds, and the opportunity charging question.", ctaText: "Read Guide", ctaHref: "#guide" },
       { id: "r2", title: "MHE Downtime & ROI Calculator", description: "See what battery swaps are costing your operation today.", ctaText: "Use Tool", ctaHref: "#calculator" },
-      { id: "r3", title: "Maximus & Momentus Specs (PDF)", description: "Full technical specifications for procurement and engineering.", ctaText: "Download PDF", ctaHref: "/resources/maximus-momentus-spec/" }
+      { id: "r3", title: "Maximus & Momentus Specs (PDF)", description: "Full technical specifications for procurement and engineering. [Client to confirm link.]", ctaText: "Download PDF", ctaHref: "/resources/maximus-momentus-spec/" }
     ],
     exploreHeading: "Explore other fleets we power",
     explorePills: [
@@ -229,7 +255,7 @@ export const industryWarehouseData = {
   leadMagnet: {
     eyebrow: "Free download",
     heading: "The Warehouse Fleet Charging Checklist",
-    description: "What ops directors need to know before their next fleet upgrade — sizing a charger fleet, reading a power feed, and understanding opportunity charging vs. battery swapping.",
+    description: "What ops directors need to know before their next fleet upgrade — sizing a charger fleet, reading a power feed, and understanding opportunity charging vs. battery swapping. [Client to confirm final guide content before this goes live.]",
     checklist: [
       "How to size a charger fleet to your MHE mix",
       "Opportunity charging implementation plan",
@@ -242,16 +268,18 @@ export const industryWarehouseData = {
     buttons: [
       { id: "b1", text: "Request a Quote", href: "#assessment", variant: "primary" },
       { id: "b2", text: "Download the Warehouse Guide", href: "#guide", variant: "outline" }
-    ]
+    ],
+    contact: "MINIT CHARGER — CHANDLER, AZ — SERVING WAREHOUSES & DISTRIBUTION CENTERS NATIONWIDE — [PHONE / EMAIL: CLIENT TO CONFIRM]"
   },
   relatedProducts: {
+    eyebrow: "Related products",
     heading: "Complete your warehouse charging ecosystem.",
     products: [
       {
         id: "maximus",
         title: "Maximus",
         description: "High-capacity indoor dual-port warehouse charger.",
-        imageSrc: "/product-images/Altus II/ALTUS II.14.webp",
+        imageSrc: "/new_images/industry_warehouse_1786134258340.webp",
         imageAlt: "Maximus charger",
         href: "/product/maximus"
       },
@@ -259,7 +287,7 @@ export const industryWarehouseData = {
         id: "momentus",
         title: "Momentus",
         description: "Mid-level compact indoor MHE charger.",
-        imageSrc: "/product-images/Altus II/ALTUS II.14.webp",
+        imageSrc: "/assets/Products/Momentus/MOMENTUs Hardware Listing.webp",
         imageAlt: "Momentus charger",
         href: "/product/momentus"
       },

@@ -290,13 +290,14 @@ export const productMagnusData = {
   },
 
   relatedProducts: {
+    eyebrow: "Related products",
     heading: "Build the rest of your charging ecosystem.",
     products: [
       {
         id: "altus",
         title: "Altus II",
         description: "Outdoor-rated dual-port DC fast charger for GSE.",
-        imageSrc: "/product-images/Altus II/ALTUS II.14.webp",
+        imageSrc: "/assets/Products/Altus II/Altus II Listing.webp",
         imageAlt: "Altus II charger",
         href: "/products/altus-ii"
       },
@@ -304,7 +305,7 @@ export const productMagnusData = {
         id: "mobilus",
         title: "Mobilus",
         description: "Mobile DC fast charging on a trailer or skid platform.",
-        imageSrc: "/assets/altus/altus-related-mobilus.webp",
+        imageSrc: "/assets/Products/Mobilus/MOBILUS Hardware Listing.webp",
         imageAlt: "Mobilus mobile DC fast charger",
         href: "/products/mobilus"
       },

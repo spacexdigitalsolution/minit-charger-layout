@@ -3,13 +3,15 @@ import Navbar from '@/components/layout/Navbar';
 import Footer from '@/components/layout/Footer';
 
 // Custom Sections
-import AviationHero from '@/components/sections/AviationHero';
+import StandardHero from '@/components/sections/StandardHero';
 import PainPointsGrid from '@/components/sections/PainPointsGrid';
 import CausalChainSection from '@/components/sections/CausalChainSection';
 import ValuePropBand from '@/components/sections/ValuePropBand';
 import SpecStoryGrid from '@/components/sections/SpecStoryGrid';
 import BpmCallout from '@/components/sections/BpmCallout';
 import EnvironmentCompareGrid from '@/components/sections/EnvironmentCompareGrid';
+import GrowthPathGrid from '@/components/sections/GrowthPathGrid';
+import TestimonialGridLight from '@/components/sections/TestimonialGridLight';
 
 // Existing Sections
 import TechSpecsTable from '@/components/sections/TechSpecsTable';
@@ -36,18 +38,21 @@ export default function AviationIndustryPage() {
     <>
       <Navbar />
       <main>
-        <AviationHero
-          eyebrow={data.hero.eyebrow || "Aviation & Ground Support"}
-          heading="Your ramp doesn't stop for a"
-          headingHighlight="dead charger."
+        <StandardHero
+          breadcrumbs={data.hero.breadcrumbs}
+          eyebrow={data.hero.eyebrow}
+          heading={data.hero.heading}
           description={data.hero.description}
-          tagsLabel="Engineered for"
-          tags={[
-            "Baggage tractors", "Belt loaders", "Tow tractors",
-            "Pushback tugs", "Air-start units", "De-icing trucks"
-          ]}
-          proofText="Deployment count, airport / ground-handler logos, or years-in-service line goes here once approved."
+          bgImage={data.hero.bgImage}
+          primaryCta={data.hero.primaryCta}
+          secondaryCta={data.hero.secondaryCta}
         />
+
+        {/* Proof Strip */}
+        <div className="bg-paper-dim border-b border-black/5 py-4 text-center font-mono text-[11.5px] uppercase tracking-wider text-[#5B6A5C] font-semibold">
+          <span className="text-amber mx-2">[CLIENT TO CONFIRM]</span>
+          <span>Deployment count, airport / ground-handler logos, or years-in-service line goes here once approved.</span>
+        </div>
 
         {/* AEO Quick-Answer Block */}
         <div className="bg-white py-24 text-left">
@@ -105,17 +110,19 @@ export default function AviationIndustryPage() {
             description: c.description
           }))}
         />
-        {/* Fleet intelligence pills to match ValueProp chips */}
-        <div className="bg-white pb-24 -mt-16 px-6 lg:px-8">
-          <div className="mx-auto max-w-[1240px] flex flex-wrap gap-2.5">
-            {data.fleetIntelligence.features.map((feature, i) => (
-              <span key={i} className="inline-flex items-center gap-2 font-mono text-[11px] font-semibold tracking-[0.05em] uppercase bg-volt/10 text-green-900 border border-volt/30 rounded-full px-3.5 py-1.5">
-                <svg className="w-3.5 h-3.5 text-volt-dim" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
-                {feature}
-              </span>
-            ))}
+        {/* Fleet intelligence pills */}
+        {data.fleetIntelligence.features && data.fleetIntelligence.features.length > 0 && (
+          <div className="bg-white pb-24 -mt-16 px-6 lg:px-8">
+            <div className="mx-auto max-w-[1240px] flex flex-wrap gap-2.5">
+              {data.fleetIntelligence.features.map((feature, i) => (
+                <span key={i} className="inline-flex items-center gap-2 font-mono text-[11px] font-semibold tracking-[0.05em] uppercase bg-volt/10 text-green-900 border border-volt/30 rounded-full px-3.5 py-1.5">
+                  <svg className="w-3.5 h-3.5 text-volt-dim" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  {feature}
+                </span>
+              ))}
+            </div>
           </div>
-        </div>
+        )}
         <EnvironmentCompareGrid
           eyebrow={data.rampVsHangar.eyebrow}
           heading={data.rampVsHangar.heading}
@@ -124,7 +131,17 @@ export default function AviationIndustryPage() {
           rightTitle={data.rampVsHangar.rightTitle}
           rightItems={data.rampVsHangar.rightItems}
         />
-        {/* Growth Path and Testimonials removed as they are not in the target industry.html design */}
+        <GrowthPathGrid
+          eyebrow={data.growthPath.eyebrow}
+          heading={data.growthPath.heading}
+          description={data.growthPath.description}
+          cards={data.growthPath.cards}
+        />
+        <TestimonialGridLight
+          eyebrow={data.testimonials.eyebrow}
+          heading={data.testimonials.heading}
+          testimonials={data.testimonials.testimonials}
+        />
         <TechSpecsTable
           eyebrow={data.specs.eyebrow}
           heading={data.specs.heading}

@@ -17,11 +17,19 @@
   --color-copper: #E08A4A;
   --color-mist: #9FB3A9;
 
+  --color-amber: #E2A03D;
+  --color-amber-deep: #A9640F;
+  --color-amber-wash: #FBF0DD;
+
   --font-display: var(--font-inter), sans-serif;
   --font-sans: var(--font-inter), sans-serif;
   --font-mono: var(--font-inter), monospace;
 
   --shadow-volt: 0 8px 24px -8px rgba(92, 242, 160, 0.35);
+}
+
+img {
+  image-rendering: auto;
 }
 
 body {

@@ -11,6 +11,7 @@
  * @param {string} props.column1Label - Header for the first column (e.g. 'Capability')
  * @param {string} props.column2Label - Header for the second column (e.g. 'Minit Charger platform')
  * @param {Array<{id: string, capability: string, value: string}>} props.specs - Array of spec objects
+ * @param {React.ReactNode} [props.footer] - Optional footnote below the table
  * @returns {JSX.Element}
  */
 export default function TechSpecsTable({
@@ -20,7 +21,8 @@ export default function TechSpecsTable({
   description,
   column1Label,
   column2Label,
-  specs
+  specs,
+  footer
 }) {
   return (
     <section className="mx-auto max-w-[1240px] px-6 py-24 lg:px-8" id={id}>
@@ -55,6 +57,11 @@ export default function TechSpecsTable({
           </tbody>
         </table>
       </div>
+      {footer && (
+        <p className="mt-6 text-[12px] leading-relaxed text-[#4C5C54] max-w-4xl text-left font-mono">
+          {footer}
+        </p>
+      )}
     </section>
   );
 }

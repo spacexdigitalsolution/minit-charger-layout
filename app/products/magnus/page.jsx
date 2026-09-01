@@ -2,7 +2,7 @@ import React from 'react';
 import Navbar from '@/components/layout/Navbar';
 import Footer from '@/components/layout/Footer';
 
-import MagnusTitleBanner from '@/components/sections/MagnusTitleBanner';
+import StandardHero from '@/components/sections/StandardHero';
 import MagnusGalleryIntro from '@/components/sections/MagnusGalleryIntro';
 import MagnusEngineeringStrip from '@/components/sections/MagnusEngineeringStrip';
 import MagnusQuickAnswer from '@/components/sections/MagnusQuickAnswer';
@@ -33,7 +33,7 @@ export default function MagnusProductPage() {
     <>
       <Navbar />
       <main>
-        <MagnusTitleBanner {...data.hero} />
+        <StandardHero {...data.hero} />
         <MagnusGalleryIntro data={data.intro} />
         <MagnusEngineeringStrip data={data.engineeringStrip} />
         <MagnusQuickAnswer data={data.quickAnswer} />

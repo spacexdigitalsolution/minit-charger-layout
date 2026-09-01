@@ -6,7 +6,10 @@ export default function BpmCallout({ eyebrow, heading, description, features }) 
     <section className="bg-ink-950 py-24 text-white">
       <div className="mx-auto max-w-[1240px] px-6 lg:px-8 grid lg:grid-cols-[1.1fr_0.9fr] gap-16 items-center">
         <div>
-          <span className="font-mono text-[13.5px] uppercase tracking-[0.12em] text-volt-dim">{eyebrow}</span>
+          <p className="font-mono inline-flex items-center gap-2 text-[12.5px] uppercase tracking-[0.08em] text-volt">
+            <span className="h-1.5 w-1.5 rounded-full bg-volt shadow-[0_0_0_4px_rgba(92,242,160,0.35)]"></span>
+            {eyebrow}
+          </p>
           <h2 className="font-display mt-4 text-3xl font-semibold tracking-tight sm:text-4xl text-white">
             {heading}
           </h2>

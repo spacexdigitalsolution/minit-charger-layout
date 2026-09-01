@@ -12,6 +12,7 @@ export const industryLsvData = {
     tags: ["Golf carts", "Campus shuttles", "Utility vehicles", "Security carts", "Municipal fleets", "AGVs"],
     videoSrc: "/assets/lsv/lsv-fleet-hero.mp4",
     posterSrc: "/assets/lsv/lsv-hero-poster.svg",
+    bgImage: "/assets/Industries/Low-Speed-Vehicles/Banner/Banner -Low-Speed-Vehicles-Page.webp",
     formTitle: "Get a charging plan for your fleet",
     formSubtitle: "One call. We'll size onboard charging to your fleet mix and growth plan."
   },
@@ -31,7 +32,7 @@ export const industryLsvData = {
         title: 'Fleet growth outpaces charging infrastructure',
         description: 'A property adds five more carts for the season, and suddenly there aren\'t enough charging bays, outlets, or staff hours to keep every vehicle topped off overnight.',
         fixTag: 'Minit response',
-        fixDescription: 'Durus\'s onboard charger travels with the vehicle — plug into any compatible outlet at any bay, cart barn, or maintenance closet. No dedicated charging station buildout per new vehicle.'
+        fix: 'Durus\'s onboard charger travels with the vehicle — plug into any compatible outlet at any bay, cart barn, or maintenance closet. No dedicated charging station buildout per new vehicle.'
       },
       {
         id: 'pp2',
@@ -39,7 +40,7 @@ export const industryLsvData = {
         title: 'Mixed-brand fleets, mismatched chargers',
         description: 'A fleet built up over years ends up with carts and utility vehicles from different manufacturers side by side — each with a different charger, a different plug, a different failure mode.',
         fixTag: 'Minit response',
-        fixDescription: 'Durus supports lead-acid, lithium, and EV chemistries with SB350, Euro, or open-lead connector options, so it standardizes charging across a genuinely mixed fleet.'
+        fix: 'Durus supports lead-acid, lithium, and EV chemistries with SB350, Euro, or open-lead connector options, so it standardizes charging across a genuinely mixed fleet.'
       },
       {
         id: 'pp3',
@@ -47,7 +48,7 @@ export const industryLsvData = {
         title: 'No visibility until a vehicle dies mid-shift',
         description: 'A cart that won\'t hold a charge doesn\'t announce itself until a guest is stranded on the back nine or a groundskeeper is stuck at the far end of the property.',
         fixTag: 'Minit response',
-        fixDescription: 'Durus\'s built-in battery management and CellTrac integration track battery health and charge status in real time, flagging a failing pack before it strands a vehicle.'
+        fix: 'Durus\'s built-in battery management and CellTrac integration track battery health and charge status in real time, flagging a failing pack before it strands a vehicle.'
       },
       {
         id: 'pp4',
@@ -55,7 +56,7 @@ export const industryLsvData = {
         title: 'Outdoor duty cycles most chargers weren\'t built for',
         description: 'Golf carts and utility vehicles live outside through heat, rain, and an off-season of sitting idle — conditions that shorten the life of a charger built for a warehouse floor.',
         fixTag: 'Minit response',
-        fixDescription: 'Durus is rated from -25°C to 60°C and installs indoors or outdoors, holding up to the same duty cycle as the vehicle it\'s mounted on.'
+        fix: 'Durus is rated from -25°C to 60°C and installs indoors or outdoors, holding up to the same duty cycle as the vehicle it\'s mounted on.'
       }
     ]
   },
@@ -279,13 +280,14 @@ export const industryLsvData = {
     description: 'One call to size your onboard chargers and scope your power constraints.'
   },
   relatedProducts: {
+    eyebrow: "Related products",
     heading: "Build your LSV charging ecosystem.",
     products: [
       {
         id: "durus",
         title: "Durus",
         description: "Compact onboard charger ideal for low-speed vehicles.",
-        imageSrc: "/product-images/Altus II/ALTUS II.14.webp",
+        bgImage: "/assets/Industries/Low-Speed-Vehicles/Banner/Banner -Low-Speed-Vehicles Page.webp",
         imageAlt: "Durus charger",
         href: "/product/durus"
       },
@@ -301,7 +303,7 @@ export const industryLsvData = {
         id: "assetpro",
         title: "AssetPro 360",
         description: "Fleet management and analytics dashboard.",
-        imageSrc: "/new_images/cumulus_dash.webp",
+        imageSrc: "/assets/Products/Cumulus/Cumulus Software Lisitng.webp",
         imageAlt: "AssetPro 360 dashboard",
         href: "/product/assetpro-360"
       }

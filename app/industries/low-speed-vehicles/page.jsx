@@ -3,7 +3,7 @@ import Navbar from '@/components/layout/Navbar';
 import Footer from '@/components/layout/Footer';
 
 // Custom Sections for LSV
-import VideoHero from '@/components/sections/VideoHero';
+import StandardHero from '@/components/sections/StandardHero';
 import LsvOnboardAdvantage from '@/components/sections/LsvOnboardAdvantage';
 import LsvProductBlurbs from '@/components/sections/LsvProductBlurbs';
 import IconCardsGrid from '@/components/sections/IconCardsGrid'; // Reusing for venue grid
@@ -35,19 +35,17 @@ export default function LsvPage() {
     <>
       <Navbar />
       <main>
-        <VideoHero
+        <StandardHero
           eyebrow={data.heroBanner.eyebrow}
-          heading={data.heroBanner.heading}
-          headingHighlight={data.heroBanner.headingHighlight}
+          heading={
+            <>
+              {data.heroBanner.heading} <span className="text-volt-dim">{data.heroBanner.headingHighlight}</span>
+            </>
+          }
           description={data.heroBanner.description}
+          bgImage={data.heroBanner.bgImage}
           primaryCta={data.heroBanner.primaryCta}
           secondaryCta={data.heroBanner.secondaryCta}
-          tagsLabel={data.heroBanner.tagsLabel}
-          tags={data.heroBanner.tags}
-          videoSrc={data.heroBanner.videoSrc}
-          posterSrc={data.heroBanner.posterSrc}
-          formTitle={data.heroBanner.formTitle}
-          formSubtitle={data.heroBanner.formSubtitle}
         />
 
         {/* Proof Strip */}

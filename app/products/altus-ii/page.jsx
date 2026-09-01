@@ -2,7 +2,7 @@ import React from 'react';
 import Navbar from '@/components/layout/Navbar';
 import Footer from '@/components/layout/Footer';
 
-import AltusTitleBanner from '@/components/sections/AltusTitleBanner';
+import StandardHero from '@/components/sections/StandardHero';
 import AltusGalleryIntro from '@/components/sections/AltusGalleryIntro';
 import AltusEngineeringStrip from '@/components/sections/AltusEngineeringStrip';
 import AltusQuickAnswer from '@/components/sections/AltusQuickAnswer';
@@ -33,7 +33,7 @@ export default function AltusProductPage() {
     <>
       <Navbar />
       <main>
-        <AltusTitleBanner {...data.hero} />
+        <StandardHero {...data.hero} />
         <AltusGalleryIntro data={data.intro} />
         <AltusEngineeringStrip data={data.engineeringStrip} />
         <AltusQuickAnswer data={data.quickAnswer} />

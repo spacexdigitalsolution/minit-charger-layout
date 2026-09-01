@@ -149,13 +149,14 @@ export const industryData = {
       ]
     },
     relatedProducts: {
-      heading: "Build your charging ecosystem.",
+    eyebrow: "Related products",
+    heading: "Build your charging ecosystem.",
       products: [
         {
           id: "magnus",
           title: "Magnus",
           description: "24–1000 VDC, one platform from GSE to high-voltage EV.",
-          imageSrc: "/assets/magnus/magnus-iso1.webp",
+          imageSrc: "/assets/Products/Magnus/Magnus Hardware Listing.webp",
           imageAlt: "Magnus universal mixed-fleet DC fast charger",
           href: "/products/magnus"
         },
@@ -163,7 +164,7 @@ export const industryData = {
           id: "maximus",
           title: "Maximus",
           description: "High-capacity indoor dual-port warehouse charger.",
-          imageSrc: "/product-images/Altus II/ALTUS II.14.webp",
+          imageSrc: "/new_images/industry_warehouse_1786134258340.webp",
           imageAlt: "Maximus charger",
           href: "/product/maximus"
         },

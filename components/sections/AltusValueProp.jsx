@@ -57,6 +57,14 @@ export default function AltusValueProp({ data }) {
             ))}
           </div>
         </div>
+        
+        {data.cta && (
+          <div className="mt-10">
+            <a href={data.cta.href} className="inline-flex h-11 items-center justify-center rounded-full bg-ink-950 px-7 text-[13px] font-bold text-white transition hover:bg-volt-dim hover:text-ink-950">
+              {data.cta.text}
+            </a>
+          </div>
+        )}
       </div>
     </section>
   );

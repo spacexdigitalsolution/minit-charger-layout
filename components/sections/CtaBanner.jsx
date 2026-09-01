@@ -13,6 +13,7 @@ import Button from '../ui/Button';
  * @param {string} props.description - Paragraph description below heading
  * @param {Object} props.primaryCta - Primary CTA button { text, href }
  * @param {Object} [props.secondaryCta] - Secondary CTA button { text, href }
+ * @param {string} [props.contactText] - Optional contact string like MINIT CHARGER - [PHONE / EMAIL]
  * @param {Array<{id: string, src: string, alt: string, description: string, hiddenOnMobile?: boolean}>} [props.images] - Optional images to display alongside
  * @returns {JSX.Element}
  */
@@ -22,6 +23,7 @@ export default function CtaBanner({
   description,
   primaryCta,
   secondaryCta,
+  contactText,
   images
 }) {
   return (
@@ -48,6 +50,11 @@ export default function CtaBanner({
               </Button>
             )}
           </div>
+          {contactText && (
+            <div className="mt-8 font-mono text-[11px] lg:text-[13px] tracking-wide text-[#9FB3A9] uppercase text-center lg:text-left">
+              {contactText}
+            </div>
+          )}
         </div>
 
         {images && images.length > 0 && (

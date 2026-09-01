@@ -12,6 +12,7 @@ import React from 'react';
  * @param {string} props.description - Paragraph description below heading
  * @param {Array<{id: string, name: string}>} props.columns - Product columns to compare (e.g. models)
  * @param {Array<{id: string, feature: string, values: string[]}>} props.rows - Features and their values for each column
+ * @param {string} [props.footer] - Optional footnote to display below the table
  * @returns {JSX.Element}
  */
 export default function ComparisonTable({
@@ -20,61 +21,73 @@ export default function ComparisonTable({
   heading,
   description,
   columns,
-  rows
+  rows,
+  footer
 }) {
   return (
     <section className="bg-paper py-24" id={id}>
       <div className="mx-auto max-w-[1240px] px-6 lg:px-8">
         <div className="mb-12 max-w-2xl">
           <p className="font-mono inline-flex items-center gap-2 text-[12.5px] uppercase tracking-[0.08em] text-volt-dim">
-            <span className="h-1.5 w-1.5 rounded-full bg-volt shadow-[0_0_0_4px_rgba(92,242,160,0.35)]"></span>
+            <span className="inline-block w-4 h-[2px] bg-copper"></span>
             {eyebrow}
           </p>
-          <h2 className="font-display mt-3 text-3xl font-semibold tracking-tight sm:text-4xl text-ink-950">
+          <h2 className="font-display mt-3.5 text-[clamp(28px,4vw,42px)] font-bold tracking-tight text-ink-950 leading-[1.02]">
             {heading}
           </h2>
-          <p className="mt-4 text-[17px] leading-relaxed text-[#4C5C54]">
+          <p className="mt-4 text-[17px] leading-relaxed text-[#5B6A5C]">
             {description}
           </p>
         </div>
 
-        <div className="overflow-x-auto rounded-[2rem] bg-white ring-1 ring-black/5 shadow-sm">
-          <table className="min-w-full text-left text-sm border-collapse">
-            <thead className="bg-ink-950 text-white font-semibold">
+        <div className="overflow-x-auto">
+          <table className="w-full border-collapse bg-white rounded-2xl overflow-hidden border border-[#D7DECB]">
+            <thead className="bg-ink-950 font-semibold text-left font-mono text-[11px] tracking-[0.08em] uppercase text-mist">
               <tr>
-                <th className="px-6 py-5 lg:px-8 w-1/3 rounded-tl-[2rem]">Feature</th>
-                {columns.map((col, idx) => (
+                <th className="p-[16px_20px]">Capability</th>
+                {columns.map((col) => (
                   <th 
                     key={col.id} 
-                    className={`px-4 py-5 pr-6 lg:pr-8 text-center ${idx === columns.length - 1 ? 'rounded-tr-[2rem]' : ''} ${col.highlight ? 'bg-volt text-ink-950' : ''}`}
+                    className={`p-[16px_20px] ${col.highlight ? 'text-volt-dim' : ''}`}
                   >
                     {col.name}
                   </th>
                 ))}
               </tr>
             </thead>
-            <tbody className="divide-y divide-black/5">
+            <tbody>
               {rows.map((row, rowIdx) => (
-                <tr key={row.id} className={rowIdx % 2 === 0 ? 'bg-white' : 'bg-gray-50/50'}>
-                  <td className="px-6 py-4 font-medium text-ink-950 lg:px-8">{row.feature}</td>
-                  {row.values.map((val, idx) => (
-                    <td key={idx} className="px-4 py-4 pr-6 text-center text-[#4C5C54] lg:pr-8">
-                      {val === 'true' || val === true ? (
-                        <svg className="mx-auto h-5 w-5 text-volt-dim" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="3" d="M5 13l4 4L19 7"></path>
-                        </svg>
-                      ) : val === 'false' || val === false ? (
-                        <span className="text-gray-300">—</span>
-                      ) : (
-                        val
-                      )}
-                    </td>
-                  ))}
+                <tr key={row.id} className={rowIdx !== rows.length - 1 ? 'border-b border-[#D7DECB]' : ''}>
+                  <td className="p-[16px_20px] text-[14.5px] font-semibold text-[#101A13] w-[26%] align-top">{row.feature}</td>
+                  {row.values.map((val, idx) => {
+                    const isHighlighted = columns[idx]?.highlight;
+                    return (
+                      <td 
+                        key={idx} 
+                        className={`p-[16px_20px] text-[13.5px] font-mono align-top ${isHighlighted ? 'font-semibold text-volt-dim bg-volt/10' : 'text-[#5B6A5C]'}`}
+                      >
+                        {val === 'true' || val === true ? (
+                          <svg className="h-5 w-5 text-volt-dim" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="3" d="M5 13l4 4L19 7"></path>
+                          </svg>
+                        ) : val === 'false' || val === false ? (
+                          <span className="text-gray-300">—</span>
+                        ) : (
+                          val
+                        )}
+                      </td>
+                    );
+                  })}
                 </tr>
               ))}
             </tbody>
           </table>
         </div>
+        {footer && (
+          <p className="mt-6 text-[12px] leading-relaxed text-[#4C5C54] max-w-4xl text-left">
+            {footer}
+          </p>
+        )}
       </div>
     </section>
   );
