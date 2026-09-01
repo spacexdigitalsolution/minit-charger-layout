@@ -150,7 +150,7 @@ export const industryLsvData = {
         description: 'An onboard AC/DC charger with integrated battery management, built into golf carts, utility vehicles, AGVs, and other small electric equipment — so the charger goes wherever the vehicle goes.',
         specLine: '2.2–3.3 kW · Lead Acid / Lithium / EV',
         href: '/products/durus/',
-        imageSrc: '/assets/lsv/lsv-utility-cart-showroom.webp',
+        imageSrc: '/assets/Home Page/Low Speed Vehicles/Compact - Built-in BMS Durus-01.webp',
         imageAlt: 'Low speed utility cart representative of the vehicles Durus is installed on'
       },
       {

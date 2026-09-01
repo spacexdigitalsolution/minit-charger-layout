@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function LsvOnboardAdvantage({ eyebrow, heading, description, chips, cta }) {
   return (
-    <section className="bg-ink text-white py-24 relative overflow-hidden">
+    <section className="bg-ink-950 text-white py-24 relative overflow-hidden">
       <div className="mx-auto max-w-[1240px] px-6 lg:px-8">
         <div className="grid lg:grid-cols-[1.1fr_0.9fr] gap-12 lg:gap-16 items-center">
           <div>
@@ -35,7 +35,7 @@ export default function LsvOnboardAdvantage({ eyebrow, heading, description, chi
             {cta && (
               <a 
                 href={cta.href} 
-                className="mt-8 inline-flex items-center justify-center rounded-full font-semibold transition px-6 py-3.5 text-[15px] bg-amber text-[#241300] hover:bg-amber-deep hover:text-white shadow-[0_14px_30px_-14px_rgba(226,160,61,0.6)] hover:-translate-y-0.5"
+                className="mt-8 inline-flex items-center justify-center rounded-full font-semibold transition px-6 py-3.5 text-[15px] bg-copper text-white hover:bg-copper/90 shadow-md hover:-translate-y-0.5"
               >
                 {cta.text}
               </a>

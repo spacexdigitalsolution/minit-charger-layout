@@ -5,8 +5,8 @@ export default function CausalChainSection({ eyebrow, heading, steps, footerText
     <section className="bg-ink-950 py-16 text-white border-y border-white/5">
       <div className="mx-auto max-w-[1240px] px-6 lg:px-8">
         <div className="max-w-2xl">
-          <p className="font-mono inline-flex items-center gap-2 text-[12.5px] uppercase tracking-[0.08em] text-amber">
-            <span className="h-1.5 w-1.5 rounded-full bg-amber shadow-[0_0_0_4px_rgba(226,160,61,0.25)]"></span>
+          <p className="font-mono inline-flex items-center gap-2 text-[12.5px] uppercase tracking-[0.08em] text-copper">
+            <span className="h-1.5 w-1.5 rounded-full bg-copper shadow-[0_0_0_4px_rgba(226,160,61,0.25)]"></span>
             {eyebrow}
           </p>
           <h2 className="font-display mt-3 text-3xl font-semibold tracking-tight sm:text-4xl text-white">
@@ -18,12 +18,12 @@ export default function CausalChainSection({ eyebrow, heading, steps, footerText
           {steps.map((step, i) => (
             <React.Fragment key={step.id}>
               <div className="flex-1 bg-[#0E1A13] border border-white/10 rounded-xl p-6 relative overflow-hidden group">
-                <div className="absolute left-0 right-0 top-1/2 h-px bg-white/5 -z-10 group-hover:bg-amber/20 transition-colors duration-500"></div>
-                <div className="font-mono text-[11px] font-bold tracking-[0.12em] uppercase text-amber">
-                  {step.title}
+                <div className="absolute left-0 right-0 top-1/2 h-px bg-white/5 -z-10 group-hover:bg-copper/20 transition-colors duration-500"></div>
+                <div className="font-mono text-[11px] font-bold tracking-[0.12em] uppercase text-copper">
+                  {step.title || step.label}
                 </div>
                 <div className="font-display text-[26px] font-medium text-white mt-2.5">
-                  {step.description}
+                  {step.description || step.value}
                 </div>
               </div>
               

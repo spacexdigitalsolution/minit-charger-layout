@@ -15,8 +15,8 @@ export default function LeadMagnet({ eyebrow, heading, description, checklist })
       <div className="mx-auto max-w-[1240px] px-6 lg:px-8">
         <div className="rounded-3xl bg-ink-950 p-8 lg:p-16 text-white grid gap-12 lg:grid-cols-2 items-center">
           <div>
-            <p className="font-mono inline-flex items-center gap-2 text-[12.5px] uppercase tracking-[0.08em] text-amber">
-              <span className="h-1.5 w-1.5 rounded-full bg-amber shadow-[0_0_0_4px_rgba(226,160,61,0.25)]"></span>
+            <p className="font-mono inline-flex items-center gap-2 text-[12.5px] uppercase tracking-[0.08em] text-copper">
+              <span className="h-1.5 w-1.5 rounded-full bg-copper shadow-[0_0_0_4px_rgba(226,160,61,0.25)]"></span>
               {eyebrow || 'Free download'}
             </p>
             <h2 className="font-display mt-4 text-3xl font-semibold tracking-tight sm:text-4xl text-white">
@@ -28,7 +28,7 @@ export default function LeadMagnet({ eyebrow, heading, description, checklist })
             <div className="flex flex-col gap-3">
               {checklist && checklist.map((item, i) => (
                 <div key={i} className="flex gap-3 text-[14px] text-[#dce7df]">
-                  <svg className="w-5 h-5 text-amber shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.4" strokeLinecap="round" strokeLinejoin="round">
+                  <svg className="w-5 h-5 text-copper shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.4" strokeLinecap="round" strokeLinejoin="round">
                     <path d="M5 13l4 4L19 7" />
                   </svg>
                   {item}
@@ -71,7 +71,7 @@ export default function LeadMagnet({ eyebrow, heading, description, checklist })
               
               <button 
                 type="submit" 
-                className="w-full bg-amber text-ink-950 font-bold py-3.5 rounded-full hover:bg-amber-deep transition hover:-translate-y-0.5 shadow-md"
+                className="w-full bg-copper text-white font-bold py-3.5 rounded-full hover:bg-copper/90 transition hover:-translate-y-0.5 shadow-md"
               >
                 Send Me the Guide
               </button>
