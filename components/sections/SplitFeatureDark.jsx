@@ -33,7 +33,7 @@ export default function SplitFeatureDark({
   noPaddingBottom = false
 }) {
   return (
-    <section className={`bg-ink-900 px-6 pt-24 ${noPaddingBottom ? 'pb-0' : 'pb-24'} text-[#EEF5F0] lg:px-8`} id={id}>
+    <section className={`bg-ink-900 px-6 pt-12 ${noPaddingBottom ? 'pb-0' : 'pb-12'} text-[#EEF5F0] lg:px-8`} id={id}>
       <div className="mx-auto grid max-w-[1240px] items-center gap-12 lg:grid-cols-2">
         <div className={imagePosition === 'left' ? 'lg:order-2' : ''}>
           <p className="font-mono mb-4 inline-flex items-center gap-2 text-[12.5px] uppercase tracking-[0.08em] text-volt">
@@ -58,7 +58,7 @@ export default function SplitFeatureDark({
           )}
         </div>
 
-        <div className={`overflow-hidden rounded-[2rem] ring-1 ring-white/10 bg-ink-850 flex items-center justify-center p-10 h-[400px] lg:h-[600px] relative ${imagePosition === 'left' ? 'lg:order-1' : ''}`}>
+        <div className={`overflow-hidden rounded-[2rem] ring-1 ring-white/10 bg-ink-850 flex items-center justify-center p-10 h-[300px] lg:h-[450px] relative ${imagePosition === 'left' ? 'lg:order-1' : ''}`}>
           <SmartImage
             src={imageSrc}
             alt={imageAlt}

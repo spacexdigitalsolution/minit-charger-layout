@@ -93,7 +93,7 @@ export const productsData = {
         imageSrc: "/product-images/Altus II/ALTUS II.14.webp", // Magnus placeholder
         imageAlt: "MAGNUS",
         imageDescription: "Placeholder for /product-images/Industry Image Renders/work platforms.webp",
-        href: "/product/magnus"
+        href: "/products/magnus"
       }
     ]
   },

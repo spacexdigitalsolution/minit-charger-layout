@@ -31,27 +31,42 @@ export default function ImageSlider({ images, interval = 5000 }) {
 
   return (
     <div className="relative h-full w-full overflow-hidden">
-      {images.map((img, idx) => (
-        <div
-          key={idx}
-          className={`absolute inset-0 transition-opacity duration-1000 ${
-            idx === currentIndex ? 'opacity-100 z-10' : 'opacity-0 z-0'
-          }`}
-        >
-          <SmartImage
-            src={img.src}
-            alt={img.alt}
-            description={img.description}
-            fill
-            priority={idx === 0}
-            displayHeight={1080}
-            displayWidth={1920}
-            safeAreaHeight={1080}
-            safeAreaWidth={1280}
-            className="h-full w-full object-cover object-center"
-          />
-        </div>
-      ))}
+      {images.map((img, idx) => {
+        const isVideo = img.src.endsWith('.mp4');
+        return (
+          <div
+            key={idx}
+            className={`absolute inset-0 transition-opacity duration-1000 ${
+              idx === currentIndex ? 'opacity-100 z-10' : 'opacity-0 z-0'
+            }`}
+          >
+            {isVideo ? (
+              <video
+                src={img.src}
+                autoPlay
+                loop
+                muted
+                playsInline
+                className="h-full w-full object-cover object-center"
+              />
+            ) : (
+              <SmartImage
+                src={img.src}
+                alt={img.alt}
+                description={img.description}
+                fill
+                priority={idx === 0}
+                displayHeight={1080}
+                displayWidth={1920}
+                safeAreaHeight={1080}
+                safeAreaWidth={1280}
+                className="h-full w-full object-cover object-center"
+                optimize={false}
+              />
+            )}
+          </div>
+        );
+      })}
 
       {images.length > 1 && (
         <div className="absolute bottom-6 left-1/2 z-20 flex -translate-x-1/2 space-x-2">

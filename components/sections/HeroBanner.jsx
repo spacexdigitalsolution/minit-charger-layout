@@ -34,7 +34,7 @@ export default function HeroBanner({
     <section className="relative flex min-h-[85vh] items-center overflow-hidden bg-gradient-to-br from-[#e4eaee] to-[#f4f7f6] pt-20 pb-20">
       {/* Background Image Container */}
       <div className="absolute inset-0 z-0">
-        <ImageSlider images={sliderImages} />
+        <ImageSlider images={sliderImages} interval={5000} />
       </div>
 
       <div className="relative z-10 mx-auto w-full max-w-[1540px] px-6  text-left">

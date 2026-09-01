@@ -1,819 +1,201 @@
 {
-  "crafted_images/Durus-01.png": {
-    "480": "/assets/crafted_images/Durus-01-480.webp",
-    "768": "/assets/crafted_images/Durus-01-768.webp",
-    "original": "/assets/crafted_images/Durus-01.webp"
-  },
-  "crafted_images/Durus-02.png": {
-    "480": "/assets/crafted_images/Durus-02-480.webp",
-    "768": "/assets/crafted_images/Durus-02-768.webp",
-    "original": "/assets/crafted_images/Durus-02.webp"
-  },
-  "crafted_images/Home Page Slider 2.png": {
-    "480": "/assets/crafted_images/Home Page Slider 2-480.webp",
-    "768": "/assets/crafted_images/Home Page Slider 2-768.webp",
-    "1200": "/assets/crafted_images/Home Page Slider 2-1200.webp",
-    "1600": "/assets/crafted_images/Home Page Slider 2-1600.webp",
-    "original": "/assets/crafted_images/Home Page Slider 2.webp"
-  },
-  "crafted_images/Home Page Slider 1.png": {
-    "480": "/assets/crafted_images/Home Page Slider 1-480.webp",
-    "768": "/assets/crafted_images/Home Page Slider 1-768.webp",
-    "1200": "/assets/crafted_images/Home Page Slider 1-1200.webp",
-    "1600": "/assets/crafted_images/Home Page Slider 1-1600.webp",
-    "original": "/assets/crafted_images/Home Page Slider 1.webp"
-  },
-  "crafted_images/Home Page Slider 3.png": {
-    "480": "/assets/crafted_images/Home Page Slider 3-480.webp",
-    "768": "/assets/crafted_images/Home Page Slider 3-768.webp",
-    "1200": "/assets/crafted_images/Home Page Slider 3-1200.webp",
-    "1600": "/assets/crafted_images/Home Page Slider 3-1600.webp",
-    "original": "/assets/crafted_images/Home Page Slider 3.webp"
-  },
-  "crafted_images/Home Page Slider 4.png": {
-    "480": "/assets/crafted_images/Home Page Slider 4-480.webp",
-    "768": "/assets/crafted_images/Home Page Slider 4-768.webp",
-    "1200": "/assets/crafted_images/Home Page Slider 4-1200.webp",
-    "1600": "/assets/crafted_images/Home Page Slider 4-1600.webp",
-    "original": "/assets/crafted_images/Home Page Slider 4.webp"
-  },
-  "crafted_images/Magnus Airport View 1_!.png": {
-    "480": "/assets/crafted_images/Magnus Airport View 1_!-480.webp",
-    "768": "/assets/crafted_images/Magnus Airport View 1_!-768.webp",
-    "original": "/assets/crafted_images/Magnus Airport View 1_!.webp"
-  },
-  "crafted_images/ALTUS for Airport vehicle 16_9.png": {
-    "480": "/assets/crafted_images/ALTUS for Airport vehicle 16_9-480.webp",
-    "768": "/assets/crafted_images/ALTUS for Airport vehicle 16_9-768.webp",
-    "1200": "/assets/crafted_images/ALTUS for Airport vehicle 16_9-1200.webp",
-    "1600": "/assets/crafted_images/ALTUS for Airport vehicle 16_9-1600.webp",
-    "original": "/assets/crafted_images/ALTUS for Airport vehicle 16_9.webp"
-  },
-  "crafted_images/All product-01.png": {
-    "480": "/assets/crafted_images/All product-01-480.webp",
-    "768": "/assets/crafted_images/All product-01-768.webp",
-    "1200": "/assets/crafted_images/All product-01-1200.webp",
-    "1600": "/assets/crafted_images/All product-01-1600.webp",
-    "original": "/assets/crafted_images/All product-01.webp"
-  },
-  "crafted_images/MAGNUS-  45 view-.png": {
-    "480": "/assets/crafted_images/MAGNUS-  45 view--480.webp",
-    "768": "/assets/crafted_images/MAGNUS-  45 view--768.webp",
-    "original": "/assets/crafted_images/MAGNUS-  45 view-.webp"
-  },
-  "crafted_images/MAGNUS-  Close up view.png": {
-    "480": "/assets/crafted_images/MAGNUS-  Close up view-480.webp",
-    "768": "/assets/crafted_images/MAGNUS-  Close up view-768.webp",
-    "original": "/assets/crafted_images/MAGNUS-  Close up view.webp"
-  },
-  "crafted_images/MAGNUS-  Top view-01.png": {
-    "480": "/assets/crafted_images/MAGNUS-  Top view-01-480.webp",
-    "768": "/assets/crafted_images/MAGNUS-  Top view-01-768.webp",
-    "original": "/assets/crafted_images/MAGNUS-  Top view-01.webp"
-  },
-  "crafted_images/MAGNUS-  side view.png": {
-    "480": "/assets/crafted_images/MAGNUS-  side view-480.webp",
-    "768": "/assets/crafted_images/MAGNUS-  side view-768.webp",
-    "original": "/assets/crafted_images/MAGNUS-  side view.webp"
-  },
-  "crafted_images/MAGNUS-  Front view.png": {
-    "480": "/assets/crafted_images/MAGNUS-  Front view-480.webp",
-    "768": "/assets/crafted_images/MAGNUS-  Front view-768.webp",
-    "original": "/assets/crafted_images/MAGNUS-  Front view.webp"
-  },
-  "crafted_images/MAGNUS-  top view-02.png": {
-    "480": "/assets/crafted_images/MAGNUS-  top view-02-480.webp",
-    "768": "/assets/crafted_images/MAGNUS-  top view-02-768.webp",
-    "original": "/assets/crafted_images/MAGNUS-  top view-02.webp"
-  },
-  "crafted_images/MAXIMUS_GEN2-01.png": {
-    "480": "/assets/crafted_images/MAXIMUS_GEN2-01-480.webp",
-    "768": "/assets/crafted_images/MAXIMUS_GEN2-01-768.webp",
-    "original": "/assets/crafted_images/MAXIMUS_GEN2-01.webp"
-  },
-  "crafted_images/Maximus Indoor.png": {
-    "480": "/assets/crafted_images/Maximus Indoor-480.webp",
-    "768": "/assets/crafted_images/Maximus Indoor-768.webp",
-    "1200": "/assets/crafted_images/Maximus Indoor-1200.webp",
-    "original": "/assets/crafted_images/Maximus Indoor.webp"
-  },
-  "crafted_images/MAXIMUS_GEN2-02.png": {
-    "480": "/assets/crafted_images/MAXIMUS_GEN2-02-480.webp",
-    "768": "/assets/crafted_images/MAXIMUS_GEN2-02-768.webp",
-    "original": "/assets/crafted_images/MAXIMUS_GEN2-02.webp"
-  },
-  "crafted_images/MAXIMUS_GEN2-03.png": {
-    "480": "/assets/crafted_images/MAXIMUS_GEN2-03-480.webp",
-    "768": "/assets/crafted_images/MAXIMUS_GEN2-03-768.webp",
-    "original": "/assets/crafted_images/MAXIMUS_GEN2-03.webp"
-  },
-  "crafted_images/MOMENTUS for warehouse-01.png": {
-    "480": "/assets/crafted_images/MOMENTUS for warehouse-01-480.webp",
-    "768": "/assets/crafted_images/MOMENTUS for warehouse-01-768.webp",
-    "original": "/assets/crafted_images/MOMENTUS for warehouse-01.webp"
-  },
-  "crafted_images/MAGNUS- hardware-01.png": {
-    "480": "/assets/crafted_images/MAGNUS- hardware-01-480.webp",
-    "768": "/assets/crafted_images/MAGNUS- hardware-01-768.webp",
-    "1200": "/assets/crafted_images/MAGNUS- hardware-01-1200.webp",
-    "1600": "/assets/crafted_images/MAGNUS- hardware-01-1600.webp",
-    "original": "/assets/crafted_images/MAGNUS- hardware-01.webp"
-  },
-  "crafted_images/MOMENTUS for warehouse-03.png": {
-    "480": "/assets/crafted_images/MOMENTUS for warehouse-03-480.webp",
-    "768": "/assets/crafted_images/MOMENTUS for warehouse-03-768.webp",
-    "original": "/assets/crafted_images/MOMENTUS for warehouse-03.webp"
-  },
-  "crafted_images/MOBILUS Hardware-01.png": {
-    "480": "/assets/crafted_images/MOBILUS Hardware-01-480.webp",
-    "768": "/assets/crafted_images/MOBILUS Hardware-01-768.webp",
-    "1200": "/assets/crafted_images/MOBILUS Hardware-01-1200.webp",
-    "1600": "/assets/crafted_images/MOBILUS Hardware-01-1600.webp",
-    "original": "/assets/crafted_images/MOBILUS Hardware-01.webp"
-  },
-  "crafted_images/Meet MOMENTUs-01.png": {
-    "480": "/assets/crafted_images/Meet MOMENTUs-01-480.webp",
-    "768": "/assets/crafted_images/Meet MOMENTUs-01-768.webp",
-    "1200": "/assets/crafted_images/Meet MOMENTUs-01-1200.webp",
-    "1600": "/assets/crafted_images/Meet MOMENTUs-01-1600.webp",
-    "original": "/assets/crafted_images/Meet MOMENTUs-01.webp"
-  },
-  "new_images/airport_bg.webp": {
-    "480": "/assets/new_images/airport_bg-480.webp",
-    "768": "/assets/new_images/airport_bg-768.webp",
-    "original": "/assets/new_images/airport_bg.webp"
-  },
-  "new_images/angle_1_hr.webp": {
-    "480": "/assets/new_images/angle_1_hr-480.webp",
-    "768": "/assets/new_images/angle_1_hr-768.webp",
-    "original": "/assets/new_images/angle_1_hr.webp"
-  },
-  "new_images/angle_2_hr.webp": {
-    "480": "/assets/new_images/angle_2_hr-480.webp",
-    "768": "/assets/new_images/angle_2_hr-768.webp",
-    "original": "/assets/new_images/angle_2_hr.webp"
-  },
-  "crafted_images/Turbocharging warehouse MHE-01.png": {
-    "480": "/assets/crafted_images/Turbocharging warehouse MHE-01-480.webp",
-    "768": "/assets/crafted_images/Turbocharging warehouse MHE-01-768.webp",
-    "1200": "/assets/crafted_images/Turbocharging warehouse MHE-01-1200.webp",
-    "1600": "/assets/crafted_images/Turbocharging warehouse MHE-01-1600.webp",
-    "original": "/assets/crafted_images/Turbocharging warehouse MHE-01.webp"
-  },
-  "new_images/angle_3_hr.webp": {
-    "480": "/assets/new_images/angle_3_hr-480.webp",
-    "768": "/assets/new_images/angle_3_hr-768.webp",
-    "original": "/assets/new_images/angle_3_hr.webp"
-  },
-  "new_images/angle_4_hr.webp": {
-    "480": "/assets/new_images/angle_4_hr-480.webp",
-    "768": "/assets/new_images/angle_4_hr-768.webp",
-    "original": "/assets/new_images/angle_4_hr.webp"
-  },
-  "new_images/angle_5_hr.webp": {
-    "480": "/assets/new_images/angle_5_hr-480.webp",
-    "768": "/assets/new_images/angle_5_hr-768.webp",
-    "original": "/assets/new_images/angle_5_hr.webp"
-  },
-  "crafted_images/MOMENTUS for warehouse-02.png": {
-    "480": "/assets/crafted_images/MOMENTUS for warehouse-02-480.webp",
-    "768": "/assets/crafted_images/MOMENTUS for warehouse-02-768.webp",
-    "1200": "/assets/crafted_images/MOMENTUS for warehouse-02-1200.webp",
-    "1600": "/assets/crafted_images/MOMENTUS for warehouse-02-1600.webp",
-    "original": "/assets/crafted_images/MOMENTUS for warehouse-02.webp"
-  },
-  "crafted_images/Two decades of leading...-01.png": {
-    "480": "/assets/crafted_images/Two decades of leading...-01-480.webp",
-    "768": "/assets/crafted_images/Two decades of leading...-01-768.webp",
-    "1200": "/assets/crafted_images/Two decades of leading...-01-1200.webp",
-    "1600": "/assets/crafted_images/Two decades of leading...-01-1600.webp",
-    "original": "/assets/crafted_images/Two decades of leading...-01.webp"
-  },
-  "new_images/ChatGPT Image Aug 7, 2026, 05_12_37 PM (2).webp": {
-    "480": "/assets/new_images/ChatGPT Image Aug 7, 2026, 05_12_37 PM (2)-480.webp",
-    "768": "/assets/new_images/ChatGPT Image Aug 7, 2026, 05_12_37 PM (2)-768.webp",
-    "1200": "/assets/new_images/ChatGPT Image Aug 7, 2026, 05_12_37 PM (2)-1200.webp",
-    "original": "/assets/new_images/ChatGPT Image Aug 7, 2026, 05_12_37 PM (2).webp"
-  },
-  "new_images/ChatGPT Image Aug 7, 2026, 05_12_37 PM (1).webp": {
-    "480": "/assets/new_images/ChatGPT Image Aug 7, 2026, 05_12_37 PM (1)-480.webp",
-    "768": "/assets/new_images/ChatGPT Image Aug 7, 2026, 05_12_37 PM (1)-768.webp",
-    "1200": "/assets/new_images/ChatGPT Image Aug 7, 2026, 05_12_37 PM (1)-1200.webp",
-    "original": "/assets/new_images/ChatGPT Image Aug 7, 2026, 05_12_37 PM (1).webp"
-  },
-  "new_images/banner_image.webp": {
-    "480": "/assets/new_images/banner_image-480.webp",
-    "768": "/assets/new_images/banner_image-768.webp",
-    "1200": "/assets/new_images/banner_image-1200.webp",
-    "1600": "/assets/new_images/banner_image-1600.webp",
-    "original": "/assets/new_images/banner_image.webp"
-  },
-  "new_images/ChatGPT Image Aug 7, 2026, 05_14_35 PM.webp": {
-    "480": "/assets/new_images/ChatGPT Image Aug 7, 2026, 05_14_35 PM-480.webp",
-    "768": "/assets/new_images/ChatGPT Image Aug 7, 2026, 05_14_35 PM-768.webp",
-    "1200": "/assets/new_images/ChatGPT Image Aug 7, 2026, 05_14_35 PM-1200.webp",
-    "original": "/assets/new_images/ChatGPT Image Aug 7, 2026, 05_14_35 PM.webp"
-  },
-  "new_images/industry_airport_1786134268548.webp": {
-    "480": "/assets/new_images/industry_airport_1786134268548-480.webp",
-    "768": "/assets/new_images/industry_airport_1786134268548-768.webp",
-    "original": "/assets/new_images/industry_airport_1786134268548.webp"
-  },
-  "new_images/ChatGPT Image Aug 7, 2026, 05_16_20 PM.webp": {
-    "480": "/assets/new_images/ChatGPT Image Aug 7, 2026, 05_16_20 PM-480.webp",
-    "768": "/assets/new_images/ChatGPT Image Aug 7, 2026, 05_16_20 PM-768.webp",
-    "1200": "/assets/new_images/ChatGPT Image Aug 7, 2026, 05_16_20 PM-1200.webp",
-    "original": "/assets/new_images/ChatGPT Image Aug 7, 2026, 05_16_20 PM.webp"
-  },
-  "new_images/Generated image_ Futuristic EV Charger at Sunset.webp": {
-    "480": "/assets/new_images/Generated image_ Futuristic EV Charger at Sunset-480.webp",
-    "768": "/assets/new_images/Generated image_ Futuristic EV Charger at Sunset-768.webp",
-    "1200": "/assets/new_images/Generated image_ Futuristic EV Charger at Sunset-1200.webp",
-    "1600": "/assets/new_images/Generated image_ Futuristic EV Charger at Sunset-1600.webp",
-    "original": "/assets/new_images/Generated image_ Futuristic EV Charger at Sunset.webp"
-  },
-  "new_images/industry_commercial_1786134294460.webp": {
-    "480": "/assets/new_images/industry_commercial_1786134294460-480.webp",
-    "768": "/assets/new_images/industry_commercial_1786134294460-768.webp",
-    "original": "/assets/new_images/industry_commercial_1786134294460.webp"
-  },
-  "new_images/media__1786134228371.webp": {
-    "480": "/assets/new_images/media__1786134228371-480.webp",
-    "768": "/assets/new_images/media__1786134228371-768.webp",
-    "original": "/assets/new_images/media__1786134228371.webp"
-  },
-  "new_images/industry_lsev_1786134282031.webp": {
-    "480": "/assets/new_images/industry_lsev_1786134282031-480.webp",
-    "768": "/assets/new_images/industry_lsev_1786134282031-768.webp",
-    "original": "/assets/new_images/industry_lsev_1786134282031.webp"
-  },
-  "new_images/industry_warehouse_1786134258340.webp": {
-    "480": "/assets/new_images/industry_warehouse_1786134258340-480.webp",
-    "768": "/assets/new_images/industry_warehouse_1786134258340-768.webp",
-    "original": "/assets/new_images/industry_warehouse_1786134258340.webp"
-  },
-  "new_images/lsev_bg.webp": {
-    "480": "/assets/new_images/lsev_bg-480.webp",
-    "768": "/assets/new_images/lsev_bg-768.webp",
-    "original": "/assets/new_images/lsev_bg.webp"
-  },
-  "new_images/warehouse_bg.webp": {
-    "480": "/assets/new_images/warehouse_bg-480.webp",
-    "768": "/assets/new_images/warehouse_bg-768.webp",
-    "original": "/assets/new_images/warehouse_bg.webp"
-  },
-  "product-images/Altus II/ALTUS II.1855 (2).webp": {
-    "480": "/assets/product-images/Altus II/ALTUS II.1855 (2)-480.webp",
-    "768": "/assets/product-images/Altus II/ALTUS II.1855 (2)-768.webp",
-    "1200": "/assets/product-images/Altus II/ALTUS II.1855 (2)-1200.webp",
-    "1600": "/assets/product-images/Altus II/ALTUS II.1855 (2)-1600.webp",
-    "original": "/assets/product-images/Altus II/ALTUS II.1855 (2).webp"
-  },
-  "product-images/Altus II/ALTUS II.2063.webp": {
-    "480": "/assets/product-images/Altus II/ALTUS II.2063-480.webp",
-    "768": "/assets/product-images/Altus II/ALTUS II.2063-768.webp",
-    "1200": "/assets/product-images/Altus II/ALTUS II.2063-1200.webp",
-    "1600": "/assets/product-images/Altus II/ALTUS II.2063-1600.webp",
-    "original": "/assets/product-images/Altus II/ALTUS II.2063.webp"
-  },
-  "product-images/Altus II/ALTUS II.1774.webp": {
-    "480": "/assets/product-images/Altus II/ALTUS II.1774-480.webp",
-    "768": "/assets/product-images/Altus II/ALTUS II.1774-768.webp",
-    "1200": "/assets/product-images/Altus II/ALTUS II.1774-1200.webp",
-    "1600": "/assets/product-images/Altus II/ALTUS II.1774-1600.webp",
-    "original": "/assets/product-images/Altus II/ALTUS II.1774.webp"
-  },
-  "product-images/Altus II/ALTUS II.2065.webp": {
-    "480": "/assets/product-images/Altus II/ALTUS II.2065-480.webp",
-    "768": "/assets/product-images/Altus II/ALTUS II.2065-768.webp",
-    "1200": "/assets/product-images/Altus II/ALTUS II.2065-1200.webp",
-    "1600": "/assets/product-images/Altus II/ALTUS II.2065-1600.webp",
-    "original": "/assets/product-images/Altus II/ALTUS II.2065.webp"
-  },
-  "product-images/Altus II/ALTUS II.2064.webp": {
-    "480": "/assets/product-images/Altus II/ALTUS II.2064-480.webp",
-    "768": "/assets/product-images/Altus II/ALTUS II.2064-768.webp",
-    "1200": "/assets/product-images/Altus II/ALTUS II.2064-1200.webp",
-    "1600": "/assets/product-images/Altus II/ALTUS II.2064-1600.webp",
-    "original": "/assets/product-images/Altus II/ALTUS II.2064.webp"
-  },
-  "product-images/ASSET-MAP.md": {
-    "original": "/assets/product-images/ASSET-MAP.md"
-  },
-  "product-images/Cell trac/Render.2054.webp": {
-    "480": "/assets/product-images/Cell trac/Render.2054-480.webp",
-    "768": "/assets/product-images/Cell trac/Render.2054-768.webp",
-    "1200": "/assets/product-images/Cell trac/Render.2054-1200.webp",
-    "1600": "/assets/product-images/Cell trac/Render.2054-1600.webp",
-    "original": "/assets/product-images/Cell trac/Render.2054.webp"
-  },
-  "product-images/Cell trac/Render.2055.webp": {
-    "480": "/assets/product-images/Cell trac/Render.2055-480.webp",
-    "768": "/assets/product-images/Cell trac/Render.2055-768.webp",
-    "1200": "/assets/product-images/Cell trac/Render.2055-1200.webp",
-    "1600": "/assets/product-images/Cell trac/Render.2055-1600.webp",
-    "original": "/assets/product-images/Cell trac/Render.2055.webp"
-  },
-  "product-images/Cell trac/Render.2056.webp": {
-    "480": "/assets/product-images/Cell trac/Render.2056-480.webp",
-    "768": "/assets/product-images/Cell trac/Render.2056-768.webp",
-    "1200": "/assets/product-images/Cell trac/Render.2056-1200.webp",
-    "1600": "/assets/product-images/Cell trac/Render.2056-1600.webp",
-    "original": "/assets/product-images/Cell trac/Render.2056.webp"
-  },
-  "product-images/Cell trac/Render.2057.webp": {
-    "480": "/assets/product-images/Cell trac/Render.2057-480.webp",
-    "768": "/assets/product-images/Cell trac/Render.2057-768.webp",
-    "1200": "/assets/product-images/Cell trac/Render.2057-1200.webp",
-    "1600": "/assets/product-images/Cell trac/Render.2057-1600.webp",
-    "original": "/assets/product-images/Cell trac/Render.2057.webp"
-  },
-  "product-images/CMS/CMS.1.webp": {
-    "480": "/assets/product-images/CMS/CMS.1-480.webp",
-    "768": "/assets/product-images/CMS/CMS.1-768.webp",
-    "1200": "/assets/product-images/CMS/CMS.1-1200.webp",
-    "1600": "/assets/product-images/CMS/CMS.1-1600.webp",
-    "original": "/assets/product-images/CMS/CMS.1.webp"
-  },
-  "product-images/CMS/CMS.2.webp": {
-    "480": "/assets/product-images/CMS/CMS.2-480.webp",
-    "768": "/assets/product-images/CMS/CMS.2-768.webp",
-    "1200": "/assets/product-images/CMS/CMS.2-1200.webp",
-    "1600": "/assets/product-images/CMS/CMS.2-1600.webp",
-    "original": "/assets/product-images/CMS/CMS.2.webp"
-  },
-  "product-images/CMS/CMS.3.webp": {
-    "480": "/assets/product-images/CMS/CMS.3-480.webp",
-    "768": "/assets/product-images/CMS/CMS.3-768.webp",
-    "1200": "/assets/product-images/CMS/CMS.3-1200.webp",
-    "1600": "/assets/product-images/CMS/CMS.3-1600.webp",
-    "original": "/assets/product-images/CMS/CMS.3.webp"
-  },
-  "product-images/CMS/CMS.34.webp": {
-    "480": "/assets/product-images/CMS/CMS.34-480.webp",
-    "768": "/assets/product-images/CMS/CMS.34-768.webp",
-    "1200": "/assets/product-images/CMS/CMS.34-1200.webp",
-    "1600": "/assets/product-images/CMS/CMS.34-1600.webp",
-    "original": "/assets/product-images/CMS/CMS.34.webp"
-  },
-  "product-images/CMS/CMS.35.webp": {
-    "480": "/assets/product-images/CMS/CMS.35-480.webp",
-    "768": "/assets/product-images/CMS/CMS.35-768.webp",
-    "1200": "/assets/product-images/CMS/CMS.35-1200.webp",
-    "1600": "/assets/product-images/CMS/CMS.35-1600.webp",
-    "original": "/assets/product-images/CMS/CMS.35.webp"
-  },
-  "product-images/CMS/CMS.36.webp": {
-    "480": "/assets/product-images/CMS/CMS.36-480.webp",
-    "768": "/assets/product-images/CMS/CMS.36-768.webp",
-    "1200": "/assets/product-images/CMS/CMS.36-1200.webp",
-    "1600": "/assets/product-images/CMS/CMS.36-1600.webp",
-    "original": "/assets/product-images/CMS/CMS.36.webp"
-  },
-  "product-images/Durus/DCXC.webp": {
-    "480": "/assets/product-images/Durus/DCXC-480.webp",
-    "768": "/assets/product-images/Durus/DCXC-768.webp",
-    "original": "/assets/product-images/Durus/DCXC.webp"
-  },
-  "product-images/Durus/Render.1945(1).webp": {
-    "480": "/assets/product-images/Durus/Render.1945(1)-480.webp",
-    "768": "/assets/product-images/Durus/Render.1945(1)-768.webp",
-    "1200": "/assets/product-images/Durus/Render.1945(1)-1200.webp",
-    "1600": "/assets/product-images/Durus/Render.1945(1)-1600.webp",
-    "original": "/assets/product-images/Durus/Render.1945(1).webp"
-  },
-  "product-images/Durus/Render.1945.webp": {
-    "480": "/assets/product-images/Durus/Render.1945-480.webp",
-    "768": "/assets/product-images/Durus/Render.1945-768.webp",
-    "1200": "/assets/product-images/Durus/Render.1945-1200.webp",
-    "1600": "/assets/product-images/Durus/Render.1945-1600.webp",
-    "original": "/assets/product-images/Durus/Render.1945.webp"
-  },
-  "product-images/Durus/Render.1946(1).webp": {
-    "480": "/assets/product-images/Durus/Render.1946(1)-480.webp",
-    "768": "/assets/product-images/Durus/Render.1946(1)-768.webp",
-    "1200": "/assets/product-images/Durus/Render.1946(1)-1200.webp",
-    "1600": "/assets/product-images/Durus/Render.1946(1)-1600.webp",
-    "original": "/assets/product-images/Durus/Render.1946(1).webp"
-  },
-  "product-images/Durus/Render.1946.webp": {
-    "480": "/assets/product-images/Durus/Render.1946-480.webp",
-    "768": "/assets/product-images/Durus/Render.1946-768.webp",
-    "1200": "/assets/product-images/Durus/Render.1946-1200.webp",
-    "1600": "/assets/product-images/Durus/Render.1946-1600.webp",
-    "original": "/assets/product-images/Durus/Render.1946.webp"
-  },
-  "product-images/Durus/Render.1947(1).webp": {
-    "480": "/assets/product-images/Durus/Render.1947(1)-480.webp",
-    "768": "/assets/product-images/Durus/Render.1947(1)-768.webp",
-    "1200": "/assets/product-images/Durus/Render.1947(1)-1200.webp",
-    "1600": "/assets/product-images/Durus/Render.1947(1)-1600.webp",
-    "original": "/assets/product-images/Durus/Render.1947(1).webp"
-  },
-  "product-images/Durus/Render.1947.webp": {
-    "480": "/assets/product-images/Durus/Render.1947-480.webp",
-    "768": "/assets/product-images/Durus/Render.1947-768.webp",
-    "1200": "/assets/product-images/Durus/Render.1947-1200.webp",
-    "1600": "/assets/product-images/Durus/Render.1947-1600.webp",
-    "original": "/assets/product-images/Durus/Render.1947.webp"
-  },
-  "product-images/Durus/Render.1948(1).webp": {
-    "480": "/assets/product-images/Durus/Render.1948(1)-480.webp",
-    "768": "/assets/product-images/Durus/Render.1948(1)-768.webp",
-    "1200": "/assets/product-images/Durus/Render.1948(1)-1200.webp",
-    "1600": "/assets/product-images/Durus/Render.1948(1)-1600.webp",
-    "original": "/assets/product-images/Durus/Render.1948(1).webp"
-  },
-  "product-images/Durus/Render.1948.webp": {
-    "480": "/assets/product-images/Durus/Render.1948-480.webp",
-    "768": "/assets/product-images/Durus/Render.1948-768.webp",
-    "1200": "/assets/product-images/Durus/Render.1948-1200.webp",
-    "1600": "/assets/product-images/Durus/Render.1948-1600.webp",
-    "original": "/assets/product-images/Durus/Render.1948.webp"
-  },
-  "product-images/Durus/Render.2148.webp": {
-    "480": "/assets/product-images/Durus/Render.2148-480.webp",
-    "768": "/assets/product-images/Durus/Render.2148-768.webp",
-    "1200": "/assets/product-images/Durus/Render.2148-1200.webp",
-    "1600": "/assets/product-images/Durus/Render.2148-1600.webp",
-    "original": "/assets/product-images/Durus/Render.2148.webp"
-  },
-  "product-images/Altus II/ALTUS II.14.webp": {
-    "480": "/assets/product-images/Altus II/ALTUS II.14-480.webp",
-    "768": "/assets/product-images/Altus II/ALTUS II.14-768.webp",
-    "1200": "/assets/product-images/Altus II/ALTUS II.14-1200.webp",
-    "1600": "/assets/product-images/Altus II/ALTUS II.14-1600.webp",
-    "original": "/assets/product-images/Altus II/ALTUS II.14.webp"
-  },
-  "product-images/Durus/Sample Render.1713.webp": {
-    "480": "/assets/product-images/Durus/Sample Render.1713-480.webp",
-    "768": "/assets/product-images/Durus/Sample Render.1713-768.webp",
-    "1200": "/assets/product-images/Durus/Sample Render.1713-1200.webp",
-    "1600": "/assets/product-images/Durus/Sample Render.1713-1600.webp",
-    "original": "/assets/product-images/Durus/Sample Render.1713.webp"
-  },
-  "product-images/Durus/Sample Render.1725.webp": {
-    "480": "/assets/product-images/Durus/Sample Render.1725-480.webp",
-    "768": "/assets/product-images/Durus/Sample Render.1725-768.webp",
-    "1200": "/assets/product-images/Durus/Sample Render.1725-1200.webp",
-    "1600": "/assets/product-images/Durus/Sample Render.1725-1600.webp",
-    "original": "/assets/product-images/Durus/Sample Render.1725.webp"
-  },
-  "product-images/Altus II/ALTUS II.2068.webp": {
-    "480": "/assets/product-images/Altus II/ALTUS II.2068-480.webp",
-    "768": "/assets/product-images/Altus II/ALTUS II.2068-768.webp",
-    "1200": "/assets/product-images/Altus II/ALTUS II.2068-1200.webp",
-    "1600": "/assets/product-images/Altus II/ALTUS II.2068-1600.webp",
-    "original": "/assets/product-images/Altus II/ALTUS II.2068.webp"
-  },
-  "product-images/Durus/Sample Render.1726.webp": {
-    "480": "/assets/product-images/Durus/Sample Render.1726-480.webp",
-    "768": "/assets/product-images/Durus/Sample Render.1726-768.webp",
-    "1200": "/assets/product-images/Durus/Sample Render.1726-1200.webp",
-    "1600": "/assets/product-images/Durus/Sample Render.1726-1600.webp",
-    "original": "/assets/product-images/Durus/Sample Render.1726.webp"
-  },
-  "product-images/Altus II/ALTUS II.2069.webp": {
-    "480": "/assets/product-images/Altus II/ALTUS II.2069-480.webp",
-    "768": "/assets/product-images/Altus II/ALTUS II.2069-768.webp",
-    "1200": "/assets/product-images/Altus II/ALTUS II.2069-1200.webp",
-    "1600": "/assets/product-images/Altus II/ALTUS II.2069-1600.webp",
-    "original": "/assets/product-images/Altus II/ALTUS II.2069.webp"
-  },
-  "product-images/Industry Image Renders/ALTUS 2 V2.1764.webp": {
-    "480": "/assets/product-images/Industry Image Renders/ALTUS 2 V2.1764-480.webp",
-    "768": "/assets/product-images/Industry Image Renders/ALTUS 2 V2.1764-768.webp",
-    "1200": "/assets/product-images/Industry Image Renders/ALTUS 2 V2.1764-1200.webp",
-    "1600": "/assets/product-images/Industry Image Renders/ALTUS 2 V2.1764-1600.webp",
-    "original": "/assets/product-images/Industry Image Renders/ALTUS 2 V2.1764.webp"
-  },
-  "product-images/Industry Image Renders/ALTUS 2 V2.1769.webp": {
-    "480": "/assets/product-images/Industry Image Renders/ALTUS 2 V2.1769-480.webp",
-    "768": "/assets/product-images/Industry Image Renders/ALTUS 2 V2.1769-768.webp",
-    "1200": "/assets/product-images/Industry Image Renders/ALTUS 2 V2.1769-1200.webp",
-    "1600": "/assets/product-images/Industry Image Renders/ALTUS 2 V2.1769-1600.webp",
-    "original": "/assets/product-images/Industry Image Renders/ALTUS 2 V2.1769.webp"
-  },
-  "product-images/Industry Image Renders/ALTUS 2 V2.1765.webp": {
-    "480": "/assets/product-images/Industry Image Renders/ALTUS 2 V2.1765-480.webp",
-    "768": "/assets/product-images/Industry Image Renders/ALTUS 2 V2.1765-768.webp",
-    "1200": "/assets/product-images/Industry Image Renders/ALTUS 2 V2.1765-1200.webp",
-    "1600": "/assets/product-images/Industry Image Renders/ALTUS 2 V2.1765-1600.webp",
-    "original": "/assets/product-images/Industry Image Renders/ALTUS 2 V2.1765.webp"
-  },
-  "product-images/Durus/Sample Render.1744.webp": {
-    "480": "/assets/product-images/Durus/Sample Render.1744-480.webp",
-    "768": "/assets/product-images/Durus/Sample Render.1744-768.webp",
-    "1200": "/assets/product-images/Durus/Sample Render.1744-1200.webp",
-    "1600": "/assets/product-images/Durus/Sample Render.1744-1600.webp",
-    "original": "/assets/product-images/Durus/Sample Render.1744.webp"
-  },
-  "product-images/Industry Image Renders/ALTUS II.1771(1).webp": {
-    "480": "/assets/product-images/Industry Image Renders/ALTUS II.1771(1)-480.webp",
-    "768": "/assets/product-images/Industry Image Renders/ALTUS II.1771(1)-768.webp",
-    "1200": "/assets/product-images/Industry Image Renders/ALTUS II.1771(1)-1200.webp",
-    "1600": "/assets/product-images/Industry Image Renders/ALTUS II.1771(1)-1600.webp",
-    "original": "/assets/product-images/Industry Image Renders/ALTUS II.1771(1).webp"
-  },
-  "product-images/Industry Image Renders/ALTUS 2 V2.1770.webp": {
-    "480": "/assets/product-images/Industry Image Renders/ALTUS 2 V2.1770-480.webp",
-    "768": "/assets/product-images/Industry Image Renders/ALTUS 2 V2.1770-768.webp",
-    "1200": "/assets/product-images/Industry Image Renders/ALTUS 2 V2.1770-1200.webp",
-    "1600": "/assets/product-images/Industry Image Renders/ALTUS 2 V2.1770-1600.webp",
-    "original": "/assets/product-images/Industry Image Renders/ALTUS 2 V2.1770.webp"
-  },
-  "product-images/Durus/Sample Render.1746.webp": {
-    "480": "/assets/product-images/Durus/Sample Render.1746-480.webp",
-    "768": "/assets/product-images/Durus/Sample Render.1746-768.webp",
-    "1200": "/assets/product-images/Durus/Sample Render.1746-1200.webp",
-    "1600": "/assets/product-images/Durus/Sample Render.1746-1600.webp",
-    "original": "/assets/product-images/Durus/Sample Render.1746.webp"
-  },
-  "product-images/Industry Image Renders/bacground  iobulus.webp": {
-    "480": "/assets/product-images/Industry Image Renders/bacground  iobulus-480.webp",
-    "768": "/assets/product-images/Industry Image Renders/bacground  iobulus-768.webp",
-    "1200": "/assets/product-images/Industry Image Renders/bacground  iobulus-1200.webp",
-    "1600": "/assets/product-images/Industry Image Renders/bacground  iobulus-1600.webp",
-    "original": "/assets/product-images/Industry Image Renders/bacground  iobulus.webp"
-  },
-  "product-images/Industry Image Renders/ALTUS II.1771.webp": {
-    "480": "/assets/product-images/Industry Image Renders/ALTUS II.1771-480.webp",
-    "768": "/assets/product-images/Industry Image Renders/ALTUS II.1771-768.webp",
-    "1200": "/assets/product-images/Industry Image Renders/ALTUS II.1771-1200.webp",
-    "1600": "/assets/product-images/Industry Image Renders/ALTUS II.1771-1600.webp",
-    "original": "/assets/product-images/Industry Image Renders/ALTUS II.1771.webp"
-  },
-  "product-images/Industry Image Renders/ALTUS II.1772.webp": {
-    "480": "/assets/product-images/Industry Image Renders/ALTUS II.1772-480.webp",
-    "768": "/assets/product-images/Industry Image Renders/ALTUS II.1772-768.webp",
-    "1200": "/assets/product-images/Industry Image Renders/ALTUS II.1772-1200.webp",
-    "1600": "/assets/product-images/Industry Image Renders/ALTUS II.1772-1600.webp",
-    "original": "/assets/product-images/Industry Image Renders/ALTUS II.1772.webp"
-  },
-  "product-images/Industry Image Renders/Material handeling.webp": {
-    "480": "/assets/product-images/Industry Image Renders/Material handeling-480.webp",
-    "768": "/assets/product-images/Industry Image Renders/Material handeling-768.webp",
-    "1200": "/assets/product-images/Industry Image Renders/Material handeling-1200.webp",
-    "1600": "/assets/product-images/Industry Image Renders/Material handeling-1600.webp",
-    "original": "/assets/product-images/Industry Image Renders/Material handeling.webp"
-  },
-  "product-images/Industry Image Renders/Sample Render.1766.jpg.webp": {
-    "480": "/assets/product-images/Industry Image Renders/Sample Render.1766.jpg-480.webp",
-    "768": "/assets/product-images/Industry Image Renders/Sample Render.1766.jpg-768.webp",
-    "1200": "/assets/product-images/Industry Image Renders/Sample Render.1766.jpg-1200.webp",
-    "1600": "/assets/product-images/Industry Image Renders/Sample Render.1766.jpg-1600.webp",
-    "original": "/assets/product-images/Industry Image Renders/Sample Render.1766.jpg.webp"
-  },
-  "product-images/Industry Image Renders/work platforms.webp": {
-    "480": "/assets/product-images/Industry Image Renders/work platforms-480.webp",
-    "original": "/assets/product-images/Industry Image Renders/work platforms.webp"
-  },
-  "product-images/Industry Image Renders/Momentus with pedestal.1773.webp": {
-    "480": "/assets/product-images/Industry Image Renders/Momentus with pedestal.1773-480.webp",
-    "768": "/assets/product-images/Industry Image Renders/Momentus with pedestal.1773-768.webp",
-    "1200": "/assets/product-images/Industry Image Renders/Momentus with pedestal.1773-1200.webp",
-    "1600": "/assets/product-images/Industry Image Renders/Momentus with pedestal.1773-1600.webp",
-    "original": "/assets/product-images/Industry Image Renders/Momentus with pedestal.1773.webp"
-  },
-  "product-images/Industry Image Renders/Sample Render.1767.jpg.webp": {
-    "480": "/assets/product-images/Industry Image Renders/Sample Render.1767.jpg-480.webp",
-    "768": "/assets/product-images/Industry Image Renders/Sample Render.1767.jpg-768.webp",
-    "1200": "/assets/product-images/Industry Image Renders/Sample Render.1767.jpg-1200.webp",
-    "1600": "/assets/product-images/Industry Image Renders/Sample Render.1767.jpg-1600.webp",
-    "original": "/assets/product-images/Industry Image Renders/Sample Render.1767.jpg.webp"
-  },
-  "product-images/Industry Image Renders/Sample Render.1768.webp": {
-    "480": "/assets/product-images/Industry Image Renders/Sample Render.1768-480.webp",
-    "768": "/assets/product-images/Industry Image Renders/Sample Render.1768-768.webp",
-    "1200": "/assets/product-images/Industry Image Renders/Sample Render.1768-1200.webp",
-    "1600": "/assets/product-images/Industry Image Renders/Sample Render.1768-1600.webp",
-    "original": "/assets/product-images/Industry Image Renders/Sample Render.1768.webp"
-  },
-  "product-images/Maximus/maximus 2.webp": {
-    "480": "/assets/product-images/Maximus/maximus 2-480.webp",
-    "768": "/assets/product-images/Maximus/maximus 2-768.webp",
-    "1200": "/assets/product-images/Maximus/maximus 2-1200.webp",
-    "1600": "/assets/product-images/Maximus/maximus 2-1600.webp",
-    "original": "/assets/product-images/Maximus/maximus 2.webp"
-  },
-  "product-images/Maximus/maximus 3 (1).webp": {
-    "480": "/assets/product-images/Maximus/maximus 3 (1)-480.webp",
-    "768": "/assets/product-images/Maximus/maximus 3 (1)-768.webp",
-    "1200": "/assets/product-images/Maximus/maximus 3 (1)-1200.webp",
-    "1600": "/assets/product-images/Maximus/maximus 3 (1)-1600.webp",
-    "original": "/assets/product-images/Maximus/maximus 3 (1).webp"
-  },
-  "product-images/Maximus/Maximus with pedestal design options-03.webp": {
-    "480": "/assets/product-images/Maximus/Maximus with pedestal design options-03-480.webp",
-    "768": "/assets/product-images/Maximus/Maximus with pedestal design options-03-768.webp",
-    "1200": "/assets/product-images/Maximus/Maximus with pedestal design options-03-1200.webp",
-    "1600": "/assets/product-images/Maximus/Maximus with pedestal design options-03-1600.webp",
-    "original": "/assets/product-images/Maximus/Maximus with pedestal design options-03.webp"
-  },
-  "product-images/Maximus/maximus 3.webp": {
-    "480": "/assets/product-images/Maximus/maximus 3-480.webp",
-    "768": "/assets/product-images/Maximus/maximus 3-768.webp",
-    "1200": "/assets/product-images/Maximus/maximus 3-1200.webp",
-    "1600": "/assets/product-images/Maximus/maximus 3-1600.webp",
-    "original": "/assets/product-images/Maximus/maximus 3.webp"
-  },
-  "product-images/Maximus/Momentus with pedestal.2087.webp": {
-    "480": "/assets/product-images/Maximus/Momentus with pedestal.2087-480.webp",
-    "768": "/assets/product-images/Maximus/Momentus with pedestal.2087-768.webp",
-    "1200": "/assets/product-images/Maximus/Momentus with pedestal.2087-1200.webp",
-    "1600": "/assets/product-images/Maximus/Momentus with pedestal.2087-1600.webp",
-    "original": "/assets/product-images/Maximus/Momentus with pedestal.2087.webp"
-  },
-  "product-images/Maximus/Momentus with pedestal.2088.webp": {
-    "480": "/assets/product-images/Maximus/Momentus with pedestal.2088-480.webp",
-    "768": "/assets/product-images/Maximus/Momentus with pedestal.2088-768.webp",
-    "1200": "/assets/product-images/Maximus/Momentus with pedestal.2088-1200.webp",
-    "1600": "/assets/product-images/Maximus/Momentus with pedestal.2088-1600.webp",
-    "original": "/assets/product-images/Maximus/Momentus with pedestal.2088.webp"
-  },
-  "product-images/Maximus/Momentus with pedestal.2089.webp": {
-    "480": "/assets/product-images/Maximus/Momentus with pedestal.2089-480.webp",
-    "768": "/assets/product-images/Maximus/Momentus with pedestal.2089-768.webp",
-    "1200": "/assets/product-images/Maximus/Momentus with pedestal.2089-1200.webp",
-    "1600": "/assets/product-images/Maximus/Momentus with pedestal.2089-1600.webp",
-    "original": "/assets/product-images/Maximus/Momentus with pedestal.2089.webp"
-  },
-  "product-images/Maximus/MAXIMUS.webp": {
-    "480": "/assets/product-images/Maximus/MAXIMUS-480.webp",
-    "768": "/assets/product-images/Maximus/MAXIMUS-768.webp",
-    "1200": "/assets/product-images/Maximus/MAXIMUS-1200.webp",
-    "1600": "/assets/product-images/Maximus/MAXIMUS-1600.webp",
-    "original": "/assets/product-images/Maximus/MAXIMUS.webp"
-  },
-  "product-images/Maximus/Momentus with pedestal.2090.webp": {
-    "480": "/assets/product-images/Maximus/Momentus with pedestal.2090-480.webp",
-    "768": "/assets/product-images/Maximus/Momentus with pedestal.2090-768.webp",
-    "1200": "/assets/product-images/Maximus/Momentus with pedestal.2090-1200.webp",
-    "1600": "/assets/product-images/Maximus/Momentus with pedestal.2090-1600.webp",
-    "original": "/assets/product-images/Maximus/Momentus with pedestal.2090.webp"
-  },
-  "product-images/Maximus/Momentus with pedestal.2091.webp": {
-    "480": "/assets/product-images/Maximus/Momentus with pedestal.2091-480.webp",
-    "768": "/assets/product-images/Maximus/Momentus with pedestal.2091-768.webp",
-    "1200": "/assets/product-images/Maximus/Momentus with pedestal.2091-1200.webp",
-    "1600": "/assets/product-images/Maximus/Momentus with pedestal.2091-1600.webp",
-    "original": "/assets/product-images/Maximus/Momentus with pedestal.2091.webp"
-  },
-  "product-images/Maximus/Momentus with pedestal.2092.webp": {
-    "480": "/assets/product-images/Maximus/Momentus with pedestal.2092-480.webp",
-    "768": "/assets/product-images/Maximus/Momentus with pedestal.2092-768.webp",
-    "1200": "/assets/product-images/Maximus/Momentus with pedestal.2092-1200.webp",
-    "1600": "/assets/product-images/Maximus/Momentus with pedestal.2092-1600.webp",
-    "original": "/assets/product-images/Maximus/Momentus with pedestal.2092.webp"
-  },
-  "product-images/Mobilus/3D MODLE.2081.webp": {
-    "480": "/assets/product-images/Mobilus/3D MODLE.2081-480.webp",
-    "768": "/assets/product-images/Mobilus/3D MODLE.2081-768.webp",
-    "original": "/assets/product-images/Mobilus/3D MODLE.2081.webp"
-  },
-  "product-images/Maximus/Momentus with pedestal.2093.webp": {
-    "480": "/assets/product-images/Maximus/Momentus with pedestal.2093-480.webp",
-    "768": "/assets/product-images/Maximus/Momentus with pedestal.2093-768.webp",
-    "1200": "/assets/product-images/Maximus/Momentus with pedestal.2093-1200.webp",
-    "1600": "/assets/product-images/Maximus/Momentus with pedestal.2093-1600.webp",
-    "original": "/assets/product-images/Maximus/Momentus with pedestal.2093.webp"
-  },
-  "product-images/Maximus/Momentus with pedestal.2094.webp": {
-    "480": "/assets/product-images/Maximus/Momentus with pedestal.2094-480.webp",
-    "768": "/assets/product-images/Maximus/Momentus with pedestal.2094-768.webp",
-    "1200": "/assets/product-images/Maximus/Momentus with pedestal.2094-1200.webp",
-    "1600": "/assets/product-images/Maximus/Momentus with pedestal.2094-1600.webp",
-    "original": "/assets/product-images/Maximus/Momentus with pedestal.2094.webp"
-  },
-  "product-images/Mobilus/3D MODLE.10.webp": {
-    "480": "/assets/product-images/Mobilus/3D MODLE.10-480.webp",
-    "768": "/assets/product-images/Mobilus/3D MODLE.10-768.webp",
-    "1200": "/assets/product-images/Mobilus/3D MODLE.10-1200.webp",
-    "1600": "/assets/product-images/Mobilus/3D MODLE.10-1600.webp",
-    "original": "/assets/product-images/Mobilus/3D MODLE.10.webp"
-  },
-  "product-images/Momentus/1 (1).webp": {
-    "480": "/assets/product-images/Momentus/1 (1)-480.webp",
-    "768": "/assets/product-images/Momentus/1 (1)-768.webp",
-    "1200": "/assets/product-images/Momentus/1 (1)-1200.webp",
-    "1600": "/assets/product-images/Momentus/1 (1)-1600.webp",
-    "original": "/assets/product-images/Momentus/1 (1).webp"
-  },
-  "product-images/Momentus/2.webp": {
-    "480": "/assets/product-images/Momentus/2-480.webp",
-    "768": "/assets/product-images/Momentus/2-768.webp",
-    "1200": "/assets/product-images/Momentus/2-1200.webp",
-    "1600": "/assets/product-images/Momentus/2-1600.webp",
-    "original": "/assets/product-images/Momentus/2.webp"
-  },
-  "product-images/Momentus/Copy of Momentus.2067.webp": {
-    "480": "/assets/product-images/Momentus/Copy of Momentus.2067-480.webp",
-    "768": "/assets/product-images/Momentus/Copy of Momentus.2067-768.webp",
-    "1200": "/assets/product-images/Momentus/Copy of Momentus.2067-1200.webp",
-    "1600": "/assets/product-images/Momentus/Copy of Momentus.2067-1600.webp",
-    "original": "/assets/product-images/Momentus/Copy of Momentus.2067.webp"
-  },
-  "product-images/Momentus/Momentus render 1 (3).webp": {
-    "480": "/assets/product-images/Momentus/Momentus render 1 (3)-480.webp",
-    "768": "/assets/product-images/Momentus/Momentus render 1 (3)-768.webp",
-    "1200": "/assets/product-images/Momentus/Momentus render 1 (3)-1200.webp",
-    "1600": "/assets/product-images/Momentus/Momentus render 1 (3)-1600.webp",
-    "original": "/assets/product-images/Momentus/Momentus render 1 (3).webp"
-  },
-  "product-images/Momentus/Momentus render png.webp": {
-    "480": "/assets/product-images/Momentus/Momentus render png-480.webp",
-    "768": "/assets/product-images/Momentus/Momentus render png-768.webp",
-    "1200": "/assets/product-images/Momentus/Momentus render png-1200.webp",
-    "1600": "/assets/product-images/Momentus/Momentus render png-1600.webp",
-    "original": "/assets/product-images/Momentus/Momentus render png.webp"
-  },
-  "product-images/Momentus/Momentus.12.webp": {
-    "480": "/assets/product-images/Momentus/Momentus.12-480.webp",
-    "768": "/assets/product-images/Momentus/Momentus.12-768.webp",
-    "1200": "/assets/product-images/Momentus/Momentus.12-1200.webp",
-    "1600": "/assets/product-images/Momentus/Momentus.12-1600.webp",
-    "original": "/assets/product-images/Momentus/Momentus.12.webp"
-  },
-  "product-images/Momentus/Momentus.2059.webp": {
-    "480": "/assets/product-images/Momentus/Momentus.2059-480.webp",
-    "768": "/assets/product-images/Momentus/Momentus.2059-768.webp",
-    "1200": "/assets/product-images/Momentus/Momentus.2059-1200.webp",
-    "1600": "/assets/product-images/Momentus/Momentus.2059-1600.webp",
-    "original": "/assets/product-images/Momentus/Momentus.2059.webp"
-  },
-  "product-images/Momentus/Momentus.13.webp": {
-    "480": "/assets/product-images/Momentus/Momentus.13-480.webp",
-    "768": "/assets/product-images/Momentus/Momentus.13-768.webp",
-    "1200": "/assets/product-images/Momentus/Momentus.13-1200.webp",
-    "1600": "/assets/product-images/Momentus/Momentus.13-1600.webp",
-    "original": "/assets/product-images/Momentus/Momentus.13.webp"
-  },
-  "product-images/Momentus/Momentus.2060.webp": {
-    "480": "/assets/product-images/Momentus/Momentus.2060-480.webp",
-    "768": "/assets/product-images/Momentus/Momentus.2060-768.webp",
-    "1200": "/assets/product-images/Momentus/Momentus.2060-1200.webp",
-    "1600": "/assets/product-images/Momentus/Momentus.2060-1600.webp",
-    "original": "/assets/product-images/Momentus/Momentus.2060.webp"
-  },
-  "product-images/Momentus/Momentus.2067.webp": {
-    "480": "/assets/product-images/Momentus/Momentus.2067-480.webp",
-    "768": "/assets/product-images/Momentus/Momentus.2067-768.webp",
-    "1200": "/assets/product-images/Momentus/Momentus.2067-1200.webp",
-    "1600": "/assets/product-images/Momentus/Momentus.2067-1600.webp",
-    "original": "/assets/product-images/Momentus/Momentus.2067.webp"
-  },
-  "product-images/Momentus/Momentus.2099.webp": {
-    "480": "/assets/product-images/Momentus/Momentus.2099-480.webp",
-    "768": "/assets/product-images/Momentus/Momentus.2099-768.webp",
-    "1200": "/assets/product-images/Momentus/Momentus.2099-1200.webp",
-    "1600": "/assets/product-images/Momentus/Momentus.2099-1600.webp",
-    "original": "/assets/product-images/Momentus/Momentus.2099.webp"
-  },
-  "product-images/Ultimate/9.1916.webp": {
-    "480": "/assets/product-images/Ultimate/9.1916-480.webp",
-    "768": "/assets/product-images/Ultimate/9.1916-768.webp",
-    "1200": "/assets/product-images/Ultimate/9.1916-1200.webp",
-    "original": "/assets/product-images/Ultimate/9.1916.webp"
-  },
-  "product-images/Momentus/Momentus.2103.webp": {
-    "480": "/assets/product-images/Momentus/Momentus.2103-480.webp",
-    "768": "/assets/product-images/Momentus/Momentus.2103-768.webp",
-    "1200": "/assets/product-images/Momentus/Momentus.2103-1200.webp",
-    "1600": "/assets/product-images/Momentus/Momentus.2103-1600.webp",
-    "original": "/assets/product-images/Momentus/Momentus.2103.webp"
-  },
-  "product-images/Momentus/Momentus.2100.webp": {
-    "480": "/assets/product-images/Momentus/Momentus.2100-480.webp",
-    "768": "/assets/product-images/Momentus/Momentus.2100-768.webp",
-    "1200": "/assets/product-images/Momentus/Momentus.2100-1200.webp",
-    "1600": "/assets/product-images/Momentus/Momentus.2100-1600.webp",
-    "original": "/assets/product-images/Momentus/Momentus.2100.webp"
-  },
-  "product-images/Ultimate/ultimate2.1331.webp": {
-    "480": "/assets/product-images/Ultimate/ultimate2.1331-480.webp",
-    "768": "/assets/product-images/Ultimate/ultimate2.1331-768.webp",
-    "1200": "/assets/product-images/Ultimate/ultimate2.1331-1200.webp",
-    "original": "/assets/product-images/Ultimate/ultimate2.1331.webp"
-  },
-  "product-images/Ultimate/9.1917.webp": {
-    "480": "/assets/product-images/Ultimate/9.1917-480.webp",
-    "768": "/assets/product-images/Ultimate/9.1917-768.webp",
-    "1200": "/assets/product-images/Ultimate/9.1917-1200.webp",
-    "original": "/assets/product-images/Ultimate/9.1917.webp"
-  },
-  "product-images/Ultimate/9.1918.webp": {
-    "480": "/assets/product-images/Ultimate/9.1918-480.webp",
-    "768": "/assets/product-images/Ultimate/9.1918-768.webp",
-    "1200": "/assets/product-images/Ultimate/9.1918-1200.webp",
-    "original": "/assets/product-images/Ultimate/9.1918.webp"
-  },
-  "product-images/Vital/Vital.webp": {
-    "480": "/assets/product-images/Vital/Vital-480.webp",
-    "768": "/assets/product-images/Vital/Vital-768.webp",
-    "1200": "/assets/product-images/Vital/Vital-1200.webp",
-    "original": "/assets/product-images/Vital/Vital.webp"
-  },
-  "product-images/Mobilus/My Video4.mp4": {
-    "original": "/assets/product-images/Mobilus/My Video4.mp4"
+  "Home Page/A legacy of reliability/A legacy of reliability-01.png": {
+    "480": "/assets/Home Page/A legacy of reliability/A legacy of reliability-01-480.webp",
+    "768": "/assets/Home Page/A legacy of reliability/A legacy of reliability-01-768.webp",
+    "1200": "/assets/Home Page/A legacy of reliability/A legacy of reliability-01-1200.webp",
+    "1600": "/assets/Home Page/A legacy of reliability/A legacy of reliability-01-1600.webp",
+    "original": "/assets/Home Page/A legacy of reliability/A legacy of reliability-01.webp"
+  },
+  "Home Page/Aviation (Airport GSE)/Cumulus Software-01.png": {
+    "480": "/assets/Home Page/Aviation (Airport GSE)/Cumulus Software-01-480.webp",
+    "768": "/assets/Home Page/Aviation (Airport GSE)/Cumulus Software-01-768.webp",
+    "1200": "/assets/Home Page/Aviation (Airport GSE)/Cumulus Software-01-1200.webp",
+    "1600": "/assets/Home Page/Aviation (Airport GSE)/Cumulus Software-01-1600.webp",
+    "original": "/assets/Home Page/Aviation (Airport GSE)/Cumulus Software-01.webp"
+  },
+  "Home Page/Aviation (Airport GSE)/Magnus Hardware-01.png": {
+    "480": "/assets/Home Page/Aviation (Airport GSE)/Magnus Hardware-01-480.webp",
+    "768": "/assets/Home Page/Aviation (Airport GSE)/Magnus Hardware-01-768.webp",
+    "1200": "/assets/Home Page/Aviation (Airport GSE)/Magnus Hardware-01-1200.webp",
+    "1600": "/assets/Home Page/Aviation (Airport GSE)/Magnus Hardware-01-1600.webp",
+    "original": "/assets/Home Page/Aviation (Airport GSE)/Magnus Hardware-01.webp"
+  },
+  "Home Page/Aviation (Airport GSE)/MOBILUS Hardware-01.png": {
+    "480": "/assets/Home Page/Aviation (Airport GSE)/MOBILUS Hardware-01-480.webp",
+    "768": "/assets/Home Page/Aviation (Airport GSE)/MOBILUS Hardware-01-768.webp",
+    "1200": "/assets/Home Page/Aviation (Airport GSE)/MOBILUS Hardware-01-1200.webp",
+    "1600": "/assets/Home Page/Aviation (Airport GSE)/MOBILUS Hardware-01-1600.webp",
+    "original": "/assets/Home Page/Aviation (Airport GSE)/MOBILUS Hardware-01.webp"
+  },
+  "Home Page/Aviation (Airport GSE)/Outdoor · EV-ready-01.png": {
+    "480": "/assets/Home Page/Aviation (Airport GSE)/Outdoor · EV-ready-01-480.webp",
+    "768": "/assets/Home Page/Aviation (Airport GSE)/Outdoor · EV-ready-01-768.webp",
+    "1200": "/assets/Home Page/Aviation (Airport GSE)/Outdoor · EV-ready-01-1200.webp",
+    "1600": "/assets/Home Page/Aviation (Airport GSE)/Outdoor · EV-ready-01-1600.webp",
+    "original": "/assets/Home Page/Aviation (Airport GSE)/Outdoor · EV-ready-01.webp"
+  },
+  "Home Page/Banner/Home banner - 01-01.png": {
+    "480": "/assets/Home Page/Banner/Home banner - 01-01-480.webp",
+    "768": "/assets/Home Page/Banner/Home banner - 01-01-768.webp",
+    "1200": "/assets/Home Page/Banner/Home banner - 01-01-1200.webp",
+    "1600": "/assets/Home Page/Banner/Home banner - 01-01-1600.webp",
+    "original": "/assets/Home Page/Banner/Home banner - 01-01.webp"
+  },
+  "Home Page/Banner/Home banner - 01-02.png": {
+    "480": "/assets/Home Page/Banner/Home banner - 01-02-480.webp",
+    "768": "/assets/Home Page/Banner/Home banner - 01-02-768.webp",
+    "1200": "/assets/Home Page/Banner/Home banner - 01-02-1200.webp",
+    "1600": "/assets/Home Page/Banner/Home banner - 01-02-1600.webp",
+    "original": "/assets/Home Page/Banner/Home banner - 01-02.webp"
+  },
+  "Home Page/Banner/Home banner - 01-03.png": {
+    "480": "/assets/Home Page/Banner/Home banner - 01-03-480.webp",
+    "768": "/assets/Home Page/Banner/Home banner - 01-03-768.webp",
+    "1200": "/assets/Home Page/Banner/Home banner - 01-03-1200.webp",
+    "1600": "/assets/Home Page/Banner/Home banner - 01-03-1600.webp",
+    "original": "/assets/Home Page/Banner/Home banner - 01-03.webp"
+  },
+  "Home Page/Banner/Home banner - 01-04.png": {
+    "480": "/assets/Home Page/Banner/Home banner - 01-04-480.webp",
+    "768": "/assets/Home Page/Banner/Home banner - 01-04-768.webp",
+    "1200": "/assets/Home Page/Banner/Home banner - 01-04-1200.webp",
+    "1600": "/assets/Home Page/Banner/Home banner - 01-04-1600.webp",
+    "original": "/assets/Home Page/Banner/Home banner - 01-04.webp"
+  },
+  "Home Page/Banner/Home banner - 01-05.png": {
+    "480": "/assets/Home Page/Banner/Home banner - 01-05-480.webp",
+    "768": "/assets/Home Page/Banner/Home banner - 01-05-768.webp",
+    "1200": "/assets/Home Page/Banner/Home banner - 01-05-1200.webp",
+    "1600": "/assets/Home Page/Banner/Home banner - 01-05-1600.webp",
+    "original": "/assets/Home Page/Banner/Home banner - 01-05.webp"
+  },
+  "Home Page/Engineered for Every Environment/Engineered for Airports.png": {
+    "480": "/assets/Home Page/Engineered for Every Environment/Engineered for Airports-480.webp",
+    "768": "/assets/Home Page/Engineered for Every Environment/Engineered for Airports-768.webp",
+    "1200": "/assets/Home Page/Engineered for Every Environment/Engineered for Airports-1200.webp",
+    "1600": "/assets/Home Page/Engineered for Every Environment/Engineered for Airports-1600.webp",
+    "original": "/assets/Home Page/Engineered for Every Environment/Engineered for Airports.webp"
+  },
+  "Home Page/Engineered for Every Environment/Engineered for Industrial & Commercial.png": {
+    "480": "/assets/Home Page/Engineered for Every Environment/Engineered for Industrial & Commercial-480.webp",
+    "768": "/assets/Home Page/Engineered for Every Environment/Engineered for Industrial & Commercial-768.webp",
+    "1200": "/assets/Home Page/Engineered for Every Environment/Engineered for Industrial & Commercial-1200.webp",
+    "1600": "/assets/Home Page/Engineered for Every Environment/Engineered for Industrial & Commercial-1600.webp",
+    "original": "/assets/Home Page/Engineered for Every Environment/Engineered for Industrial & Commercial.webp"
+  },
+  "Home Page/Engineered for Every Environment/Engineered for LSEVs.png": {
+    "480": "/assets/Home Page/Engineered for Every Environment/Engineered for LSEVs-480.webp",
+    "768": "/assets/Home Page/Engineered for Every Environment/Engineered for LSEVs-768.webp",
+    "1200": "/assets/Home Page/Engineered for Every Environment/Engineered for LSEVs-1200.webp",
+    "1600": "/assets/Home Page/Engineered for Every Environment/Engineered for LSEVs-1600.webp",
+    "original": "/assets/Home Page/Engineered for Every Environment/Engineered for LSEVs.webp"
+  },
+  "Home Page/Engineered for Every Environment/Engineered for Warehouses.png": {
+    "480": "/assets/Home Page/Engineered for Every Environment/Engineered for Warehouses-480.webp",
+    "768": "/assets/Home Page/Engineered for Every Environment/Engineered for Warehouses-768.webp",
+    "1200": "/assets/Home Page/Engineered for Every Environment/Engineered for Warehouses-1200.webp",
+    "1600": "/assets/Home Page/Engineered for Every Environment/Engineered for Warehouses-1600.webp",
+    "original": "/assets/Home Page/Engineered for Every Environment/Engineered for Warehouses.webp"
+  },
+  "Home Page/Footer CTA Band/Footer CTA-01.png": {
+    "480": "/assets/Home Page/Footer CTA Band/Footer CTA-01-480.webp",
+    "768": "/assets/Home Page/Footer CTA Band/Footer CTA-01-768.webp",
+    "1200": "/assets/Home Page/Footer CTA Band/Footer CTA-01-1200.webp",
+    "1600": "/assets/Home Page/Footer CTA Band/Footer CTA-01-1600.webp",
+    "original": "/assets/Home Page/Footer CTA Band/Footer CTA-01.webp"
+  },
+  "Home Page/Footer CTA Band/Footer CTA-02.png": {
+    "480": "/assets/Home Page/Footer CTA Band/Footer CTA-02-480.webp",
+    "768": "/assets/Home Page/Footer CTA Band/Footer CTA-02-768.webp",
+    "1200": "/assets/Home Page/Footer CTA Band/Footer CTA-02-1200.webp",
+    "1600": "/assets/Home Page/Footer CTA Band/Footer CTA-02-1600.webp",
+    "original": "/assets/Home Page/Footer CTA Band/Footer CTA-02.webp"
+  },
+  "Home Page/Indoor vs outdoor/Indoor material handling-01.png": {
+    "480": "/assets/Home Page/Indoor vs outdoor/Indoor material handling-01-480.webp",
+    "768": "/assets/Home Page/Indoor vs outdoor/Indoor material handling-01-768.webp",
+    "1200": "/assets/Home Page/Indoor vs outdoor/Indoor material handling-01-1200.webp",
+    "1600": "/assets/Home Page/Indoor vs outdoor/Indoor material handling-01-1600.webp",
+    "original": "/assets/Home Page/Indoor vs outdoor/Indoor material handling-01.webp"
+  },
+  "Home Page/Indoor vs outdoor/Outdoor eGSE & yards-01.png": {
+    "480": "/assets/Home Page/Indoor vs outdoor/Outdoor eGSE & yards-01-480.webp",
+    "768": "/assets/Home Page/Indoor vs outdoor/Outdoor eGSE & yards-01-768.webp",
+    "1200": "/assets/Home Page/Indoor vs outdoor/Outdoor eGSE & yards-01-1200.webp",
+    "1600": "/assets/Home Page/Indoor vs outdoor/Outdoor eGSE & yards-01-1600.webp",
+    "original": "/assets/Home Page/Indoor vs outdoor/Outdoor eGSE & yards-01.webp"
+  },
+  "Home Page/Interactive Charging Scenes/Interactive Charging Scenes- Airport-02.png": {
+    "480": "/assets/Home Page/Interactive Charging Scenes/Interactive Charging Scenes- Airport-02-480.webp",
+    "768": "/assets/Home Page/Interactive Charging Scenes/Interactive Charging Scenes- Airport-02-768.webp",
+    "1200": "/assets/Home Page/Interactive Charging Scenes/Interactive Charging Scenes- Airport-02-1200.webp",
+    "1600": "/assets/Home Page/Interactive Charging Scenes/Interactive Charging Scenes- Airport-02-1600.webp",
+    "original": "/assets/Home Page/Interactive Charging Scenes/Interactive Charging Scenes- Airport-02.webp"
+  },
+  "Home Page/Interactive Charging Scenes/Interactive Charging Scenes- warehouse-01.png": {
+    "480": "/assets/Home Page/Interactive Charging Scenes/Interactive Charging Scenes- warehouse-01-480.webp",
+    "768": "/assets/Home Page/Interactive Charging Scenes/Interactive Charging Scenes- warehouse-01-768.webp",
+    "1200": "/assets/Home Page/Interactive Charging Scenes/Interactive Charging Scenes- warehouse-01-1200.webp",
+    "1600": "/assets/Home Page/Interactive Charging Scenes/Interactive Charging Scenes- warehouse-01-1600.webp",
+    "original": "/assets/Home Page/Interactive Charging Scenes/Interactive Charging Scenes- warehouse-01.webp"
+  },
+  "Home Page/Low Speed Vehicles/Compact · Built-in BMS Durus-01.png": {
+    "480": "/assets/Home Page/Low Speed Vehicles/Compact · Built-in BMS Durus-01-480.webp",
+    "768": "/assets/Home Page/Low Speed Vehicles/Compact · Built-in BMS Durus-01-768.webp",
+    "1200": "/assets/Home Page/Low Speed Vehicles/Compact · Built-in BMS Durus-01-1200.webp",
+    "1600": "/assets/Home Page/Low Speed Vehicles/Compact · Built-in BMS Durus-01-1600.webp",
+    "original": "/assets/Home Page/Low Speed Vehicles/Compact · Built-in BMS Durus-01.webp"
+  },
+  "Home Page/Meet Momentus/Meet MOMENTUs-02.png": {
+    "480": "/assets/Home Page/Meet Momentus/Meet MOMENTUs-02-480.webp",
+    "768": "/assets/Home Page/Meet Momentus/Meet MOMENTUs-02-768.webp",
+    "1200": "/assets/Home Page/Meet Momentus/Meet MOMENTUs-02-1200.webp",
+    "1600": "/assets/Home Page/Meet Momentus/Meet MOMENTUs-02-1600.webp",
+    "original": "/assets/Home Page/Meet Momentus/Meet MOMENTUs-02.webp"
+  },
+  "Home Page/Trusted by Industry Leaders/Air China.png": {
+    "original": "/assets/Home Page/Trusted by Industry Leaders/Air China.webp"
+  },
+  "Home Page/Trusted by Industry Leaders/Boeing.png": {
+    "original": "/assets/Home Page/Trusted by Industry Leaders/Boeing.webp"
+  },
+  "Home Page/Trusted by Industry Leaders/Americold.png": {
+    "original": "/assets/Home Page/Trusted by Industry Leaders/Americold.webp"
+  },
+  "Home Page/Trusted by Industry Leaders/Coco cola.png": {
+    "original": "/assets/Home Page/Trusted by Industry Leaders/Coco cola.webp"
+  },
+  "Home Page/Trusted by Industry Leaders/United.png": {
+    "original": "/assets/Home Page/Trusted by Industry Leaders/United.webp"
+  },
+  "Home Page/Warehouse & Manufacturing/Cumulus Software-01.png": {
+    "480": "/assets/Home Page/Warehouse & Manufacturing/Cumulus Software-01-480.webp",
+    "768": "/assets/Home Page/Warehouse & Manufacturing/Cumulus Software-01-768.webp",
+    "1200": "/assets/Home Page/Warehouse & Manufacturing/Cumulus Software-01-1200.webp",
+    "1600": "/assets/Home Page/Warehouse & Manufacturing/Cumulus Software-01-1600.webp",
+    "original": "/assets/Home Page/Warehouse & Manufacturing/Cumulus Software-01.webp"
+  },
+  "Home Page/Warehouse & Manufacturing/Indoor · High-capacity Maximus-01.png": {
+    "480": "/assets/Home Page/Warehouse & Manufacturing/Indoor · High-capacity Maximus-01-480.webp",
+    "768": "/assets/Home Page/Warehouse & Manufacturing/Indoor · High-capacity Maximus-01-768.webp",
+    "1200": "/assets/Home Page/Warehouse & Manufacturing/Indoor · High-capacity Maximus-01-1200.webp",
+    "1600": "/assets/Home Page/Warehouse & Manufacturing/Indoor · High-capacity Maximus-01-1600.webp",
+    "original": "/assets/Home Page/Warehouse & Manufacturing/Indoor · High-capacity Maximus-01.webp"
+  },
+  "Home Page/Warehouse & Manufacturing/MOMENTUs Hardware-01.png": {
+    "480": "/assets/Home Page/Warehouse & Manufacturing/MOMENTUs Hardware-01-480.webp",
+    "768": "/assets/Home Page/Warehouse & Manufacturing/MOMENTUs Hardware-01-768.webp",
+    "1200": "/assets/Home Page/Warehouse & Manufacturing/MOMENTUs Hardware-01-1200.webp",
+    "1600": "/assets/Home Page/Warehouse & Manufacturing/MOMENTUs Hardware-01-1600.webp",
+    "original": "/assets/Home Page/Warehouse & Manufacturing/MOMENTUs Hardware-01.webp"
+  },
+  "Home Page/Trusted by Industry Leaders/Southwest.png": {
+    "original": "/assets/Home Page/Trusted by Industry Leaders/Southwest.webp"
+  },
+  "Home Page/Trusted by Industry Leaders/General Mills.png": {
+    "original": "/assets/Home Page/Trusted by Industry Leaders/General Mills.webp"
+  },
+  "Home Page/Trusted by Industry Leaders/Nestle.png": {
+    "original": "/assets/Home Page/Trusted by Industry Leaders/Nestle.webp"
   }
 }

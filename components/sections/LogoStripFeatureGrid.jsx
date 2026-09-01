@@ -1,3 +1,5 @@
+import SmartImage from '../ui/SmartImage';
+
 /**
  * LogoStripFeatureGrid Section Component
  * 
@@ -24,9 +26,15 @@ export default function LogoStripFeatureGrid({
         
         <div className="mt-8 flex flex-wrap items-center justify-center gap-8 sm:gap-14">
           {logos.map((logo) => (
-            <span key={logo.id} className="font-display text-lg font-bold tracking-wide text-ink-900/35">
-              {logo.name}
-            </span>
+            logo.src ? (
+              <div key={logo.id} className="relative h-12 w-32 flex items-center justify-center opacity-60 grayscale hover:grayscale-0 hover:opacity-100 transition-all">
+                <SmartImage src={logo.src} alt={logo.name} className="object-contain" fill />
+              </div>
+            ) : (
+              <span key={logo.id} className="font-display text-lg font-bold tracking-wide text-ink-900/35">
+                {logo.name}
+              </span>
+            )
           ))}
         </div>
         

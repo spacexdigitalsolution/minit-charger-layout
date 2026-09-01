@@ -22,7 +22,7 @@ export default function Navbar() {
 
         <nav className="hidden items-center gap-8 text-sm font-semibold text-ink-900 lg:flex" aria-label="Primary">
           <Link href="/" className="hover:text-black transition">Home</Link>
-          <Link href="/categories" className="hover:text-black transition">Categories</Link>
+
           <Link href="/products" className="hover:text-black transition">Products</Link>
           <Link href="/industries" className="hover:text-black transition">Industries</Link>
           <Link href="/blog" className="hover:text-black transition">Blog</Link>

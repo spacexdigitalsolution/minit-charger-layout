@@ -4,7 +4,7 @@ import SmartImage from '../ui/SmartImage';
 /**
  * IndustryHero Component
  * 
- * Dark hero section for individual industry pages with breadcrumbs and
+ * Light hero section for individual industry pages with breadcrumbs and
  * a bottom volt border.
  * 
  * @param {Object} props
@@ -27,26 +27,26 @@ export default function IndustryHero({
   description
 }) {
   return (
-    <section className="relative bg-ink-950 text-white py-24 overflow-hidden border-b-[8px] border-volt" id={id}>
+    <section className="relative bg-paper text-ink-950 py-24 overflow-hidden border-b-[8px] border-volt" id={id}>
       <div className="absolute inset-0 z-0">
-        <div className="w-full h-full opacity-20 bg-ink-900">
+        <div className="w-full h-full opacity-10 bg-black">
           <SmartImage
             src={imageSrc}
             alt={imageAlt}
             description={imageDescription || imageAlt}
             fill
-            className="object-cover"
+            className="object-cover grayscale"
           />
         </div>
       </div>
       <div className="relative z-10 mx-auto max-w-[1240px] px-6 lg:px-8">
         {breadcrumbs && breadcrumbs.length > 0 && (
-          <nav className="mb-6 font-mono text-xs uppercase tracking-wider text-mist">
+          <nav className="mb-6 font-mono text-xs uppercase tracking-wider text-ink-600">
             {breadcrumbs.map((crumb, idx) => (
               <span key={idx}>
                 {idx > 0 && ' › '}
                 {idx < breadcrumbs.length - 1 ? (
-                  <Link href={crumb.href} className="hover:text-volt">{crumb.label}</Link>
+                  <Link href={crumb.href} className="hover:text-ink-950">{crumb.label}</Link>
                 ) : (
                   <span>{crumb.label}</span>
                 )}
@@ -57,7 +57,7 @@ export default function IndustryHero({
         <h1 className="font-display text-4xl font-semibold tracking-tight sm:text-6xl max-w-3xl">
           {title}
         </h1>
-        <p className="mt-6 text-lg leading-relaxed text-mist max-w-2xl">
+        <p className="mt-6 text-lg leading-relaxed text-ink-600 max-w-2xl">
           {description}
         </p>
       </div>

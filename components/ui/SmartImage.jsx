@@ -1,3 +1,4 @@
+"use client";
 import React from 'react';
 import Image from 'next/image';
 
@@ -69,9 +70,11 @@ export default function SmartImage({
   description,
   className = '',
   mode = 'image',
+  optimize = true,
   ...props
 }) {
-  const currentMode = process.env.NEXT_PUBLIC_IMAGE_MODE || mode;
+  const [hasError, setHasError] = React.useState(false);
+  const currentMode = hasError ? 'placeholder' : (process.env.NEXT_PUBLIC_IMAGE_MODE || mode);
 
   // Resolve src if it's a static import object
   const rawSrc = typeof src === 'object' && src !== null ? src.src : src;
@@ -132,26 +135,29 @@ export default function SmartImage({
   const srcString = decodeURIComponent(rawSrc);
   let imageVariants = null;
 
-  // 1. Direct match
-  if (manifest[srcString]) {
-    imageVariants = manifest[srcString];
-  } else {
-    const lookupBasename = cleanBasename(srcString);
-    const lookupNoExt = getNoExt(lookupBasename);
+  // Only attempt manifest lookup if optimization is enabled
+  if (optimize) {
+    // 1. Direct match
+    if (manifest[srcString]) {
+      imageVariants = manifest[srcString];
+    } else {
+      const lookupBasename = cleanBasename(srcString);
+      const lookupNoExt = getNoExt(lookupBasename);
 
-    // 2. Fuzzy match by basename
-    let keyMatch = Object.keys(manifest).find(
-      (key) => cleanBasename(key) === lookupBasename
-    );
-
-    // 3. Match by name only (handles extension changes)
-    if (!keyMatch) {
-      keyMatch = Object.keys(manifest).find(
-        (key) => getNoExt(cleanBasename(key)) === lookupNoExt
+      // 2. Fuzzy match by basename
+      let keyMatch = Object.keys(manifest).find(
+        (key) => cleanBasename(key) === lookupBasename
       );
-    }
 
-    imageVariants = keyMatch ? manifest[keyMatch] : null;
+      // 3. Match by name only (handles extension changes)
+      if (!keyMatch) {
+        keyMatch = Object.keys(manifest).find(
+          (key) => getNoExt(cleanBasename(key)) === lookupNoExt
+        );
+      }
+
+      imageVariants = keyMatch ? manifest[keyMatch] : null;
+    }
   }
 
   // If we found variants in the manifest, we construct our own responsive <img> wrapper
@@ -198,6 +204,7 @@ export default function SmartImage({
         loading={priority ? undefined : (loading || "lazy")}
         fetchPriority={priority ? "high" : undefined}
         style={Object.keys(combinedStyle).length > 0 ? combinedStyle : undefined}
+        onError={() => setHasError(true)}
         {...restProps}
       />
     );
@@ -215,7 +222,7 @@ export default function SmartImage({
     return nativeImg;
   }
 
-  // Fallback to Next.js Image if no manifest variant is found (e.g. external images, unoptimized SVGs)
+  // Fallback to Next.js Image if no manifest variant is found (e.g. external images, unoptimized SVGs, or optimize={false})
   const nextImage = (
     <Image
       src={src}
@@ -224,6 +231,7 @@ export default function SmartImage({
       height={imgHeight}
       className={className}
       sizes={props.fill ? (props.sizes || "100vw") : props.sizes}
+      onError={() => setHasError(true)}
       {...props}
     />
   );

@@ -69,9 +69,9 @@ export const homeData3 = {
       "Robust monitoring and incident management for safety",
       "Industry leadership built over 25 years of deployments"
     ],
-    imageSrc: "/crafted_images/Two decades of leading...-01.png",
-    imageAlt: "Altus II industrial charger product showcase",
-    imageDescription: "The Altus II charging station in a well-lit exhibition environment."
+    imageSrc: "/assets/Home Page/A legacy of reliability/A legacy of reliability-01.webp",
+    imageAlt: "A legacy of reliability showcase",
+    imageDescription: "A view of the legacy and robust history of Minit Charger."
   },
   companyStats: {
     stats: [
@@ -213,8 +213,8 @@ export const homeData3 = {
     images: [
       {
         id: "cb1",
-        src: "/crafted_images/All product-01.png",
-        alt: "All products",
+        src: "/assets/Home Page/Footer CTA Band/Footer CTA-01.webp",
+        alt: "Minit Charger Products",
         description: "A comprehensive view of all Minit Charger products.",
         hiddenOnMobile: false
       }
@@ -224,16 +224,7 @@ export const homeData3 = {
     heading: "Contact Minit Charger",
     description: "Tell us about your fleet and sites. We’ll follow up with a tailored charging recommendation.",
     contactDetails: [
-      {
-        id: "cd1",
-        icon: (
-          <svg viewBox="0 0 24 24" fill="none">
-            <path d="M12 21s7-5.5 7-12a7 7 0 1 0-14 0c0 6.5 7 12 7 12Z" stroke="currentColor" strokeWidth="1.5" />
-            <circle cx="12" cy="9" r="2.5" stroke="currentColor" strokeWidth="1.5" />
-          </svg>
-        ),
-        content: "7303 W Boston St, Chandler, AZ 85226"
-      },
+
       {
         id: "cd2",
         icon: (

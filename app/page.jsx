@@ -5,22 +5,19 @@ import LogoStripFeatureGrid from '@/components/sections/LogoStripFeatureGrid';
 import LightFeatureGrid from '@/components/sections/LightFeatureGrid';
 import DarkUseCasesGrid from '@/components/sections/DarkUseCasesGrid';
 import BentoFeatureGrid from '@/components/sections/BentoFeatureGrid';
-import TallImageCardGrid from '@/components/sections/TallImageCardGrid';
 import InteractiveSceneTabs from '@/components/sections/InteractiveSceneTabs';
 import ComparisonSplit from '@/components/sections/ComparisonSplit';
 import PillStrip from '@/components/sections/PillStrip';
 import ProductSpotlight from '@/components/sections/ProductSpotlight';
-import GalleryFeaturesGrid from '@/components/sections/GalleryFeaturesGrid';
 import ProductCatalogList from '@/components/sections/ProductCatalogList';
 import TestimonialGrid from '@/components/sections/TestimonialGrid';
-import SplitFeatureLight from '@/components/sections/SplitFeatureLight';
 import SplitFeatureDark from '@/components/sections/SplitFeatureDark';
 import StatStripDark from '@/components/sections/StatStripDark';
 import TechSpecsTable from '@/components/sections/TechSpecsTable';
 import ProcessStepsGrid from '@/components/sections/ProcessStepsGrid';
 import ResourceGuideGrid from '@/components/sections/ResourceGuideGrid';
 import ResourceCardsGrid from '@/components/sections/ResourceCardsGrid';
-import GlossaryList from '@/components/sections/GlossaryList';
+
 import FaqAccordion from '@/components/sections/FaqAccordion';
 import ServiceAreaContactStrip from '@/components/sections/ServiceAreaContactStrip';
 import CtaBanner from '@/components/sections/CtaBanner';
@@ -41,18 +38,17 @@ export default function HomePage() {
         <ComparisonSplit {...homeData.comparisonSplit} />
         <PillStrip {...homeData.pillStrip} />
         <ProductSpotlight {...homeData.productSpotlight} />
-        <GalleryFeaturesGrid {...homeData.galleryFeaturesGrid} />
+        {/**   <GalleryFeaturesGrid {...homeData.galleryFeaturesGrid} />  */}
         <ProductCatalogList {...homeData.productCatalogList} />
         <TestimonialGrid {...homeData.testimonialGrid} />
-        <SplitFeatureLight {...homeData.batteryChemistry} />
-        <SplitFeatureLight {...homeData.assetPro} />
+
         <SplitFeatureDark {...homeData.company} noPaddingBottom />
         <StatStripDark {...homeData.companyStats} />
         <TechSpecsTable {...homeData.techSpecs} />
         <ProcessStepsGrid {...homeData.processSteps} />
         <ResourceGuideGrid {...homeData.buyerGuides} />
         <ResourceCardsGrid {...homeData.recommendedResources} />
-        <GlossaryList {...homeData.glossary} />
+
         <FaqAccordion {...homeData.faq} />
         <ServiceAreaContactStrip {...homeData.serviceArea} />
         <CtaBanner {...homeData.ctaBanner} />

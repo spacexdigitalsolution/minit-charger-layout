@@ -44,7 +44,7 @@ export default function Footer() {
           <h3 className="text-sm font-bold uppercase tracking-wider text-white/70">Navigation</h3>
           <ul className="mt-4 space-y-2 text-sm text-mist">
             <li><Link href="/products" className="hover:text-volt transition">Products</Link></li>
-            <li><Link href="/categories" className="hover:text-volt transition">Categories</Link></li>
+
             <li><Link href="/industries" className="hover:text-volt transition">Industries</Link></li>
             <li><Link href="/blog" className="hover:text-volt transition">Blog</Link></li>
           </ul>

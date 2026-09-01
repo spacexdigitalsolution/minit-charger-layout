@@ -15,22 +15,27 @@ export const homeData = {
     secondaryCta: { text: "Explore Solutions", href: "#solutions" },
     images: [
       {
-        src: "/crafted_images/Home Page Slider 1.png",
+        src: "/assets/Home Page/Banner/Home banner - 01-05.mp4",
+        alt: "Home page banner video",
+        description: "Dynamic video showcasing industrial fleet operations."
+      },
+      {
+        src: "/assets/Home Page/Banner/Home banner - 01-01.webp",
         alt: "Momentus rapid charger banner",
         description: "A wide banner showing a dynamic industrial environment with an electric fleet rapidly charging."
       },
       {
-        src: "/crafted_images/Home Page Slider 2.png",
+        src: "/assets/Home Page/Banner/Home banner - 01-02.webp",
         alt: "Airport tarmac operations banner",
         description: "An airport tarmac with ground support equipment parked near an aircraft."
       },
       {
-        src: "/new_images/banner_image.webp",
+        src: "/assets/Home Page/Banner/Home banner - 01-03.webp",
         alt: "Fleet charging slider image 3",
         description: "A wide landscape view of an industrial environment showcasing fleet chargers in action."
       },
       {
-        src: "/crafted_images/Home Page Slider 4.png",
+        src: "/assets/Home Page/Banner/Home banner - 01-04.webp",
         alt: "Fleet charging slider image 4",
         description: "A landscape view showing chargers providing power to industrial vehicles."
       }
@@ -39,10 +44,12 @@ export const homeData = {
   logoStripFeatureGrid: {
     eyebrow: 'Trusted by industry leaders',
     logos: [
-      { id: 'l1', name: 'BOEING' },
-      { id: 'l2', name: 'AMERICOLD' },
-      { id: 'l3', name: 'UNITED' },
-      { id: 'l4', name: 'ENTERPRISE' }
+      { id: 'l1', name: 'BOEING', src: '/assets/Home Page/Trusted by Industry Leaders/Boeing.png' },
+      { id: 'l2', name: 'AMERICOLD', src: '/assets/Home Page/Trusted by Industry Leaders/Americold.png' },
+      { id: 'l3', name: 'UNITED', src: '/assets/Home Page/Trusted by Industry Leaders/United.png' },
+      { id: 'l4', name: 'SOUTHWEST', src: '/assets/Home Page/Trusted by Industry Leaders/Southwest.png' },
+      { id: 'l5', name: 'NESTLE', src: '/assets/Home Page/Trusted by Industry Leaders/Nestle.png' },
+      { id: 'l6', name: 'GENERAL MILLS', src: '/assets/Home Page/Trusted by Industry Leaders/General Mills.png' },
     ],
     features: [
       {
@@ -122,7 +129,7 @@ export const homeData = {
         id: 'uc1',
         title: 'Warehouses',
         href: '#',
-        imageSrc: '/crafted_images/MOMENTUS for warehouse-01.png',
+        imageSrc: '/assets/Home Page/Engineered for Every Environment/Engineered for Warehouses.webp',
         imageAlt: 'Warehouses',
         imageDescription: "A bustling warehouse interior showing rows of shelving and electric forklifts."
       },
@@ -130,7 +137,7 @@ export const homeData = {
         id: 'uc2',
         title: 'Airports',
         href: '#',
-        imageSrc: '/crafted_images/Magnus Airport View 1_!.png',
+        imageSrc: '/assets/Home Page/Engineered for Every Environment/Engineered for Airports.webp',
         imageAlt: 'Airports',
         imageDescription: "An airport tarmac with ground support equipment parked near an aircraft."
       },
@@ -138,7 +145,7 @@ export const homeData = {
         id: 'uc3',
         title: 'LSEVs',
         href: '#',
-        imageSrc: '/crafted_images/Durus-01.png',
+        imageSrc: '/assets/Home Page/Engineered for Every Environment/Engineered for LSEVs.webp',
         imageAlt: 'LSEVs',
         imageDescription: "A low-speed electric vehicle navigating through a large resort campus."
       },
@@ -146,7 +153,7 @@ export const homeData = {
         id: 'uc4',
         title: 'Industrial & Commercial',
         href: '#',
-        imageSrc: '/crafted_images/Turbocharging warehouse MHE-01.png',
+        imageSrc: '/assets/Home Page/Engineered for Every Environment/Engineered for Industrial & Commercial.webp',
         imageAlt: 'Industrial & Commercial',
         imageDescription: "An industrial manufacturing facility showing heavy commercial equipment."
       }
@@ -161,7 +168,7 @@ export const homeData = {
         id: 'bf1',
         title: 'Smart technology & diagnostics',
         description: 'On-screen diagnostics and remote monitoring surface issues before they become downtime — every unit reports back to Cumulus in real time.',
-        spanClass: 'md:col-span-2 lg:row-span-2',
+        spanClass: 'md:col-span-2 lg:col-span-2 lg:row-span-2',
         icon: (
           <svg className="h-6 w-6" viewBox="0 0 24 24" fill="none">
             <path d="M13 2 4 14h6l-1 8 9-12h-6l1-8Z" stroke="currentColor" strokeWidth="1.5" strokeLinejoin="round" />
@@ -194,7 +201,7 @@ export const homeData = {
         id: 'bf4',
         title: 'Comprehensive coverage',
         description: 'From compact LSEV chargers to dual-port high-capacity systems — one vendor for your mixed fleet.',
-        spanClass: 'md:col-span-2 lg:col-span-2',
+        spanClass: 'md:col-span-2 lg:col-span-4',
         icon: (
           <svg className="h-5 w-5" viewBox="0 0 24 24" fill="none">
             <rect x="3" y="7" width="18" height="12" rx="2" stroke="currentColor" strokeWidth="1.5" />
@@ -210,7 +217,7 @@ export const homeData = {
         id: 'tc1',
         title: 'Warehouses',
         description: 'Uninterrupted power for round-the-clock operations.',
-        imageSrc: '/crafted_images/MOMENTUS for warehouse-02.png',
+        imageSrc: '/assets/Home Page/Warehouse & Manufacturing/MOMENTUs Hardware-01.webp',
         imageAlt: 'Warehouse',
         imageDescription: "Dark warehouse setting with glowing accents highlighting a charging forklift.",
         icon: (
@@ -223,7 +230,7 @@ export const homeData = {
         id: 'tc2',
         title: 'Airports',
         description: 'Clean mobility for a smarter infrastructure.',
-        imageSrc: '/crafted_images/ALTUS for Airport vehicle 16_9.png',
+        imageSrc: '/assets/Home Page/Interactive Charging Scenes/Interactive Charging Scenes- Airport-02.webp',
         imageAlt: 'Airport',
         imageDescription: "Airport runway at dusk with ground support vehicles in operation.",
         icon: (
@@ -236,7 +243,7 @@ export const homeData = {
         id: 'tc3',
         title: 'Low-Speed Electric Vehicles (LSEVs)',
         description: 'Clean energy for campus, resort and community mobility.',
-        imageSrc: '/crafted_images/Durus-02.png',
+        imageSrc: '/assets/Home Page/Low Speed Vehicles/Compact · Built-in BMS Durus-01.webp',
         imageAlt: 'LSEV',
         imageDescription: "Scenic view of a low-speed electric vehicle parked outdoors.",
         icon: (
@@ -254,7 +261,7 @@ export const homeData = {
     warehouseScene: (
       <div className="relative w-full aspect-video rounded-xl overflow-hidden shadow-2xl border-4 border-white">
         <SmartImage
-          src="/crafted_images/MOMENTUS for warehouse-03.png"
+          src="/assets/Home Page/Interactive Charging Scenes/Interactive Charging Scenes- warehouse-01.webp"
           alt="Interactive Warehouse Scene"
           fill
           displayHeight={540}
@@ -270,7 +277,7 @@ export const homeData = {
     airportScene: (
       <div className="relative w-full aspect-video rounded-xl overflow-hidden shadow-2xl border-4 border-white">
         <SmartImage
-          src="/crafted_images/ALTUS for Airport vehicle 16_9.png"
+          src="/assets/Home Page/Interactive Charging Scenes/Interactive Charging Scenes- Airport-02.webp"
           alt="Interactive Airport Scene"
           fill
           className="object-cover"
@@ -287,7 +294,7 @@ export const homeData = {
     cards: [
       {
         id: 'cs1',
-        imageSrc: '/crafted_images/Maximus Indoor.png',
+        imageSrc: '/assets/Home Page/Warehouse & Manufacturing/Indoor · High-capacity Maximus-01.webp',
         imageAlt: 'Maximus indoor high-capacity forklift battery charger',
         imageDescription: "Detailed front view of the Maximus charger unit emphasizing its robust build.",
         title: 'Indoor material handling',
@@ -300,7 +307,7 @@ export const homeData = {
       },
       {
         id: 'cs2',
-        imageSrc: '/crafted_images/ALTUS for Airport vehicle 16_9.png',
+        imageSrc: '/assets/Home Page/Aviation (Airport GSE)/Outdoor · EV-ready-01.webp',
         imageAlt: 'Altus II outdoor dual-port eGSE airport charger',
         imageDescription: "The Altus II dual-port eGSE charger shown in an outdoor setting.",
         title: 'Outdoor eGSE & yards',
@@ -320,7 +327,7 @@ export const homeData = {
     ]
   },
   productSpotlight: {
-    imageSrc: '/crafted_images/Meet MOMENTUs-01.png',
+    imageSrc: '/assets/Home Page/Meet Momentus/Meet MOMENTUs-02.webp',
     imageAlt: 'Momentus industrial battery charger product view',
     imageDescription: "A sleek, industrial design of the Momentus mid-level forklift battery charger.",
     eyebrow: 'Flagship · Industrial MHE',
@@ -338,35 +345,35 @@ export const homeData = {
     gallery: [
       {
         id: 'g1',
-        imageSrc: '/crafted_images/MAGNUS-  Front view.png',
+        imageSrc: '/assets/Home Page/Aviation (Airport GSE)/Magnus Hardware-01.webp',
         imageAlt: 'Front View',
         imageDescription: "Front elevation of the charging unit showing the main interface screen.",
         label: 'Front View'
       },
       {
         id: 'g2',
-        imageSrc: '/crafted_images/MAGNUS-  45 view-.png',
+        imageSrc: '/assets/Home Page/Aviation (Airport GSE)/MOBILUS Hardware-01.webp',
         imageAlt: '45° View',
         imageDescription: "Three-quarter perspective view highlighting the depth and side vents.",
         label: '45° View'
       },
       {
         id: 'g3',
-        imageSrc: '/crafted_images/MAGNUS-  side view.png',
+        imageSrc: '/assets/Home Page/Aviation (Airport GSE)/Cumulus Software-01.webp',
         imageAlt: 'Side View',
         imageDescription: "Direct side profile showing the slim form factor and mounting brackets.",
         label: 'Side View'
       },
       {
         id: 'g4',
-        imageSrc: '/crafted_images/MAGNUS-  Close up view.png',
+        imageSrc: '/assets/Home Page/Aviation (Airport GSE)/Outdoor · EV-ready-01.webp',
         imageAlt: 'Close-Up',
         imageDescription: "Macro shot focusing on the high-quality finish and durable materials.",
         label: 'Close-Up'
       },
       {
         id: 'g5',
-        imageSrc: '/crafted_images/MAGNUS-  top view-02.png',
+        imageSrc: '/assets/Home Page/A legacy of reliability/A legacy of reliability-01.webp',
         imageAlt: 'Top Isometric',
         imageDescription: "Elevated isometric view providing a sense of scale and cable management.",
         label: 'Top Isometric'

@@ -30,7 +30,7 @@ export default function CtaBanner({
         className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_at_70%_50%,rgba(92,242,160,0.15),transparent_55%)]"
         aria-hidden="true"
       ></div>
-      <div className="relative mx-auto grid max-w-[1240px] items-center gap-10 px-6 py-20 lg:grid-cols-2 lg:px-8">
+      <div className="relative mx-auto grid max-w-[1240px] items-center gap-10 px-6 py-12 lg:grid-cols-2 lg:px-8">
         <div className="text-center lg:text-left">
           <h2 className="font-display text-3xl font-semibold text-white sm:text-4xl">
             {heading}
@@ -55,7 +55,7 @@ export default function CtaBanner({
             {images.map((image) => (
               <div
                 key={image.id}
-                className={`relative w-[280px] sm:w-[480px] lg:w-[540px] h-64 sm:h-80 lg:h-[480px] ${image.hiddenOnMobile ? 'hidden sm:block' : ''}`}
+                className={`relative w-[280px] sm:w-[480px] lg:w-[540px] h-64 sm:h-80 lg:h-[320px] ${image.hiddenOnMobile ? 'hidden sm:block' : ''}`}
               >
                 <SmartImage
                   src={image.src}
