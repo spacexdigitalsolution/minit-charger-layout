@@ -243,5 +243,34 @@ export const industryWarehouseData = {
       { id: "b1", text: "Request a Quote", href: "#assessment", variant: "primary" },
       { id: "b2", text: "Download the Warehouse Guide", href: "#guide", variant: "outline" }
     ]
+  },
+  relatedProducts: {
+    heading: "Complete your warehouse charging ecosystem.",
+    products: [
+      {
+        id: "maximus",
+        title: "Maximus",
+        description: "High-capacity indoor dual-port warehouse charger.",
+        imageSrc: "/product-images/Altus II/ALTUS II.14.webp",
+        imageAlt: "Maximus charger",
+        href: "/product/maximus"
+      },
+      {
+        id: "momentus",
+        title: "Momentus",
+        description: "Mid-level compact indoor MHE charger.",
+        imageSrc: "/product-images/Altus II/ALTUS II.14.webp",
+        imageAlt: "Momentus charger",
+        href: "/product/momentus"
+      },
+      {
+        id: "celltrac",
+        title: "CellTrac",
+        description: "Battery asset tracking and BMS telemetry.",
+        imageSrc: "/new_images/celltrac_dash.webp",
+        imageAlt: "CellTrac dashboard",
+        href: "/product/celltrac"
+      }
+    ]
   }
 };

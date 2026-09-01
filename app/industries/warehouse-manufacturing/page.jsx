@@ -10,18 +10,17 @@ import ValuePropBand from '@/components/sections/ValuePropBand';
 import SpecStoryGrid from '@/components/sections/SpecStoryGrid';
 import BpmCallout from '@/components/sections/BpmCallout';
 import EnvironmentCompareGrid from '@/components/sections/EnvironmentCompareGrid';
-import ComparisonTable from '@/components/sections/ComparisonTable'; // Need to map to a valid comparison table component if it exists. Alternatively, I will use MagnusComparisonTable.
 
 // Existing Sections
 import TechSpecsTable from '@/components/sections/TechSpecsTable';
 import ProcessStepsGrid from '@/components/sections/ProcessStepsGrid';
 import LeadMagnet from '@/components/sections/LeadMagnet';
 import RoiCalculator from '@/components/sections/RoiCalculator';
-import FaqAccordion from '@/components/sections/FaqAccordion';
 import ResourceGuideGrid from '@/components/sections/ResourceGuideGrid';
 import PillStrip from '@/components/sections/PillStrip';
 import CtaBanner from '@/components/sections/CtaBanner';
 import ContactFormSection from '@/components/sections/ContactFormSection';
+import RelatedProducts from '@/components/sections/RelatedProducts';
 import { industryWarehouseData } from '@/data/industryWarehouseData';
 
 export const metadata = {
@@ -161,6 +160,15 @@ export default function WarehouseManufacturingPage() {
           eyebrow={data.resources.exploreHeading}
           items={data.resources.explorePills.map(p => p.label)}
         />
+
+        {data.relatedProducts && (
+          <RelatedProducts
+            heading={data.relatedProducts.heading}
+            products={data.relatedProducts.products}
+            theme="light"
+            columns={3}
+          />
+        )}
 
         <CtaBanner
           heading={data.cta.heading}

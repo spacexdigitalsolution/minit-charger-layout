@@ -294,7 +294,7 @@ export const homeData = {
     cards: [
       {
         id: 'cs1',
-        imageSrc: '/assets/Home Page/Warehouse & Manufacturing/Indoor · High-capacity Maximus-01.webp',
+        imageSrc: '/assets/Home Page/Indoor vs outdoor/Indoor material handling-01.webp',
         imageAlt: 'Maximus indoor high-capacity forklift battery charger',
         imageDescription: "Detailed front view of the Maximus charger unit emphasizing its robust build.",
         title: 'Indoor material handling',
@@ -307,7 +307,7 @@ export const homeData = {
       },
       {
         id: 'cs2',
-        imageSrc: '/assets/Home Page/Aviation (Airport GSE)/Outdoor · EV-ready-01.webp',
+        imageSrc: '/assets/Home Page/Indoor vs outdoor/Outdoor eGSE & yards-01.webp',
         imageAlt: 'Altus II outdoor dual-port eGSE airport charger',
         imageDescription: "The Altus II dual-port eGSE charger shown in an outdoor setting.",
         title: 'Outdoor eGSE & yards',

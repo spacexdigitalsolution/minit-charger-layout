@@ -58,7 +58,7 @@ export default function SplitFeatureDark({
           )}
         </div>
 
-        <div className={`overflow-hidden rounded-[2rem] ring-1 ring-white/10 bg-ink-850 flex items-center justify-center p-10 h-[300px] lg:h-[450px] relative ${imagePosition === 'left' ? 'lg:order-1' : ''}`}>
+        <div className={`overflow-hidden rounded-[2rem] ring-1 ring-white/10 flex items-center justify-center relative ${imagePosition === 'left' ? 'lg:order-1' : ''}`}>
           <SmartImage
             src={imageSrc}
             alt={imageAlt}
@@ -67,8 +67,9 @@ export default function SplitFeatureDark({
             safeAreaHeight={1080}
             safeAreaWidth={1080}
             description={imageDescription}
-            fill
-            className="object-contain"
+            width={1200}
+            height={800}
+            className="w-full h-auto object-cover"
           />
         </div>
       </div>

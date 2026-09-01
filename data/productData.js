@@ -120,6 +120,27 @@ export const productData = {
           answer: "The charger can intelligently split its 30 kW output between two connected vehicles, allowing both to charge simultaneously. It automatically routes more power to the vehicle with the lower state of charge."
         }
       ]
+    },
+    relatedProducts: {
+      heading: "Build the rest of your charging ecosystem.",
+      products: [
+        {
+          id: "momentus",
+          title: "Momentus",
+          description: "Mid-level compact indoor MHE charger.",
+          imageSrc: "/product-images/Altus II/ALTUS II.14.webp",
+          imageAlt: "Momentus charger",
+          href: "/product/momentus"
+        },
+        {
+          id: "celltrac",
+          title: "CellTrac",
+          description: "Battery asset tracking and BMS telemetry.",
+          imageSrc: "/new_images/celltrac_dash.webp",
+          imageAlt: "CellTrac dashboard",
+          href: "/product/celltrac"
+        }
+      ]
     }
   }
 };

@@ -18,15 +18,15 @@ export default function ServiceAreaContactStrip({
   contactInfo
 }) {
   return (
-    <section className="bg-paper-dim py-20" id={id}>
+    <section className="bg-paper-dim py-10" id={id}>
       <div className="mx-auto max-w-[1240px] px-6 text-center lg:px-8">
-        <h2 className="font-display text-3xl font-semibold tracking-tight sm:text-4xl">
+        <h2 className="font-display text-xl font-semibold tracking-tight sm:text-2xl">
           {heading}
         </h2>
-        <p className="mx-auto mt-4 max-w-3xl text-[17px] leading-relaxed text-[#4C5C54]">
+        <p className="mx-auto mt-2 max-w-3xl text-[15px] leading-relaxed text-[#4C5C54]">
           {description}
         </p>
-        <p className="mt-6 font-mono text-sm text-volt-dim">
+        <p className="mt-4 font-mono text-[11px] text-volt-dim font-semibold uppercase tracking-wider">
           {contactInfo}
         </p>
       </div>

@@ -19,6 +19,7 @@ import RoiCalculator from '@/components/sections/RoiCalculator';
 import FaqAccordion from '@/components/sections/FaqAccordion';
 import CtaBanner from '@/components/sections/CtaBanner';
 import ContactFormSection from '@/components/sections/ContactFormSection';
+import RelatedProducts from '@/components/sections/RelatedProducts';
 
 import { industryLsvData } from '@/data/industryLsvData';
 
@@ -152,6 +153,15 @@ export default function LsvPage() {
           heading={data.faq.heading}
           faqs={data.faq.questions}
         />
+
+        {data.relatedProducts && (
+          <RelatedProducts
+            heading={data.relatedProducts.heading}
+            products={data.relatedProducts.products}
+            theme="light"
+            columns={3}
+          />
+        )}
 
         <CtaBanner
           heading={data.ctaBanner.heading}

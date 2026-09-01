@@ -21,6 +21,7 @@ import ResourceGuideGrid from '@/components/sections/ResourceGuideGrid';
 import PillStrip from '@/components/sections/PillStrip';
 import CtaBanner from '@/components/sections/CtaBanner';
 import ContactFormSection from '@/components/sections/ContactFormSection';
+import RelatedProducts from '@/components/sections/RelatedProducts';
 import { industryAviationData } from '@/data/industryAviationData';
 
 export const metadata = {
@@ -166,6 +167,15 @@ export default function AviationIndustryPage() {
           eyebrow={data.resources.exploreHeading}
           items={data.resources.explorePills.map(p => p.label)}
         />
+
+        {data.relatedProducts && (
+          <RelatedProducts
+            heading={data.relatedProducts.heading}
+            products={data.relatedProducts.products}
+            theme="light"
+            columns={4}
+          />
+        )}
 
         <CtaBanner
           heading={data.cta.heading}

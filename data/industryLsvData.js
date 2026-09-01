@@ -277,5 +277,34 @@ export const industryLsvData = {
   contactForm: {
     heading: 'Talk to an engineer',
     description: 'One call to size your onboard chargers and scope your power constraints.'
+  },
+  relatedProducts: {
+    heading: "Build your LSV charging ecosystem.",
+    products: [
+      {
+        id: "durus",
+        title: "Durus",
+        description: "Compact onboard charger ideal for low-speed vehicles.",
+        imageSrc: "/product-images/Altus II/ALTUS II.14.webp",
+        imageAlt: "Durus charger",
+        href: "/product/durus"
+      },
+      {
+        id: "celltrac",
+        title: "CellTrac",
+        description: "Battery asset tracking and BMS telemetry.",
+        imageSrc: "/new_images/celltrac_dash.webp",
+        imageAlt: "CellTrac dashboard",
+        href: "/product/celltrac"
+      },
+      {
+        id: "assetpro",
+        title: "AssetPro 360",
+        description: "Fleet management and analytics dashboard.",
+        imageSrc: "/new_images/cumulus_dash.webp",
+        imageAlt: "AssetPro 360 dashboard",
+        href: "/product/assetpro-360"
+      }
+    ]
   }
 };

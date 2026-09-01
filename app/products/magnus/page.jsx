@@ -17,6 +17,7 @@ import MagnusTechSpecsTable from '@/components/sections/MagnusTechSpecsTable';
 import MagnusContactForm from '@/components/sections/MagnusContactForm';
 import MagnusFaqAccordion from '@/components/sections/MagnusFaqAccordion';
 import MagnusFinalCta from '@/components/sections/MagnusFinalCta';
+import RelatedProducts from '@/components/sections/RelatedProducts';
 
 import { productMagnusData } from '@/data/productMagnusData';
 
@@ -46,6 +47,14 @@ export default function MagnusProductPage() {
         <MagnusTechSpecsTable data={data.specs} />
         <MagnusContactForm data={data.form} />
         <MagnusFaqAccordion data={data.faq} />
+        {data.relatedProducts && (
+          <RelatedProducts
+            heading={data.relatedProducts.heading}
+            products={data.relatedProducts.products}
+            theme="dark"
+            columns={3}
+          />
+        )}
         <MagnusFinalCta data={data.finalCta} />
       </main>
       <Footer />

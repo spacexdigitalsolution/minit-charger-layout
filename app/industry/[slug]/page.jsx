@@ -9,6 +9,7 @@ import CaseStudySplit from '@/components/sections/CaseStudySplit';
 import FaqAccordion from '@/components/sections/FaqAccordion';
 import CtaBanner from '@/components/sections/CtaBanner';
 import ImageGalleryStrip from '@/components/sections/ImageGalleryStrip';
+import RelatedProducts from '@/components/sections/RelatedProducts';
 import { industryData } from '@/data/industryData';
 
 export function generateStaticParams() {
@@ -46,6 +47,14 @@ export default async function IndustryPage({ params }) {
         <FeatureSplitRightImage {...data.challenges} />
         <CaseStudySplit {...data.spotlight} />
         <FaqAccordion {...data.faq} />
+        {data.relatedProducts && (
+          <RelatedProducts
+            heading={data.relatedProducts.heading}
+            products={data.relatedProducts.products}
+            theme="light"
+            columns={3}
+          />
+        )}
         <CtaBanner {...data.cta} />
         <ImageGalleryStrip {...data.galleryStrip} />
       </main>

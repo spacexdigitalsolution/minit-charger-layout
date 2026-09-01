@@ -12,7 +12,7 @@ export const homeData2 = {
             id: "p-altus",
             title: "Altus II",
             badge: "Outdoor rated",
-            imageSrc: "/assets/Home Page/Aviation (Airport GSE)/Outdoor - EV-ready-01.webp",
+            imageSrc: "/assets/Products/Altus II/Altus II Listing.webp",
             description: "Outdoor dual-port eGSE charger with optional Level 2 EV port and weather-minded construction.",
             href: "#"
           },
@@ -20,7 +20,7 @@ export const homeData2 = {
             id: "c-magnus",
             title: "Magnus",
             badge: "Hardware",
-            imageSrc: "/assets/Home Page/Aviation (Airport GSE)/Magnus Hardware-01.webp",
+            imageSrc: "/assets/Products/Magnus/Magnus Hardware Listing.webp",
             description: "Our largest, most resilient outdoor pedestal engineered specifically for high-traffic airport hubs.",
             href: "/products/magnus"
           },
@@ -28,7 +28,7 @@ export const homeData2 = {
             id: "c-mobilus",
             title: "Mobilus",
             badge: "Hardware",
-            imageSrc: "/assets/Home Page/Aviation (Airport GSE)/MOBILUS Hardware-01.webp",
+            imageSrc: "/assets/Products/Mobilus/MOBILUS Hardware Listing.webp",
             description: "A completely portable, temporary charging unit for remote aprons and yards.",
             href: "/product/mobile-charging-unit"
           },
@@ -44,7 +44,7 @@ export const homeData2 = {
             id: "c-cumulus-1",
             title: "Cumulus",
             badge: "Software",
-            imageSrc: "/assets/Home Page/Aviation (Airport GSE)/Cumulus Software-01.webp",
+            imageSrc: "/assets/Products/Cumulus/Cumulus Software Lisitng.webp",
             description: "Comprehensive fleet-wide monitoring and analytics software layered directly on top of your charging ecosystem.",
             href: "/product/cumulus"
           }
@@ -66,7 +66,7 @@ export const homeData2 = {
             id: "c-momentus",
             title: "Momentus",
             badge: "Hardware",
-            imageSrc: "/assets/Home Page/Warehouse & Manufacturing/MOMENTUs Hardware-01.webp",
+            imageSrc: "/assets/Products/Momentus/MOMENTUs Hardware Listing.webp",
             description: "A highly reliable mid-level indoor forklift charger balancing performance and fast installation.",
             href: "/product/momentus"
           },
@@ -82,7 +82,7 @@ export const homeData2 = {
             id: "c-cumulus-2",
             title: "Cumulus",
             badge: "Software",
-            imageSrc: "/assets/Home Page/Warehouse & Manufacturing/Cumulus Software-01.webp",
+            imageSrc: "/assets/Products/Cumulus/Cumulus Software Lisitng.webp",
             description: "Comprehensive fleet-wide monitoring and analytics software layered directly on top of your charging ecosystem.",
             href: "/product/cumulus"
           }
@@ -96,7 +96,7 @@ export const homeData2 = {
             id: "p-durus",
             title: "Durus",
             badge: "Compact · Mobility",
-            imageSrc: "/assets/Home Page/Low Speed Vehicles/Compact - Built-in BMS Durus-01.webp",
+            imageSrc: "/assets/Products/Durus/Durus Listing.webp",
             description: "Compact charging ideal for low-speed electric vehicles and lighter industrial mobility fleets.",
             href: "#"
           },
@@ -112,7 +112,7 @@ export const homeData2 = {
             id: "c-cumulus-3",
             title: "Cumulus",
             badge: "Software",
-            imageSrc: "/assets/Home Page/Warehouse & Manufacturing/Cumulus Software-01.webp",
+            imageSrc: "/assets/Products/Cumulus/Cumulus Software Lisitng.webp",
             description: "Comprehensive fleet-wide monitoring and analytics software layered directly on top of your charging ecosystem.",
             href: "/product/cumulus"
           }
@@ -134,7 +134,7 @@ export const homeData2 = {
             id: "c-cumulus-4",
             title: "Cumulus",
             badge: "Software",
-            imageSrc: "/assets/Home Page/Warehouse & Manufacturing/Cumulus Software-01.webp",
+            imageSrc: "/assets/Products/Cumulus/Cumulus Software Lisitng.webp",
             description: "Comprehensive fleet-wide monitoring and analytics software layered directly on top of your charging ecosystem.",
             href: "/product/cumulus"
           },
@@ -142,7 +142,7 @@ export const homeData2 = {
             id: "c-mobilus-2",
             title: "Mobilus",
             badge: "Hardware",
-            imageSrc: "/assets/Home Page/Aviation (Airport GSE)/MOBILUS Hardware-01.webp",
+            imageSrc: "/assets/Products/Mobilus/MOBILUS Hardware Listing.webp",
             description: "A completely portable, temporary charging unit for remote aprons and yards.",
             href: "/product/mobile-charging-unit"
           }

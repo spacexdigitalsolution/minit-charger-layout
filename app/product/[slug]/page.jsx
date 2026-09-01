@@ -8,6 +8,7 @@ import BentoFeatureGrid from '@/components/sections/BentoFeatureGrid';
 import TechSpecsTable from '@/components/sections/TechSpecsTable';
 import ComparisonTable from '@/components/sections/ComparisonTable';
 import FaqAccordion from '@/components/sections/FaqAccordion';
+import RelatedProducts from '@/components/sections/RelatedProducts';
 import { productData } from '@/data/productData';
 
 // Generates the static routes
@@ -47,6 +48,14 @@ export default async function ProductPage({ params }) {
         {data.specs && <TechSpecsTable {...data.specs} />}
         {data.comparison && <ComparisonTable {...data.comparison} />}
         {data.faq && <FaqAccordion {...data.faq} />}
+        {data.relatedProducts && (
+          <RelatedProducts
+            heading={data.relatedProducts.heading}
+            products={data.relatedProducts.products}
+            theme="light"
+            columns={3}
+          />
+        )}
       </main>
       <Footer />
     </>

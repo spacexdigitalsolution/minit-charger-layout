@@ -287,5 +287,35 @@ export const productMagnusData = {
     heading: "See if Magnus fits your fleet's next five years.",
     description: "Talk to an engineer about voltage range, connector mix, and whether one Magnus platform can replace what you were about to buy twice.",
     contact: "MINIT CHARGER — CHANDLER, AZ — [PHONE / EMAIL: CLIENT TO CONFIRM]"
+  },
+
+  relatedProducts: {
+    heading: "Build the rest of your charging ecosystem.",
+    products: [
+      {
+        id: "altus",
+        title: "Altus II",
+        description: "Outdoor-rated dual-port DC fast charger for GSE.",
+        imageSrc: "/product-images/Altus II/ALTUS II.14.webp",
+        imageAlt: "Altus II charger",
+        href: "/products/altus-ii"
+      },
+      {
+        id: "mobilus",
+        title: "Mobilus",
+        description: "Mobile DC fast charging on a trailer or skid platform.",
+        imageSrc: "/assets/altus/altus-related-mobilus.webp",
+        imageAlt: "Mobilus mobile DC fast charger",
+        href: "/products/mobilus"
+      },
+      {
+        id: "celltrac",
+        title: "CellTrac",
+        description: "Onboard BMS with GPS tracking and cloud connectivity.",
+        imageSrc: "/new_images/celltrac_dash.webp",
+        imageAlt: "CellTrac dashboard",
+        href: "/products/celltrac"
+      }
+    ]
   }
 };

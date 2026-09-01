@@ -325,5 +325,42 @@ export const industryAviationData = {
         icon: <svg className="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><circle cx="12" cy="12" r="2.4" /><path d="M7 9a7 7 0 0 0 0 6M17 9a7 7 0 0 1 0 6M4 6a11 11 0 0 0 0 12M20 6a11 11 0 0 1 0 12" strokeLinecap="round" /></svg>
       }
     ]
+  },
+  relatedProducts: {
+    heading: "Build your ground support charging ecosystem.",
+    products: [
+      {
+        id: "altus",
+        title: "Altus II",
+        description: "Outdoor-rated dual-port DC fast charger for GSE.",
+        imageSrc: "/product-images/Altus II/ALTUS II.14.webp",
+        imageAlt: "Altus II charger",
+        href: "/products/altus-ii"
+      },
+      {
+        id: "magnus",
+        title: "Magnus",
+        description: "24–1000 VDC, one platform from GSE to high-voltage EV.",
+        imageSrc: "/assets/magnus/magnus-iso1.webp",
+        imageAlt: "Magnus universal mixed-fleet DC fast charger",
+        href: "/products/magnus"
+      },
+      {
+        id: "mobilus",
+        title: "Mobilus",
+        description: "Mobile DC fast charging on a trailer or skid platform.",
+        imageSrc: "/assets/altus/altus-related-mobilus.webp",
+        imageAlt: "Mobilus mobile DC fast charger",
+        href: "/products/mobilus"
+      },
+      {
+        id: "celltrac",
+        title: "CellTrac",
+        description: "Onboard BMS with GPS tracking and cloud connectivity.",
+        imageSrc: "/new_images/celltrac_dash.webp",
+        imageAlt: "CellTrac dashboard",
+        href: "/products/celltrac"
+      }
+    ]
   }
 };
