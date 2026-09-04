@@ -13,7 +13,7 @@ export const industriesData = {
         imageSrc: "/new_images/industry_warehouse_1786134258340.webp",
         imageAlt: "Warehouses",
         imageDescription: "Placeholder for /new_images/industry_warehouse_1786134258340.webp",
-        href: "/industries/warehouse-manufacturing"
+        href: "/industry/warehouse-manufacturing"
       },
       {
         id: 'i2',
@@ -22,7 +22,7 @@ export const industriesData = {
         imageSrc: "/new_images/industry_airport_1786134268548.webp",
         imageAlt: "Airports",
         imageDescription: "Placeholder for /new_images/industry_airport_1786134268548.webp",
-        href: "/industries/aviation-ground-support-equipment"
+        href: "/industry/aviation-ground-support-equipment"
       },
       {
         id: 'i3',
@@ -31,7 +31,7 @@ export const industriesData = {
         imageSrc: "/new_images/industry_lsev_1786134282031.webp",
         imageAlt: "LSEVs",
         imageDescription: "Placeholder for /new_images/industry_lsev_1786134282031.webp",
-        href: "/industries/low-speed-vehicles"
+        href: "/industry/low-speed-vehicles"
       },
       {
         id: 'i4',

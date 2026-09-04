@@ -19,14 +19,15 @@ This is a Next.js website. There is an existing HTML file containing text conten
 
 ## Step 2 — Implementation (only after Step 1 is approved)
 1. For missing text in existing sections: insert it into the correct existing components, matching current copy style/tone.
-2. For entirely missing sections: create new components mirroring the structure, naming conventions, and file organization of existing sections in this codebase (don't invent a new pattern).
+2. For entirely missing sections: create new feature-colocated components. Do NOT dump them into the global `/components/sections/`. Instead, create them in the appropriate `_components/` subdirectory for that specific page (e.g., `app/product/[slug]/_components/[product-name]/`).
 3. Ensure **every** piece of text extracted from the HTML file ends up somewhere on the page — do a final pass to confirm nothing was dropped.
 
 ## Step 3 — Create the New Page
-1. Find an existing, similar page in the codebase to use as the structural template.
-2. Create the new page reusing the same layout, component structure, and file/routing conventions as that template.
-3. **Design and colors must exactly match the current Next.js site** — reuse existing design tokens, Tailwind classes, and shared components. Do not introduce new colors, spacing scales, or styles.
-4. Populate it with the relevant content (from the HTML file per Step 1's extraction).
+1. Determine if the page is a Product or an Industry. Use the dynamic routing convention (`app/product/[slug]` or `app/industry/[slug]`).
+2. Add a new data file in the respective `_data/` folder (e.g., `app/product/[slug]/_data/new-product.js`) and export it from `index.js`.
+3. Create the new wrapper page in `_components/[slug]/` reusing the same layout, component structure, and file/routing conventions as existing dynamic pages.
+4. **Design and colors must exactly match the current Next.js site** — reuse existing design tokens, Tailwind classes, and shared components. Do not introduce new colors, spacing scales, or styles.
+5. Populate it with the relevant content (from the HTML file per Step 1's extraction) via the data object.
 
 ## Rules
 - Use your own editor tools (file edit/insert operations) for all changes — do **not** use shell scripts, `sed`, or find-and-replace scripts for any edit.

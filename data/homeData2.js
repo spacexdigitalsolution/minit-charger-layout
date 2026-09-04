@@ -22,7 +22,7 @@ export const homeData2 = {
             badge: "Hardware",
             imageSrc: "/assets/Products/Magnus/Magnus Hardware Listing.webp",
             description: "Our largest, most resilient outdoor pedestal engineered specifically for high-traffic airport hubs.",
-            href: "/products/magnus"
+            href: "/product/magnus"
           },
           {
             id: "c-mobilus",

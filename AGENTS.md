@@ -13,13 +13,20 @@ This block is written and re-added by `next dev` — verify at `node_modules/nex
 - **Language:** JavaScript
 - **Styling:** Tailwind CSS
 
-# Folder Structure
-- `/app`: Route files (`page.jsx`, `layout.jsx`, etc.)
+# Folder Structure & Routing (Feature-Colocated)
+- `/app`: Use dynamic routing (`app/product/[slug]` and `app/industry/[slug]`) rather than static type-based routes (avoid `app/products/magnus`).
+- `/app/(feature)/[slug]/_components/`: Colocate highly specific one-off components for a given route/slug here rather than in the global `components/` folder. Keep global `components/` strictly for generic UI.
+- `/app/(feature)/[slug]/_data/`: Store data files directly inside the feature route (e.g. `magnus.js`) instead of using large "god objects" in a global `/data` folder.
 - `/components/layout`: Global layout components like Navbar, Footer.
-- `/components/sections`: Reusable page sections (HeroBanner, FeatureGrid, etc.).
+- `/components/sections`: ONLY truly reusable page sections used across 3+ distinct features. If a section is specific to one or two products/industries, colocate it.
 - `/components/ui`: Small reusable primitives (SmartImage, Button, Card, Pill).
 - `/lib`: Utility functions.
 - `/public`: Static assets.
+
+# File Size & Bloat Limits
+- **Component Files:** Maximum 250-300 lines. Split any component exceeding ~250 lines into smaller pieces.
+- **Data/Config Files:** Maximum 400 lines. Avoid "god objects". Split large data files by entity/slug (e.g., `magnus.js`, `altus.js`).
+- Colocate feature-specific code and avoid dumping logic into shared/ or utils/ unless truly shared across 3+ features.
 
 # Component Naming Conventions
 - Always use PascalCase for component files (e.g. `HeroBanner.jsx`).

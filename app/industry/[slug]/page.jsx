@@ -1,16 +1,13 @@
 import { notFound } from 'next/navigation';
 import Navbar from '@/components/layout/Navbar';
 import Footer from '@/components/layout/Footer';
-import IndustryHero from '@/components/sections/IndustryHero';
-import LogoTextStrip from '@/components/sections/LogoTextStrip';
-import IndustryProseSidebar from '@/components/sections/IndustryProseSidebar';
-import FeatureSplitRightImage from '@/components/sections/FeatureSplitRightImage';
-import CaseStudySplit from '@/components/sections/CaseStudySplit';
-import FaqAccordion from '@/components/sections/FaqAccordion';
-import CtaBanner from '@/components/sections/CtaBanner';
-import ImageGalleryStrip from '@/components/sections/ImageGalleryStrip';
-import RelatedProducts from '@/components/sections/RelatedProducts';
-import { industryData } from '@/data/industryData';
+import { industryData, getIndustryData } from './_data';
+import WarehousePage from './_components/warehouse/WarehousePage';
+import AviationPage from './_components/aviation/AviationPage';
+import AviationGsePage from './_components/aviation-gse/AviationGsePage';
+import LsvPage from './_components/lsv/LsvPage';
+import DefaultIndustryPage from './_components/default/DefaultIndustryPage';
+import { getRelatedProducts } from '@/data/productRegistry';
 
 export function generateStaticParams() {
   return Object.keys(industryData).map((slug) => ({
@@ -20,44 +17,48 @@ export function generateStaticParams() {
 
 export async function generateMetadata({ params }) {
   const resolvedParams = await params;
-  const data = industryData[resolvedParams.slug];
+  const data = await getIndustryData(resolvedParams.slug);
   if (!data) return { title: 'Industry Not Found' };
   
   return {
-    title: `${data.hero.title} Charging Solutions | Minit Charger`,
-    description: data.hero.description,
+    title: `${data.hero?.title || data.heroBanner?.heading || 'Industry'} Charging Solutions | Minit Charger`,
+    description: data.hero?.description || data.heroBanner?.description || '',
   };
 }
 
 export default async function IndustryPage({ params }) {
   const resolvedParams = await params;
-  const data = industryData[resolvedParams.slug];
+  const data = await getIndustryData(resolvedParams.slug);
   
   if (!data) {
     notFound();
   }
 
+  // Map verbose URL slugs to internal industry IDs for the registry
+  const slugToIdMap = {
+    'warehouse-manufacturing': 'warehouse',
+    'aviation-ground-support-equipment': 'aviation',
+    'aviation-gse': 'aviation',
+    'low-speed-vehicles': 'lsv'
+  };
+  const internalIndustryId = slugToIdMap[resolvedParams.slug] || resolvedParams.slug;
+
+  if (data.relatedProducts) {
+    data.relatedProducts.products = getRelatedProducts({ currentIndustryId: internalIndustryId, maxItems: 4 });
+  }
+
+  const renderContent = () => {
+    if (resolvedParams.slug === 'warehouse-manufacturing') return <WarehousePage data={data} />;
+    if (resolvedParams.slug === 'aviation-ground-support-equipment') return <AviationPage data={data} />;
+    if (resolvedParams.slug === 'aviation-gse') return <AviationGsePage data={data} />;
+    if (resolvedParams.slug === 'low-speed-vehicles') return <LsvPage data={data} />;
+    return <DefaultIndustryPage data={data} />;
+  };
+
   return (
     <>
-      <Navbar />
-      <main>
-        <IndustryHero {...data.hero} />
-        <LogoTextStrip {...data.logoStrip} />
-        <IndustryProseSidebar {...data.prose} />
-        <FeatureSplitRightImage {...data.challenges} />
-        <CaseStudySplit {...data.spotlight} />
-        <FaqAccordion {...data.faq} />
-        {data.relatedProducts && (
-          <RelatedProducts
-            heading={data.relatedProducts.heading}
-            products={data.relatedProducts.products}
-            theme="light"
-            columns={3}
-          />
-        )}
-        <CtaBanner {...data.cta} />
-        <ImageGalleryStrip {...data.galleryStrip} />
-      </main>
+      <Navbar variant={resolvedParams.slug === 'aviation-gse' ? 'transparent' : 'default'} />
+      {renderContent()}
       <Footer />
     </>
   );

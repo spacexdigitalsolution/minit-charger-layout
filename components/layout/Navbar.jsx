@@ -7,11 +7,13 @@ import Link from 'next/link';
  * 
  * @returns {JSX.Element}
  */
-export default function Navbar() {
+export default function Navbar({ variant = 'default' }) {
+  const isTransparent = variant === 'transparent';
+
   return (
-    <header className="sticky top-0 z-50 bg-[#eef1f3]/90 backdrop-blur-md" id="nav">
+    <header className={`${isTransparent ? 'absolute w-full bg-transparent' : 'sticky bg-[#eef1f3]/90 backdrop-blur-md'} top-0 z-50`} id="nav">
       <div className="mx-auto flex max-w-[1240px] items-center justify-between px-6 py-4 lg:px-8">
-        <Link href="/" className="flex items-center gap-2 font-display text-xl tracking-wide font-bold text-ink-950">
+        <Link href="/" className={`flex items-center gap-2 font-display text-xl tracking-wide font-bold ${isTransparent ? 'text-white' : 'text-ink-950'}`}>
           <span className="flex items-center justify-center text-[#28A745]" aria-hidden="true">
             <svg className="h-7 w-7" viewBox="0 0 24 24" fill="none">
               <path d="M13 2 4 14h6l-1 8 9-12h-6l1-8Z" fill="currentColor" />
@@ -20,13 +22,13 @@ export default function Navbar() {
           <span className="leading-tight">MINIT<br />CHARGER</span>
         </Link>
 
-        <nav className="hidden items-center gap-8 text-sm font-semibold text-ink-900 lg:flex" aria-label="Primary">
-          <Link href="/" className="hover:text-black transition">Home</Link>
+        <nav className={`hidden items-center gap-8 text-sm font-semibold ${isTransparent ? 'text-white' : 'text-ink-900'} lg:flex`} aria-label="Primary">
+          <Link href="/" className={`transition ${isTransparent ? 'hover:text-gray-300' : 'hover:text-black'}`}>Home</Link>
 
-          <Link href="/products" className="hover:text-black transition">Products</Link>
-          <Link href="/industries" className="hover:text-black transition">Industries</Link>
-          <Link href="/blog" className="hover:text-black transition">Blog</Link>
-          <Link href="/about" className="hover:text-black transition">About Us</Link>
+          <Link href="/products" className={`transition ${isTransparent ? 'hover:text-gray-300' : 'hover:text-black'}`}>Products</Link>
+          <Link href="/industries" className={`transition ${isTransparent ? 'hover:text-gray-300' : 'hover:text-black'}`}>Industries</Link>
+          <Link href="/blog" className={`transition ${isTransparent ? 'hover:text-gray-300' : 'hover:text-black'}`}>Blog</Link>
+          <Link href="/about" className={`transition ${isTransparent ? 'hover:text-gray-300' : 'hover:text-black'}`}>About Us</Link>
         </nav>
         
         <div className="hidden items-center gap-4 sm:flex">
@@ -39,9 +41,9 @@ export default function Navbar() {
         </div>
 
         <button className="flex flex-col gap-1.5 lg:hidden" id="navToggle" aria-label="Open menu" aria-expanded="false" type="button">
-          <span className="block h-0.5 w-5 rounded bg-ink-900"></span>
-          <span className="block h-0.5 w-5 rounded bg-ink-900"></span>
-          <span className="block h-0.5 w-5 rounded bg-ink-900"></span>
+          <span className={`block h-0.5 w-5 rounded ${isTransparent ? 'bg-white' : 'bg-ink-900'}`}></span>
+          <span className={`block h-0.5 w-5 rounded ${isTransparent ? 'bg-white' : 'bg-ink-900'}`}></span>
+          <span className={`block h-0.5 w-5 rounded ${isTransparent ? 'bg-white' : 'bg-ink-900'}`}></span>
         </button>
       </div>
     </header>

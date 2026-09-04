@@ -1,0 +1,20 @@
+{
+  "See your fleet before it strands you.png": {
+    "480": "/assets/Industries/Aviation-GSE/Pain Points/See your fleet before it strands you-480.webp",
+    "768": "/assets/Industries/Aviation-GSE/Pain Points/See your fleet before it strands you-768.webp",
+    "1200": "/assets/Industries/Aviation-GSE/Pain Points/See your fleet before it strands you-1200.webp",
+    "original": "/assets/Industries/Aviation-GSE/Pain Points/See your fleet before it strands you.webp"
+  },
+  "No infrastructure upgrade required.png": {
+    "480": "/assets/Industries/Aviation-GSE/Pain Points/No infrastructure upgrade required-480.webp",
+    "768": "/assets/Industries/Aviation-GSE/Pain Points/No infrastructure upgrade required-768.webp",
+    "1200": "/assets/Industries/Aviation-GSE/Pain Points/No infrastructure upgrade required-1200.webp",
+    "original": "/assets/Industries/Aviation-GSE/Pain Points/No infrastructure upgrade required.webp"
+  },
+  "Built for the ramp.png": {
+    "480": "/assets/Industries/Aviation-GSE/Pain Points/Built for the ramp-480.webp",
+    "768": "/assets/Industries/Aviation-GSE/Pain Points/Built for the ramp-768.webp",
+    "1200": "/assets/Industries/Aviation-GSE/Pain Points/Built for the ramp-1200.webp",
+    "original": "/assets/Industries/Aviation-GSE/Pain Points/Built for the ramp.webp"
+  }
+}

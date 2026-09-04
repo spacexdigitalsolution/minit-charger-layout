@@ -39,7 +39,7 @@ export const productsData = {
         imageSrc: "/assets/Products/Altus II/Altus II Listing.webp", // Altus II
         imageAlt: "ALTUS II",
         imageDescription: "Placeholder for /product-images/Altus II/ALTUS II.14.webp",
-        href: "/products/altus-ii"
+        href: "/product/altus-ii"
       },
       {
         id: 'p3',
@@ -57,7 +57,7 @@ export const productsData = {
         imageSrc: "/assets/Products/Durus/Durus Listing.webp", // Durus
         imageAlt: "DURUS",
         imageDescription: "Placeholder for /product-images/Durus/DCXC.webp",
-        href: "/products/durus"
+        href: "/product/durus"
       },
       {
         id: 'p5',
@@ -66,7 +66,7 @@ export const productsData = {
         imageSrc: "/new_images/celltrac_dash.webp", // CellTrac
         imageAlt: "CELLTRAC",
         imageDescription: "Placeholder for /product-images/Cell trac/Render.2055.webp",
-        href: "/products/celltrac"
+        href: "/product/celltrac"
       },
       {
         id: 'p6',
@@ -75,7 +75,7 @@ export const productsData = {
         imageSrc: "/assets/Products/Cumulus/Cumulus Software Lisitng.webp", // Cumulus
         imageAlt: "CUMULUS",
         imageDescription: "Placeholder for /product-images/CMS/CMS.3.webp",
-        href: "/products/cumulus"
+        href: "/product/cumulus"
       },
       {
         id: 'p7',
@@ -93,7 +93,7 @@ export const productsData = {
         imageSrc: "/assets/Products/Magnus/Magnus Hardware Listing.webp", // Magnus
         imageAlt: "MAGNUS",
         imageDescription: "Placeholder for /product-images/Industry Image Renders/work platforms.webp",
-        href: "/products/magnus"
+        href: "/product/magnus"
       }
     ]
   },

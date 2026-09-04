@@ -21,6 +21,19 @@
   --color-amber-deep: #A9640F;
   --color-amber-wash: #FBF0DD;
 
+  /* Durus-specific missing colors */
+  --color-ink: #0B140F;
+  --color-ink-soft: #12201A;
+  --color-panel: #EAEFE1;
+  --color-panel-deep: #DEE6D2;
+  --color-green: #2E9955;
+  --color-green-deep: #1B6B3B;
+  --color-green-bright: #3FBE6C;
+  --color-green-wash: #E5F3E9;
+  --color-text: #101A13;
+  --color-muted: #5B6A5C;
+  --color-line: #D7DECB;
+
   --font-display: var(--font-inter), sans-serif;
   --font-sans: var(--font-inter), sans-serif;
   --font-mono: var(--font-inter), monospace;

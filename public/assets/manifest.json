@@ -6,6 +6,13 @@
     "1600": "/assets/Home Page/A legacy of reliability/A legacy of reliability-01-1600.webp",
     "original": "/assets/Home Page/A legacy of reliability/A legacy of reliability-01.webp"
   },
+  "Home Page/Aviation (Airport GSE)/Altus II.png": {
+    "480": "/assets/Home Page/Aviation (Airport GSE)/Altus II-480.webp",
+    "768": "/assets/Home Page/Aviation (Airport GSE)/Altus II-768.webp",
+    "1200": "/assets/Home Page/Aviation (Airport GSE)/Altus II-1200.webp",
+    "1600": "/assets/Home Page/Aviation (Airport GSE)/Altus II-1600.webp",
+    "original": "/assets/Home Page/Aviation (Airport GSE)/Altus II.webp"
+  },
   "Home Page/Aviation (Airport GSE)/Cumulus Software-01.png": {
     "480": "/assets/Home Page/Aviation (Airport GSE)/Cumulus Software-01-480.webp",
     "768": "/assets/Home Page/Aviation (Airport GSE)/Cumulus Software-01-768.webp",
@@ -40,13 +47,6 @@
     "1200": "/assets/Home Page/Banner/Home banner - 01-02-1200.webp",
     "1600": "/assets/Home Page/Banner/Home banner - 01-02-1600.webp",
     "original": "/assets/Home Page/Banner/Home banner - 01-02.webp"
-  },
-  "Home Page/Aviation (Airport GSE)/Altus II.png": {
-    "480": "/assets/Home Page/Aviation (Airport GSE)/Altus II-480.webp",
-    "768": "/assets/Home Page/Aviation (Airport GSE)/Altus II-768.webp",
-    "1200": "/assets/Home Page/Aviation (Airport GSE)/Altus II-1200.webp",
-    "1600": "/assets/Home Page/Aviation (Airport GSE)/Altus II-1600.webp",
-    "original": "/assets/Home Page/Aviation (Airport GSE)/Altus II.webp"
   },
   "Home Page/Banner/Home banner - 01-03.png": {
     "480": "/assets/Home Page/Banner/Home banner - 01-03-480.webp",
@@ -205,27 +205,18 @@
     "1600": "/assets/Industries/Aviation/Banner/Banner-Aviation page-1600.webp",
     "original": "/assets/Industries/Aviation/Banner/Banner-Aviation page.webp"
   },
+  "Industries/Aviation/Banner/Banner-Aviation.png": {
+    "480": "/assets/Industries/Aviation/Banner/Banner-Aviation-480.webp",
+    "768": "/assets/Industries/Aviation/Banner/Banner-Aviation-768.webp",
+    "1200": "/assets/Industries/Aviation/Banner/Banner-Aviation-1200.webp",
+    "1600": "/assets/Industries/Aviation/Banner/Banner-Aviation-1600.webp",
+    "original": "/assets/Industries/Aviation/Banner/Banner-Aviation.webp"
+  },
   "Industries/Aviation/The only charger engineered for airport turnaround pressure/ALTUS_II-DUAL PORT-IP65.png": {
     "480": "/assets/Industries/Aviation/The only charger engineered for airport turnaround pressure/ALTUS_II-DUAL PORT-IP65-480.webp",
     "768": "/assets/Industries/Aviation/The only charger engineered for airport turnaround pressure/ALTUS_II-DUAL PORT-IP65-768.webp",
     "1200": "/assets/Industries/Aviation/The only charger engineered for airport turnaround pressure/ALTUS_II-DUAL PORT-IP65-1200.webp",
     "original": "/assets/Industries/Aviation/The only charger engineered for airport turnaround pressure/ALTUS_II-DUAL PORT-IP65.webp"
-  },
-  "Home Page/Banner/Home banner - 01-02.mp4": {
-    "original": "/assets/Home Page/Banner/Home banner - 01-02.mp4"
-  },
-  "Home Page/Banner/Home banner - 01-01_1.mp4": {
-    "original": "/assets/Home Page/Banner/Home banner - 01-01_1.mp4"
-  },
-  "Home Page/Banner/Home banner - 01-03.mp4": {
-    "original": "/assets/Home Page/Banner/Home banner - 01-03.mp4"
-  },
-  "Industries/Warehouse/Banner/Banner-Warehouse-Page.png": {
-    "480": "/assets/Industries/Warehouse/Banner/Banner-Warehouse-Page-480.webp",
-    "768": "/assets/Industries/Warehouse/Banner/Banner-Warehouse-Page-768.webp",
-    "1200": "/assets/Industries/Warehouse/Banner/Banner-Warehouse-Page-1200.webp",
-    "1600": "/assets/Industries/Warehouse/Banner/Banner-Warehouse-Page-1600.webp",
-    "original": "/assets/Industries/Warehouse/Banner/Banner-Warehouse-Page.webp"
   },
   "Industries/Low-Speed-Vehicles/Banner/Banner -Low-Speed-Vehicles-Page.png": {
     "480": "/assets/Industries/Low-Speed-Vehicles/Banner/Banner -Low-Speed-Vehicles-Page-480.webp",
@@ -234,6 +225,13 @@
     "1600": "/assets/Industries/Low-Speed-Vehicles/Banner/Banner -Low-Speed-Vehicles-Page-1600.webp",
     "original": "/assets/Industries/Low-Speed-Vehicles/Banner/Banner -Low-Speed-Vehicles-Page.webp"
   },
+  "Industries/Warehouse/Banner/Banner-Warehouse-Page.png": {
+    "480": "/assets/Industries/Warehouse/Banner/Banner-Warehouse-Page-480.webp",
+    "768": "/assets/Industries/Warehouse/Banner/Banner-Warehouse-Page-768.webp",
+    "1200": "/assets/Industries/Warehouse/Banner/Banner-Warehouse-Page-1200.webp",
+    "1600": "/assets/Industries/Warehouse/Banner/Banner-Warehouse-Page-1600.webp",
+    "original": "/assets/Industries/Warehouse/Banner/Banner-Warehouse-Page.webp"
+  },
   "Products/Altus II/Altus II Listing.png": {
     "480": "/assets/Products/Altus II/Altus II Listing-480.webp",
     "768": "/assets/Products/Altus II/Altus II Listing-768.webp",
@@ -241,19 +239,19 @@
     "1600": "/assets/Products/Altus II/Altus II Listing-1600.webp",
     "original": "/assets/Products/Altus II/Altus II Listing.webp"
   },
-  "Products/Durus/Durus Listing.png": {
-    "480": "/assets/Products/Durus/Durus Listing-480.webp",
-    "768": "/assets/Products/Durus/Durus Listing-768.webp",
-    "1200": "/assets/Products/Durus/Durus Listing-1200.webp",
-    "1600": "/assets/Products/Durus/Durus Listing-1600.webp",
-    "original": "/assets/Products/Durus/Durus Listing.webp"
-  },
   "Products/Cumulus/Cumulus Software Lisitng.png": {
     "480": "/assets/Products/Cumulus/Cumulus Software Lisitng-480.webp",
     "768": "/assets/Products/Cumulus/Cumulus Software Lisitng-768.webp",
     "1200": "/assets/Products/Cumulus/Cumulus Software Lisitng-1200.webp",
     "1600": "/assets/Products/Cumulus/Cumulus Software Lisitng-1600.webp",
     "original": "/assets/Products/Cumulus/Cumulus Software Lisitng.webp"
+  },
+  "Products/Durus/Durus Listing.png": {
+    "480": "/assets/Products/Durus/Durus Listing-480.webp",
+    "768": "/assets/Products/Durus/Durus Listing-768.webp",
+    "1200": "/assets/Products/Durus/Durus Listing-1200.webp",
+    "1600": "/assets/Products/Durus/Durus Listing-1600.webp",
+    "original": "/assets/Products/Durus/Durus Listing.webp"
   },
   "Products/Magnus/Magnus Hardware Listing.png": {
     "480": "/assets/Products/Magnus/Magnus Hardware Listing-480.webp",
@@ -275,5 +273,19 @@
     "1200": "/assets/Products/Momentus/MOMENTUs Hardware Listing-1200.webp",
     "1600": "/assets/Products/Momentus/MOMENTUs Hardware Listing-1600.webp",
     "original": "/assets/Products/Momentus/MOMENTUs Hardware Listing.webp"
+  },
+  "Industries/Aviation-GSE/CTA/Banner.png": {
+    "480": "/assets/Industries/Aviation-GSE/CTA/Banner-480.webp",
+    "768": "/assets/Industries/Aviation-GSE/CTA/Banner-768.webp",
+    "1200": "/assets/Industries/Aviation-GSE/CTA/Banner-1200.webp",
+    "1600": "/assets/Industries/Aviation-GSE/CTA/Banner-1600.webp",
+    "original": "/assets/Industries/Aviation-GSE/CTA/Banner.webp"
+  },
+  "Industries/Aviation-GSE/Banner/Banner-Aviation.png": {
+    "480": "/assets/Industries/Aviation-GSE/Banner/Banner-Aviation-480.webp",
+    "768": "/assets/Industries/Aviation-GSE/Banner/Banner-Aviation-768.webp",
+    "1200": "/assets/Industries/Aviation-GSE/Banner/Banner-Aviation-1200.webp",
+    "1600": "/assets/Industries/Aviation-GSE/Banner/Banner-Aviation-1600.webp",
+    "original": "/assets/Industries/Aviation-GSE/Banner/Banner-Aviation.webp"
   }
 }
