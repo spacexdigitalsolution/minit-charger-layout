@@ -1,18 +1,21 @@
 import Navbar from '@/components/layout/Navbar';
 import Footer from '@/components/layout/Footer';
-import HeroBanner from '@/components/sections/HeroBanner';
-import OverlappingImageBlock from '@/components/sections/OverlappingImageBlock';
-import LogoStripFeatureGrid from '@/components/sections/LogoStripFeatureGrid';
-import ProseSection from '@/components/sections/ProseSection';
-import IconCardsGrid from '@/components/sections/IconCardsGrid';
-import SplitFeatureLight from '@/components/sections/SplitFeatureLight';
-import CtaBanner from '@/components/sections/CtaBanner';
-import ImageGalleryStrip from '@/components/sections/ImageGalleryStrip';
-import { aboutData } from '@/data/aboutData';
+
+// Feature-colocated components
+import AboutHero from './_components/AboutHero';
+import OriginSection from './_components/OriginSection';
+import StatsGrid from './_components/StatsGrid';
+import LeadershipQuote from './_components/LeadershipQuote';
+import TodaySection from './_components/TodaySection';
+import ValuesAlternating from './_components/ValuesAlternating';
+import FinalCta from './_components/FinalCta';
+
+// Data
+import { aboutPageData } from './_data/aboutPageData';
 
 export const metadata = {
   title: 'About Us | Minit Charger',
-  description: "Learn about Minit Charger's 25+ year history of pioneering industrial fast charging technology and our mission to power the world's supply chain.",
+  description: "Minit Charger pioneered fast, opportunity-style charging for industrial fleets. Today we build charging and fleet-intelligence systems for aviation, warehouse, and low-speed vehicle operations nationwide.",
 };
 
 export default function AboutPage() {
@@ -20,14 +23,13 @@ export default function AboutPage() {
     <>
       <Navbar />
       <main>
-        <HeroBanner {...aboutData.heroBanner} />
-        <OverlappingImageBlock {...aboutData.imageBlock} />
-        <LogoStripFeatureGrid {...aboutData.logoStrip} />
-        <ProseSection {...aboutData.legacyProse} />
-        <IconCardsGrid {...aboutData.coreValues} />
-        <SplitFeatureLight {...aboutData.manufacturing} />
-        <CtaBanner {...aboutData.ctaBanner} />
-        <ImageGalleryStrip {...aboutData.galleryStrip} />
+        <AboutHero {...aboutPageData.hero} />
+        <OriginSection {...aboutPageData.origin} />
+        <StatsGrid stats={aboutPageData.stats} />
+        <LeadershipQuote {...aboutPageData.quote} />
+        <TodaySection {...aboutPageData.today} />
+        <ValuesAlternating values={aboutPageData.values} />
+        <FinalCta {...aboutPageData.finalCta} />
       </main>
       <Footer />
     </>

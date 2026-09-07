@@ -1,18 +1,17 @@
 import Navbar from '@/components/layout/Navbar';
 import Footer from '@/components/layout/Footer';
-import ContactFormSection from '@/components/sections/ContactFormSection';
-import SupportRoutingGrid from '@/components/sections/SupportRoutingGrid';
-import AddressesGrid from '@/components/sections/AddressesGrid';
-import DarkImageBanner from '@/components/sections/DarkImageBanner';
-import FaqAccordion from '@/components/sections/FaqAccordion';
-import LogoStripFeatureGrid from '@/components/sections/LogoStripFeatureGrid';
-import NewsletterSignup from '@/components/sections/NewsletterSignup';
-import ImageGalleryStrip from '@/components/sections/ImageGalleryStrip';
-import { contactData } from '@/data/contactData';
+
+// Feature-colocated components
+import CompactPageHeader from './_components/CompactPageHeader';
+import TabbedContactForms from './_components/TabbedContactForms';
+import DirectContactStrip from './_components/DirectContactStrip';
+
+// Data
+import { contactPageData } from './_data/contactPageData';
 
 export const metadata = {
   title: 'Contact Us | Minit Charger',
-  description: 'Get in touch with the Minit Charger team for sales inquiries, technical support, or to discuss your industrial fast charging needs.',
+  description: "Get in touch with Minit Charger for sales, product support, or customer service. Tell us what you need and we'll route it to the right team.",
 };
 
 export default function ContactPage() {
@@ -20,14 +19,9 @@ export default function ContactPage() {
     <>
       <Navbar />
       <main>
-        <ContactFormSection {...contactData.contactForm} />
-        <SupportRoutingGrid {...contactData.supportRouting} />
-        <AddressesGrid {...contactData.addresses} />
-        <DarkImageBanner {...contactData.networkMap} />
-        <FaqAccordion {...contactData.faq} />
-        <LogoStripFeatureGrid {...contactData.logoStrip} />
-        <NewsletterSignup {...contactData.newsletter} />
-        <ImageGalleryStrip {...contactData.galleryStrip} />
+        <CompactPageHeader {...contactPageData.header} />
+        <TabbedContactForms formsData={contactPageData.forms} />
+        <DirectContactStrip directContact={contactPageData.directContact} />
       </main>
       <Footer />
     </>

@@ -1,0 +1,960 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Minit Charger</title>
+    <meta name="description"
+        content="Get in touch with Minit Charger for sales, product support, or customer service. Tell us what you need and we'll route it to the right team.">
+    <link rel="canonical" href="https://www.minitcharger.com/contact/">
+    <meta name="robots" content="index, follow">
+
+    <!--
+=====================================================================
+  BUILD NOTE — SPACEX DIGITAL SOLUTION
+  Contact page built to match the minimal Aviation page system exactly
+  (same tokens, header, button/accordion language, reveal animations).
+
+  ROUTING LOGIC PER ARUN'S BRIEF (9/x):
+  Three request types, each its own field "tree." No backend exists
+  yet, so each form currently shows a client-side success state on
+  submit — wire the three forms to their real destinations (CRM,
+  ticketing system, inbox rules, etc.) before go-live. Suggest routing
+  by the hidden "request_type" field already present in each form.
+
+  SALES        -> Product Type, Fleet Size*, Location*, Company Name*,
+                  Contact Name*, Phone*, Email*  (* = required, per brief)
+  SUPPORT      -> Existing customer? (Y/N)*, Site/Location*, Product
+                  Name*, Serial No*, Complaint Details*, Attachments
+                  (optional — images/data files), Contact Name*,
+                  Phone*, Email*
+  CUSTOMER SVC -> Details*, Part No (optional), PO No (optional),
+                  Contact Name*, Phone*, Email*
+
+  No hard multi-step wizard/conditional gating was built (e.g. hiding
+  fields until "existing customer" is answered) since there's no
+  backend to route a branch to yet — each category shows its full,
+  correctly-ordered field set in one view instead, which keeps this
+  buildable as a static mockup while still respecting the field
+  hierarchy and required/optional rules exactly as specified.
+
+  LAYOUT UPDATE: the tall real-photo hero was replaced with a compact
+  text-only page header so the request-type selector and form load
+  near the top of the page with minimal scrolling. The address was
+  also removed from the direct-contact strip per request (Phone and
+  Email remain). Note this trades away the real-life photography
+  treatment used on the marketing pages — reasonable for a
+  transactional contact page where speed-to-form matters more than
+  storytelling, but flag if a photo should come back in some form.
+=====================================================================
+-->
+
+    <script type="application/ld+json">
+{"@context":"https://schema.org","@type":"ContactPage","name":"Contact Minit Charger","about":{"@type":"Organization","name":"Minit Charger","address":{"@type":"PostalAddress","streetAddress":"7303 W Boston St","addressLocality":"Chandler","addressRegion":"AZ","postalCode":"85226","addressCountry":"US"},"email":"info@minitcharger.com"}}
+</script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@600;700;800&family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500;600&display=swap"
+        rel="stylesheet">
+
+    <style>
+        :root {
+            --ink: #0A130E;
+            --ink-soft: #101D16;
+            --ink-line: rgba(255, 255, 255, .16);
+            --white: #FFFFFF;
+            --paper: #FFFFFF;
+            --panel: #F3F5EF;
+            --line: #E7EAE1;
+            --green: #2E9955;
+            --green-deep: #17552F;
+            --green-bright: #3FBE6C;
+            --green-wash: #EAF5EE;
+            --text: #0E1712;
+            --muted: #5E6D62;
+            --muted-on-ink: #A9BAAE;
+            --amber: #A9640F;
+            --font-display: 'Big Shoulders Display', 'Arial Narrow', sans-serif;
+            --font-body: 'IBM Plex Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            --font-mono: 'IBM Plex Mono', 'SFMono-Regular', Consolas, monospace;
+            --maxw: 1240px;
+            --radius: 18px;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            html {
+                scroll-behavior: auto;
+            }
+
+            * {
+                animation-duration: .001ms !important;
+                transition-duration: .001ms !important;
+            }
+        }
+
+        body {
+            margin: 0;
+            font-family: var(--font-body);
+            color: var(--text);
+            background: var(--paper);
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        img,
+        svg {
+            display: block;
+            max-width: 100%;
+        }
+
+        a {
+            color: inherit;
+        }
+
+        h1,
+        h2,
+        h3 {
+            font-family: var(--font-display);
+            font-weight: 700;
+            letter-spacing: .01em;
+            margin: 0;
+            line-height: 1;
+        }
+
+        p {
+            margin: 0;
+        }
+
+        button {
+            font-family: inherit;
+            cursor: pointer;
+            background: none;
+            border: none;
+        }
+
+        .container {
+            max-width: var(--maxw);
+            margin: 0 auto;
+            padding: 0 32px;
+        }
+
+        @media (max-width:640px) {
+            .container {
+                padding: 0 22px;
+            }
+        }
+
+        :focus-visible {
+            outline: 2px solid var(--green);
+            outline-offset: 3px;
+        }
+
+        .eyebrow {
+            font-family: var(--font-mono);
+            font-size: 12.5px;
+            font-weight: 600;
+            letter-spacing: .18em;
+            text-transform: uppercase;
+            color: var(--green-deep);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .eyebrow.on-ink {
+            color: var(--green-bright);
+        }
+
+        .eyebrow::before {
+            content: "";
+            width: 18px;
+            height: 1.5px;
+            background: var(--amber);
+            display: inline-block;
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 9px;
+            font-family: var(--font-body);
+            font-weight: 600;
+            font-size: 15px;
+            padding: 15px 28px;
+            border-radius: 100px;
+            text-decoration: none;
+            transition: all .2s ease;
+            white-space: nowrap;
+        }
+
+        .btn-solid {
+            background: var(--green);
+            color: #fff;
+        }
+
+        .btn-solid:hover {
+            background: var(--green-deep);
+            transform: translateY(-1px);
+        }
+
+        .btn-outline {
+            border: 1.5px solid currentColor;
+            color: #fff;
+        }
+
+        .btn-outline:hover {
+            background: rgba(255, 255, 255, .12);
+        }
+
+        .link-arrow {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            font-weight: 600;
+            font-size: 14.5px;
+            text-decoration: none;
+            color: var(--green-deep);
+        }
+
+        .link-arrow svg {
+            width: 16px;
+            height: 16px;
+            transition: transform .2s ease;
+        }
+
+        .link-arrow:hover svg {
+            transform: translateX(4px);
+        }
+
+        /* ---- header ---- */
+        .site-header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 80;
+            padding: 22px 0;
+            transition: background .3s ease, padding .3s ease, box-shadow .3s ease;
+        }
+
+        .site-header.solid {
+            background: rgba(255, 255, 255, .96);
+            backdrop-filter: blur(10px);
+            padding: 14px 0;
+            box-shadow: 0 1px 0 var(--line);
+        }
+
+        .nav-row {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .brand {
+            display: flex;
+            align-items: center;
+            gap: 9px;
+            text-decoration: none;
+            color: #fff;
+            font-family: var(--font-display);
+            font-weight: 700;
+            font-size: 19px;
+            transition: color .3s ease;
+        }
+
+        .site-header.solid .brand {
+            color: var(--text);
+        }
+
+        .brand-mark {
+            width: 26px;
+            height: 26px;
+            border-radius: 7px;
+            background: linear-gradient(135deg, var(--green-bright), var(--green-deep));
+            flex: none;
+        }
+
+        .main-nav {
+            display: flex;
+            gap: 34px;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .main-nav a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: 500;
+            transition: color .3s ease;
+        }
+
+        .site-header.solid .main-nav a {
+            color: var(--text);
+        }
+
+        .main-nav a:hover {
+            opacity: .7;
+        }
+
+        .header-cta .btn-outline {
+            color: #fff;
+            padding: 11px 22px;
+            font-size: 13.5px;
+        }
+
+        .site-header.solid .header-cta .btn-outline {
+            color: var(--text);
+            border-color: var(--line);
+        }
+
+        @media (max-width:860px) {
+            .main-nav {
+                display: none;
+            }
+        }
+
+        /* ---- compact page header (no photo — form sits near the top) ---- */
+        .page-head {
+            padding: 150px 0 40px;
+        }
+
+        .page-head h1 {
+            font-size: clamp(34px, 5vw, 54px);
+            color: var(--text);
+            max-width: 640px;
+            margin-top: 14px;
+        }
+
+        .page-head .sub {
+            margin-top: 16px;
+            font-size: 17px;
+            color: var(--muted);
+            max-width: 480px;
+        }
+
+        @media (max-width:760px) {
+            .page-head {
+                padding: 120px 0 30px;
+            }
+        }
+
+        /* ---- section rhythm ---- */
+        .section {
+            padding: 96px 0;
+        }
+
+        @media (max-width:760px) {
+            .section {
+                padding: 60px 0;
+            }
+        }
+
+        .section-tight {
+            padding: 56px 0;
+        }
+
+        /* ---- route selector cards ---- */
+        /* ---- request type tabs (minimal) ---- */
+        .tab-row {
+            display: flex;
+            gap: 8px;
+            flex-wrap: wrap;
+            border-bottom: 1px solid var(--line);
+            padding-bottom: 0;
+        }
+
+        .tab-btn {
+            font-family: var(--font-body);
+            font-weight: 600;
+            font-size: 14.5px;
+            color: var(--muted);
+            padding: 13px 4px;
+            margin-right: 26px;
+            border-bottom: 2px solid transparent;
+            transition: color .2s ease, border-color .2s ease;
+        }
+
+        .tab-btn:hover {
+            color: var(--text);
+        }
+
+        .tab-btn.active {
+            color: var(--green-deep);
+            border-bottom-color: var(--green);
+        }
+
+        /* ---- forms ---- */
+        .form-wrap {
+            max-width: 720px;
+            margin-top: 56px;
+            display: none;
+        }
+
+        .form-wrap.active {
+            display: block;
+        }
+
+        .form-wrap h3 {
+            font-size: clamp(22px, 2.8vw, 28px);
+        }
+
+        .form-wrap .form-sub {
+            margin-top: 10px;
+            font-size: 15px;
+            color: var(--muted);
+        }
+
+        .form-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 18px;
+            margin-top: 32px;
+        }
+
+        .form-grid .full {
+            grid-column: 1/-1;
+        }
+
+        @media (max-width:600px) {
+            .form-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .field label {
+            display: block;
+            font-size: 13px;
+            font-weight: 600;
+            color: var(--text);
+            margin-bottom: 7px;
+        }
+
+        .field label .req {
+            color: var(--amber);
+            font-weight: 700;
+        }
+
+        .field label .opt {
+            color: var(--muted);
+            font-weight: 500;
+            font-family: var(--font-mono);
+            font-size: 11px;
+            text-transform: uppercase;
+            letter-spacing: .06em;
+        }
+
+        .field input,
+        .field select,
+        .field textarea {
+            width: 100%;
+            padding: 13px 14px;
+            border: 1.5px solid var(--line);
+            border-radius: 10px;
+            font-family: inherit;
+            font-size: 14.5px;
+            color: var(--text);
+            background: #fff;
+            transition: border-color .2s ease;
+        }
+
+        .field input:focus,
+        .field select:focus,
+        .field textarea:focus {
+            outline: none;
+            border-color: var(--green);
+        }
+
+        .field textarea {
+            resize: vertical;
+            min-height: 110px;
+        }
+
+        .field-file {
+            border: 1.5px dashed var(--line);
+            border-radius: 10px;
+            padding: 20px;
+            text-align: center;
+            font-size: 13.5px;
+            color: var(--muted);
+            transition: border-color .2s ease;
+        }
+
+        .field-file:hover {
+            border-color: var(--green);
+        }
+
+        .field-file input {
+            margin-top: 10px;
+            font-size: 13px;
+        }
+
+        .form-divider {
+            grid-column: 1/-1;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin: 6px 0 -4px;
+            font-family: var(--font-mono);
+            font-size: 11px;
+            letter-spacing: .08em;
+            text-transform: uppercase;
+            color: var(--muted);
+        }
+
+        .form-divider::after {
+            content: "";
+            flex: 1;
+            height: 1px;
+            background: var(--line);
+        }
+
+        .form-actions {
+            grid-column: 1/-1;
+            margin-top: 8px;
+            display: flex;
+            align-items: center;
+            gap: 18px;
+            flex-wrap: wrap;
+        }
+
+        .form-note {
+            font-size: 12.5px;
+            color: var(--muted);
+        }
+
+        .form-success {
+            display: none;
+            grid-column: 1/-1;
+            padding: 16px 18px;
+            border-radius: 10px;
+            background: var(--green-wash);
+            color: var(--green-deep);
+            font-size: 14px;
+            font-weight: 600;
+        }
+
+        .form-success.show {
+            display: block;
+        }
+
+        /* ---- direct contact strip ---- */
+        .direct-wrap {
+            background: var(--panel);
+        }
+
+        .direct-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1px;
+            background: var(--line);
+            border-radius: var(--radius);
+            overflow: hidden;
+            max-width: 640px;
+        }
+
+        @media (max-width:560px) {
+            .direct-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .direct-item {
+            background: #fff;
+            padding: 28px 26px;
+        }
+
+        .direct-item .lbl {
+            font-family: var(--font-mono);
+            font-size: 11px;
+            letter-spacing: .08em;
+            text-transform: uppercase;
+            color: var(--muted);
+        }
+
+        .direct-item .val {
+            margin-top: 8px;
+            font-size: 16px;
+            font-weight: 600;
+        }
+
+        /* ---- footer ---- */
+        footer {
+            background: #fff;
+            border-top: 1px solid var(--line);
+            padding: 56px 0 34px;
+        }
+
+        .footer-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 24px;
+        }
+
+        .footer-links {
+            display: flex;
+            gap: 28px;
+            flex-wrap: wrap;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .footer-links a {
+            color: var(--muted);
+            text-decoration: none;
+            font-size: 13.5px;
+        }
+
+        .footer-links a:hover {
+            color: var(--text);
+        }
+
+        .footer-bottom {
+            margin-top: 40px;
+            padding-top: 24px;
+            border-top: 1px solid var(--line);
+            font-size: 12.5px;
+            color: var(--muted);
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .reveal {
+            opacity: 0;
+            transform: translateY(24px);
+            transition: opacity .7s cubic-bezier(.2, .7, .2, 1), transform .7s cubic-bezier(.2, .7, .2, 1);
+        }
+
+        .reveal.in {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .sr-only {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            overflow: hidden;
+            clip: rect(0, 0, 0, 0);
+        }
+    </style>
+</head>
+
+<body>
+
+    <svg class="sr-only" aria-hidden="true">
+        <symbol id="i-bolt" viewBox="0 0 24 24" fill="none">
+            <path d="M13 2 4 14h6l-1 8 9-12h-6l1-8Z" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round" />
+        </symbol>
+        <symbol id="i-wrench" viewBox="0 0 24 24" fill="none">
+            <path d="M14.7 6.3a4 4 0 0 0-5.4 5.4L3 18l3 3 6.3-6.3a4 4 0 0 0 5.4-5.4l-2.7 2.7-2-2 2.7-2.7Z"
+                stroke="currentColor" stroke-width="1.6" stroke-linejoin="round" />
+        </symbol>
+        <symbol id="i-chat" viewBox="0 0 24 24" fill="none">
+            <path d="M4 5h16v11H9l-5 4V5Z" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round" />
+        </symbol>
+        <symbol id="i-check" viewBox="0 0 24 24" fill="none">
+            <path d="M5 13l4 4L19 7" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"
+                stroke-linejoin="round" />
+        </symbol>
+    </svg>
+
+    <!-- ============================= HEADER ============================= -->
+    <header class="site-header" id="siteHeader">
+        <div class="container nav-row">
+            <a class="brand" href="/"><span class="brand-mark"></span> MINIT CHARGER</a>
+            <ul class="main-nav">
+                <li><a href="/products/">Products</a></li>
+                <li><a href="/industries/">Industries</a></li>
+                <li><a href="/company/">Company</a></li>
+            </ul>
+            <div class="header-cta">
+                <a href="#route" class="btn btn-outline">Contact Sales</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- ============================= COMPACT PAGE HEADER (no photo — moves the form up) ============================= -->
+    <section class="page-head">
+        <div class="container">
+            <span class="eyebrow">Contact us</span>
+            <h1>Let's get you to the right team.</h1>
+            <p class="sub">Sales, support, or general service — tell us what you need and we'll route it immediately.
+            </p>
+        </div>
+    </section>
+
+    <!-- ============================= REQUEST TYPE TABS (minimal) ============================= -->
+    <section class="section" id="route" style="padding-top:8px;">
+        <div class="container">
+            <div class="tab-row reveal">
+                <button class="tab-btn active" data-target="sales" aria-pressed="true">Sales</button>
+                <button class="tab-btn" data-target="support" aria-pressed="false">Support</button>
+                <button class="tab-btn" data-target="service" aria-pressed="false">Customer Service</button>
+            </div>
+
+            <!-- ===== SALES FORM ===== -->
+            <form class="form-wrap active reveal" id="form-sales" data-request-type="Sales" novalidate>
+                <h3>Tell us about your fleet.</h3>
+                <p class="form-sub">All fields below are required — this helps us route you to the right engineer
+                    immediately.</p>
+                <div class="form-grid">
+                    <div class="field full">
+                        <label for="s-product">Product type <span class="req">*</span></label>
+                        <select id="s-product" required>
+                            <option value="">Select a product</option>
+                            <option>Altus II</option>
+                            <option>Magnus</option>
+                            <option>Momentus</option>
+                            <option>Maximus</option>
+                            <option>Durus</option>
+                            <option>Mobilus</option>
+                            <option>CellTrac</option>
+                            <option>AssetPro 360</option>
+                            <option>Not sure yet</option>
+                        </select>
+                    </div>
+                    <div class="field">
+                        <label for="s-fleet">Fleet size <span class="req">*</span></label>
+                        <input id="s-fleet" type="text" placeholder="e.g. 12 vehicles" required>
+                    </div>
+                    <div class="field">
+                        <label for="s-location">Location <span class="req">*</span></label>
+                        <input id="s-location" type="text" placeholder="City, state, or airport code" required>
+                    </div>
+                    <div class="field">
+                        <label for="s-company">Company name <span class="req">*</span></label>
+                        <input id="s-company" type="text" required>
+                    </div>
+                    <div class="field">
+                        <label for="s-name">Contact name <span class="req">*</span></label>
+                        <input id="s-name" type="text" required>
+                    </div>
+                    <div class="field">
+                        <label for="s-phone">Phone <span class="req">*</span></label>
+                        <input id="s-phone" type="tel" required>
+                    </div>
+                    <div class="field">
+                        <label for="s-email">Email <span class="req">*</span></label>
+                        <input id="s-email" type="email" required>
+                    </div>
+                    <div class="form-actions">
+                        <button type="submit" class="btn btn-solid">Send to Sales</button>
+                        <span class="form-note">A sales engineer replies within one business day.</span>
+                    </div>
+                    <div class="form-success" id="success-sales">Thanks — our sales team will reach out shortly.</div>
+                </div>
+            </form>
+
+            <!-- ===== SUPPORT FORM ===== -->
+            <form class="form-wrap reveal" id="form-support" data-request-type="Support" novalidate>
+                <h3>Tell us what's happening.</h3>
+                <p class="form-sub">The more detail you give us, the faster we can diagnose it — photos and data files
+                    help a lot.</p>
+                <div class="form-grid">
+                    <div class="field full">
+                        <label>Are you an existing customer? <span class="req">*</span></label>
+                        <select required>
+                            <option value="">Select one</option>
+                            <option>Yes</option>
+                            <option>No</option>
+                        </select>
+                    </div>
+
+                    <div class="form-divider">Where &amp; what</div>
+                    <div class="field">
+                        <label for="su-site">Site / location <span class="req">*</span></label>
+                        <input id="su-site" type="text" placeholder="e.g. PHX Ground Ops, Bay 4" required>
+                    </div>
+                    <div class="field">
+                        <label for="su-product">Product name <span class="req">*</span></label>
+                        <select id="su-product" required>
+                            <option value="">Select a product</option>
+                            <option>Altus II</option>
+                            <option>Magnus</option>
+                            <option>Momentus</option>
+                            <option>Maximus</option>
+                            <option>Durus</option>
+                            <option>Mobilus</option>
+                            <option>CellTrac</option>
+                            <option>AssetPro 360</option>
+                            <option>Other / not listed</option>
+                        </select>
+                    </div>
+                    <div class="field full">
+                        <label for="su-serial">Serial number <span class="req">*</span></label>
+                        <input id="su-serial" type="text" placeholder="Found on the unit's nameplate" required>
+                    </div>
+
+                    <div class="form-divider">The issue</div>
+                    <div class="field full">
+                        <label for="su-complaint">Complaint details <span class="req">*</span></label>
+                        <textarea id="su-complaint"
+                            placeholder="What's happening, when it started, any error codes or messages"
+                            required></textarea>
+                    </div>
+                    <div class="field full">
+                        <label for="su-files">Attachments <span class="opt">optional</span></label>
+                        <div class="field-file">
+                            Photos, error screenshots, or data files help us diagnose faster.
+                            <input id="su-files" type="file" multiple accept="image/*,.pdf,.csv,.xlsx,.txt,.log">
+                        </div>
+                    </div>
+
+                    <div class="form-divider">Your contact info</div>
+                    <div class="field">
+                        <label for="su-name">Contact name <span class="req">*</span></label>
+                        <input id="su-name" type="text" required>
+                    </div>
+                    <div class="field">
+                        <label for="su-phone">Phone <span class="req">*</span></label>
+                        <input id="su-phone" type="tel" required>
+                    </div>
+                    <div class="field full">
+                        <label for="su-email">Email <span class="req">*</span></label>
+                        <input id="su-email" type="email" required>
+                    </div>
+
+                    <div class="form-actions">
+                        <button type="submit" class="btn btn-solid">Send to Support</button>
+                        <span class="form-note">Urgent equipment down? Call us directly — see below.</span>
+                    </div>
+                    <div class="form-success" id="success-support">Thanks — a support engineer will follow up shortly.
+                    </div>
+                </div>
+            </form>
+
+            <!-- ===== CUSTOMER SERVICE FORM ===== -->
+            <form class="form-wrap reveal" id="form-service" data-request-type="Customer Service" novalidate>
+                <h3>How can we help?</h3>
+                <p class="form-sub">For anything that isn't a sale or an equipment issue — parts, orders, invoices, or
+                    general questions.</p>
+                <div class="form-grid">
+                    <div class="field full">
+                        <label for="c-details">Details <span class="req">*</span></label>
+                        <textarea id="c-details" placeholder="Tell us what you need" required></textarea>
+                    </div>
+                    <div class="field">
+                        <label for="c-part">Part No <span class="opt">optional</span></label>
+                        <input id="c-part" type="text">
+                    </div>
+                    <div class="field">
+                        <label for="c-po">PO No <span class="opt">optional</span></label>
+                        <input id="c-po" type="text">
+                    </div>
+                    <div class="field">
+                        <label for="c-name">Contact name <span class="req">*</span></label>
+                        <input id="c-name" type="text" required>
+                    </div>
+                    <div class="field">
+                        <label for="c-phone">Phone <span class="req">*</span></label>
+                        <input id="c-phone" type="tel" required>
+                    </div>
+                    <div class="field full">
+                        <label for="c-email">Email <span class="req">*</span></label>
+                        <input id="c-email" type="email" required>
+                    </div>
+                    <div class="form-actions">
+                        <button type="submit" class="btn btn-solid">Send to Customer Service</button>
+                        <span class="form-note">We typically reply within one business day.</span>
+                    </div>
+                    <div class="form-success" id="success-service">Thanks — our customer service team will be in touch.
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- ============================= DIRECT CONTACT ============================= -->
+    <section class="direct-wrap section-tight">
+        <div class="container">
+            <div class="direct-grid reveal">
+                <div class="direct-item">
+                    <div class="lbl">Phone</div>
+                    <div class="val">[Client to confirm]</div>
+                </div>
+                <div class="direct-item">
+                    <div class="lbl">Email</div>
+                    <div class="val">info@minitcharger.com</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================= FOOTER ============================= -->
+    <footer>
+        <div class="container">
+            <div class="footer-row">
+                <a class="brand" href="/" style="color:var(--text);"><span class="brand-mark"></span> MINIT CHARGER</a>
+                <ul class="footer-links">
+                    <li><a href="/products/">Products</a></li>
+                    <li><a href="/industries/">Industries</a></li>
+                    <li><a href="/company/">About</a></li>
+                    <li><a href="/contact/">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-bottom">
+                <span>© 2026 Minit Charger.</span>
+                <span>Chandler, AZ</span>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        var header = document.getElementById('siteHeader');
+        window.addEventListener('scroll', function () {
+            header.classList.toggle('solid', window.scrollY > 60);
+        }, { passive: true });
+
+        (function () {
+            var items = document.querySelectorAll('.reveal');
+            if (!('IntersectionObserver' in window)) { items.forEach(function (i) { i.classList.add('in'); }); return; }
+            var io = new IntersectionObserver(function (entries) {
+                entries.forEach(function (en) { if (en.isIntersecting) { en.target.classList.add('in'); io.unobserve(en.target); } });
+            }, { threshold: .12 });
+            items.forEach(function (i) { io.observe(i); });
+        })();
+
+        // tab selection -> show matching form
+        var cards = document.querySelectorAll('.tab-btn');
+        var forms = document.querySelectorAll('.form-wrap');
+        cards.forEach(function (card) {
+            card.addEventListener('click', function () {
+                cards.forEach(function (c) { c.classList.remove('active'); c.setAttribute('aria-pressed', 'false'); });
+                card.classList.add('active'); card.setAttribute('aria-pressed', 'true');
+                var target = card.getAttribute('data-target');
+                forms.forEach(function (f) { f.classList.toggle('active', f.id === 'form-' + target); });
+            });
+        });
+
+        // client-side success state per form (wire to real endpoints before go-live)
+        forms.forEach(function (form) {
+            form.addEventListener('submit', function (e) {
+                e.preventDefault();
+                var type = form.getAttribute('data-request-type');
+                var successEl = form.querySelector('.form-success');
+                if (successEl) { successEl.classList.add('show'); }
+                form.reset();
+            });
+        });
+    </script>
+</body>
+
+</html>

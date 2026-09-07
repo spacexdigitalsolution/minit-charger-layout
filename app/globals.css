@@ -57,3 +57,19 @@ body {
   max-width: 800px;
   border-top: 1px solid rgba(0, 0, 0, 0.1);
 }
+
+.container {
+  width: 100%;
+  max-width: 1240px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 32px;
+  padding-right: 32px;
+}
+
+@media (max-width: 640px) {
+  .container {
+    padding-left: 22px;
+    padding-right: 22px;
+  }
+}
