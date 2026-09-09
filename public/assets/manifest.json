@@ -218,6 +218,45 @@
     "1200": "/assets/Industries/Aviation/The only charger engineered for airport turnaround pressure/ALTUS_II-DUAL PORT-IP65-1200.webp",
     "original": "/assets/Industries/Aviation/The only charger engineered for airport turnaround pressure/ALTUS_II-DUAL PORT-IP65.webp"
   },
+  "Industries/Aviation-GSE/Banner/Banner-Aviation.png": {
+    "480": "/assets/Industries/Aviation-GSE/Banner/Banner-Aviation-480.webp",
+    "768": "/assets/Industries/Aviation-GSE/Banner/Banner-Aviation-768.webp",
+    "1200": "/assets/Industries/Aviation-GSE/Banner/Banner-Aviation-1200.webp",
+    "1600": "/assets/Industries/Aviation-GSE/Banner/Banner-Aviation-1600.webp",
+    "original": "/assets/Industries/Aviation-GSE/Banner/Banner-Aviation.webp"
+  },
+  "Industries/Aviation-GSE/CTA/Banner.png": {
+    "480": "/assets/Industries/Aviation-GSE/CTA/Banner-480.webp",
+    "768": "/assets/Industries/Aviation-GSE/CTA/Banner-768.webp",
+    "1200": "/assets/Industries/Aviation-GSE/CTA/Banner-1200.webp",
+    "1600": "/assets/Industries/Aviation-GSE/CTA/Banner-1600.webp",
+    "original": "/assets/Industries/Aviation-GSE/CTA/Banner.webp"
+  },
+  "Industries/Aviation-GSE/Features/Built for the ramp.png": {
+    "480": "/assets/Industries/Aviation-GSE/Features/Built for the ramp-480.webp",
+    "768": "/assets/Industries/Aviation-GSE/Features/Built for the ramp-768.webp",
+    "1200": "/assets/Industries/Aviation-GSE/Features/Built for the ramp-1200.webp",
+    "original": "/assets/Industries/Aviation-GSE/Features/Built for the ramp.webp"
+  },
+  "Industries/Aviation-GSE/Features/No infrastructure upgrade required.png": {
+    "480": "/assets/Industries/Aviation-GSE/Features/No infrastructure upgrade required-480.webp",
+    "768": "/assets/Industries/Aviation-GSE/Features/No infrastructure upgrade required-768.webp",
+    "1200": "/assets/Industries/Aviation-GSE/Features/No infrastructure upgrade required-1200.webp",
+    "original": "/assets/Industries/Aviation-GSE/Features/No infrastructure upgrade required.webp"
+  },
+  "Industries/Aviation-GSE/Features/See your fleet before it strands you.png": {
+    "480": "/assets/Industries/Aviation-GSE/Features/See your fleet before it strands you-480.webp",
+    "768": "/assets/Industries/Aviation-GSE/Features/See your fleet before it strands you-768.webp",
+    "1200": "/assets/Industries/Aviation-GSE/Features/See your fleet before it strands you-1200.webp",
+    "original": "/assets/Industries/Aviation-GSE/Features/See your fleet before it strands you.webp"
+  },
+  "Industries/Aviation-GSE/Why Minit Charger/Banner.png": {
+    "480": "/assets/Industries/Aviation-GSE/Why Minit Charger/Banner-480.webp",
+    "768": "/assets/Industries/Aviation-GSE/Why Minit Charger/Banner-768.webp",
+    "1200": "/assets/Industries/Aviation-GSE/Why Minit Charger/Banner-1200.webp",
+    "1600": "/assets/Industries/Aviation-GSE/Why Minit Charger/Banner-1600.webp",
+    "original": "/assets/Industries/Aviation-GSE/Why Minit Charger/Banner.webp"
+  },
   "Industries/Low-Speed-Vehicles/Banner/Banner -Low-Speed-Vehicles-Page.png": {
     "480": "/assets/Industries/Low-Speed-Vehicles/Banner/Banner -Low-Speed-Vehicles-Page-480.webp",
     "768": "/assets/Industries/Low-Speed-Vehicles/Banner/Banner -Low-Speed-Vehicles-Page-768.webp",
@@ -274,18 +313,10 @@
     "1600": "/assets/Products/Momentus/MOMENTUs Hardware Listing-1600.webp",
     "original": "/assets/Products/Momentus/MOMENTUs Hardware Listing.webp"
   },
-  "Industries/Aviation-GSE/CTA/Banner.png": {
-    "480": "/assets/Industries/Aviation-GSE/CTA/Banner-480.webp",
-    "768": "/assets/Industries/Aviation-GSE/CTA/Banner-768.webp",
-    "1200": "/assets/Industries/Aviation-GSE/CTA/Banner-1200.webp",
-    "1600": "/assets/Industries/Aviation-GSE/CTA/Banner-1600.webp",
-    "original": "/assets/Industries/Aviation-GSE/CTA/Banner.webp"
+  "Products/Altus II/Banner/ALTUS II.mp4": {
+    "original": "/assets/Products/Altus II/Banner/ALTUS II.mp4"
   },
-  "Industries/Aviation-GSE/Banner/Banner-Aviation.png": {
-    "480": "/assets/Industries/Aviation-GSE/Banner/Banner-Aviation-480.webp",
-    "768": "/assets/Industries/Aviation-GSE/Banner/Banner-Aviation-768.webp",
-    "1200": "/assets/Industries/Aviation-GSE/Banner/Banner-Aviation-1200.webp",
-    "1600": "/assets/Industries/Aviation-GSE/Banner/Banner-Aviation-1600.webp",
-    "original": "/assets/Industries/Aviation-GSE/Banner/Banner-Aviation.webp"
+  "Products/Altus II/Banner/ALTUS II2.mp4": {
+    "original": "/assets/Products/Altus II/Banner/ALTUS II2.mp4"
   }
 }
