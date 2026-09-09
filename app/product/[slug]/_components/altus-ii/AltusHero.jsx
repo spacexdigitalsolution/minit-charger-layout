@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useRef, useState } from 'react';
+import React, { useRef, useState, useEffect } from 'react';
 import SmartImage from '@/components/ui/SmartImage';
 
 const Pause = ({ size }) => (
@@ -16,7 +16,29 @@ const Play = ({ size }) => (
 );
 export default function AltusHero({ data }) {
   const [isPlaying, setIsPlaying] = useState(true);
+  const [currentVideoIndex, setCurrentVideoIndex] = useState(0);
   const videoRef = useRef(null);
+
+  const videoSrcArray = Array.isArray(data.videoSrc) ? data.videoSrc : (data.videoSrc ? [data.videoSrc] : []);
+  const currentVideo = videoSrcArray.length > 0 ? videoSrcArray[currentVideoIndex] : null;
+
+  useEffect(() => {
+    if (videoRef.current && currentVideo) {
+      videoRef.current.load();
+      if (isPlaying) {
+        const playPromise = videoRef.current.play();
+        if (playPromise !== undefined) {
+          playPromise.catch(e => console.log("Playback prevented:", e));
+        }
+      }
+    }
+  }, [currentVideo, isPlaying]);
+
+  const handleVideoEnded = () => {
+    if (videoSrcArray.length > 1) {
+      setCurrentVideoIndex((prev) => (prev + 1) % videoSrcArray.length);
+    }
+  };
 
   const toggleVideo = () => {
     if (videoRef.current) {
@@ -32,19 +54,18 @@ export default function AltusHero({ data }) {
   return (
     <section className="relative overflow-hidden bg-ink text-white flex items-end min-h-[min(90vh,780px)]" style={{ clipPath: 'polygon(0 0, 100% 0, 100% 100%, 0 96%)' }}>
       <div className="absolute inset-0">
-        {data.videoSrc ? (
+        {currentVideo ? (
           <video 
             ref={videoRef}
-            autoPlay 
             muted 
-            loop 
+            loop={videoSrcArray.length === 1}
             playsInline
+            onEnded={handleVideoEnded}
             poster={data.posterSrc}
             aria-label={data.posterAlt}
             className="w-full h-full object-cover animate-[heroZoom_22s_ease-in-out_infinite_alternate]"
           >
-            <source src={data.videoSrc} type="video/mp4" />
-            <img src={data.posterSrc} alt={data.posterAlt} />
+            <source src={currentVideo} type="video/mp4" />
           </video>
         ) : (
           <SmartImage src={data.posterSrc} alt={data.posterAlt} fill className="object-cover animate-[heroZoom_22s_ease-in-out_infinite_alternate]" />
@@ -80,7 +101,7 @@ export default function AltusHero({ data }) {
               </a>
             ))}
           </div>
-          {data.videoSrc && (
+          {currentVideo && (
             <button 
               onClick={toggleVideo}
               aria-label={isPlaying ? "Pause background video" : "Play background video"}

@@ -46,10 +46,16 @@ export default function AltusRampReality({ data }) {
               <span key={i} className="relative whitespace-nowrap group-in-view">
                 {part}
                 <svg className="absolute left-0 -bottom-[4px] w-full h-[8px] overflow-visible" viewBox="0 0 100 8" preserveAspectRatio="none">
-                  <path 
-                    d="M2 5 Q50 -2 98 5" 
-                    className="stroke-green-bright stroke-[2.4px] fill-none stroke-[length:220] stroke-dashoffset-[220] transition-[stroke-dashoffset] duration-1000 ease-out delay-200 [.in-view_&]:stroke-dashoffset-0"
-                    style={{ strokeDasharray: 220 }}
+                  <path
+                    d="M2 5 Q50 -2 98 5"
+                    className="stroke-green-bright transition-all duration-1000 ease-out delay-200 [.in-view_&]:![stroke-dashoffset:0]"
+                    style={{
+                      fill: 'transparent',
+                      strokeWidth: '2.4px',
+                      vectorEffect: 'non-scaling-stroke',
+                      strokeDasharray: 100,
+                      strokeDashoffset: 100
+                    }}
                   />
                 </svg>
               </span>
@@ -62,18 +68,18 @@ export default function AltusRampReality({ data }) {
   };
 
   return (
-    <section 
+    <section
       ref={sectionRef}
       className="relative overflow-hidden text-white flex items-center min-h-[520px] md:min-h-[640px] py-[96px]"
       id="ramp-reality"
     >
-      <div 
+      <div
         ref={bgRef}
         className="absolute -inset-[3%] bg-cover bg-center scale-[1.06]"
         style={{ backgroundImage: `url(${data.bgImageSrc})` }}
       ></div>
       <div className="absolute inset-0 bg-gradient-to-b from-[rgba(11,20,15,.55)] to-[rgba(11,20,15,.72)]"></div>
-      
+
       <div className="relative z-10 w-full container mx-auto px-6 max-w-[1180px]">
         <div className="mx-auto text-center max-w-[640px]">
           <div className="font-mono text-[12px] tracking-[0.12em] uppercase text-green-bright font-semibold">

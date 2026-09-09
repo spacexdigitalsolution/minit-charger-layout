@@ -3,7 +3,10 @@ export const productAltusData = {
     eyebrow: "Altus II — Outdoor DC Fast Charger",
     heading: "Built for the ramp. Not adapted for it.",
     description: "Two ports, one pedestal, one power feed — charging tugs, loaders and small EVs where they actually park, in the weather they actually work in.",
-    videoSrc: "/assets/video/altus-ii-ramp.mp4",
+    videoSrc: [
+      "/assets/video/altus-ii-banner-1.mp4",
+      "/assets/video/altus-ii-banner-2.mp4"
+    ],
     posterSrc: "/assets/img/altus-ii-ramp-poster.jpg",
     posterAlt: "Altus II charger on an airport ramp",
     specRibbon: [
@@ -135,7 +138,8 @@ export const productAltusData = {
     description: "Lead acid, lithium and EV from the same unit, so a phased battery refresh doesn't strand the hardware you already bought.",
     bgImageSrc: "/assets/img/altus-ii-mixed-fleet.jpg",
     alignment: "right",
-    scrim: "side-reverse"
+    scrim: "side-reverse",
+    theme: "light"
   },
 
   rampReality: {
@@ -166,6 +170,7 @@ export const productAltusData = {
     bgImageSrc: "/assets/img/cumulus-dashboard.jpg",
     alignment: "left",
     scrim: "side",
+    theme: "light",
     pills: [
       { label: "Cumulus", desc: "fleet management platform" },
       { label: "CellTrac", desc: "on-vehicle battery monitoring" }
@@ -209,7 +214,7 @@ export const productAltusData = {
   finalCta: {
     heading: "Bring us your fleet mix and your feed.",
     description: "An engineer will size the charge points around your equipment, your turn times and the power you already have — before anyone quotes hardware.",
-    bgImageSrc: "/assets/img/altus-ii-final-cta.jpg",
+    bgImageSrc: "/assets/img/altus-ii-final-cta-banner.png",
     ctas: [
       { text: "Get a charging assessment", href: "/contact/", type: "primary" },
       { text: "Download the spec sheet", href: "/resources/altus-ii-spec-sheet/", type: "ghost" }

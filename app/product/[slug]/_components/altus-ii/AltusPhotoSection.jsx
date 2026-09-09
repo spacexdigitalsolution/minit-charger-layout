@@ -7,6 +7,7 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger';
 export default function AltusPhotoSection({ data }) {
   const sectionRef = useRef(null);
   const bgRef = useRef(null);
+  const isLight = data.theme === 'light';
 
   useEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
@@ -65,31 +66,35 @@ export default function AltusPhotoSection({ data }) {
   return (
     <section 
       ref={sectionRef}
-      className={`relative overflow-hidden text-white flex items-center ${data.alignment === 'center' ? 'min-h-[520px] md:min-h-[640px]' : 'min-h-[520px] md:min-h-[640px]'} py-[96px]`}
+      className={`relative overflow-hidden flex items-center ${isLight ? 'bg-white text-ink' : 'text-white'} ${data.alignment === 'center' ? 'min-h-[520px] md:min-h-[640px]' : 'min-h-[520px] md:min-h-[640px]'} py-[96px]`}
     >
-      <div 
-        ref={bgRef}
-        className="absolute -inset-[3%] bg-cover bg-center scale-[1.06]"
-        style={{ backgroundImage: `url(${data.bgImageSrc})` }}
-      ></div>
-      <div className={`absolute inset-0 ${getScrimStyle()}`}></div>
+      {!isLight && (
+        <>
+          <div 
+            ref={bgRef}
+            className="absolute -inset-[3%] bg-cover bg-center scale-[1.06]"
+            style={{ backgroundImage: `url(${data.bgImageSrc})` }}
+          ></div>
+          <div className={`absolute inset-0 ${getScrimStyle()}`}></div>
+        </>
+      )}
       
       <div className={`relative z-10 w-full container mx-auto px-6 max-w-[1180px]`}>
         <div className={getAlignmentClasses()}>
           <div className="font-mono text-[12px] tracking-[0.12em] uppercase text-green-bright font-semibold">
             {data.kicker}
           </div>
-          <h2 className={`text-white text-[clamp(30px,4.6vw,50px)] font-display font-bold leading-[1.02] mt-[14px] ${data.alignment === 'center' ? 'max-w-[20ch] mx-auto' : 'max-w-[16ch]'} ${data.alignment === 'right' ? 'md:ml-auto' : ''}`}>
+          <h2 className={`${isLight ? 'text-ink' : 'text-white'} text-[clamp(30px,4.6vw,50px)] font-display font-bold leading-[1.02] mt-[14px] ${data.alignment === 'center' ? 'max-w-[20ch] mx-auto' : 'max-w-[16ch]'} ${data.alignment === 'right' ? 'md:ml-auto' : ''}`}>
             {data.heading}
           </h2>
-          <p className={`mt-[16px] text-[#DCE7DF] text-[17px] max-w-[46ch] ${getSubAlignmentClasses()}`}>
+          <p className={`mt-[16px] ${isLight ? 'text-ink/80' : 'text-[#DCE7DF]'} text-[17px] max-w-[46ch] ${getSubAlignmentClasses()}`}>
             {data.description}
           </p>
 
           {data.pills && (
             <div className={`mt-[34px] flex gap-[14px] flex-wrap ${data.alignment === 'center' ? 'justify-center' : ''} ${data.alignment === 'right' ? 'justify-start md:justify-end' : ''}`}>
               {data.pills.map((pill, idx) => (
-                <span key={idx} className="font-mono text-[12.5px] text-white border border-[rgba(255,255,255,.14)] rounded-full py-[8px] px-[16px] bg-[rgba(255,255,255,.06)]">
+                <span key={idx} className={`font-mono text-[12.5px] border rounded-full py-[8px] px-[16px] ${isLight ? 'border-line text-ink bg-paper' : 'border-[rgba(255,255,255,.14)] text-white bg-[rgba(255,255,255,.06)]'}`}>
                   <b className="text-green-bright font-semibold mr-[6px]">{pill.label}</b> — {pill.desc}
                 </span>
               ))}

@@ -5,7 +5,7 @@ import AltusPhotoSection from './AltusPhotoSection';
 import AltusRampReality from './AltusRampReality';
 import AltusBpm from './AltusBpm';
 import AltusCompare from './AltusCompare';
-import AltusFaqAccordion from './AltusFaqAccordion';
+import FaqAccordion from '@/components/sections/FaqAccordion';
 import AltusFinalCta from './AltusFinalCta';
 
 export default function AltusPage({ data }) {
@@ -19,7 +19,7 @@ export default function AltusPage({ data }) {
       <AltusPhotoSection data={data.fleetIntelligence} />
       <AltusBpm data={data.bpm} />
       <AltusCompare data={data.compare} />
-      <AltusFaqAccordion data={data.faq} />
+      <FaqAccordion heading={data.faq.heading} faqs={data.faq.faqs} />
       <AltusFinalCta data={data.finalCta} />
     </main>
   );

@@ -11,7 +11,7 @@ const Plus = ({ size }) => (
 );
 
 export default function AltusCloserLook({ data }) {
-  const [activeSection, setActiveSection] = useState(data.sections[0]?.id);
+  const [activeSection, setActiveSection] = useState(null);
   const panelRefs = useRef({});
 
   useEffect(() => {
@@ -49,7 +49,7 @@ export default function AltusCloserLook({ data }) {
               return (
                 <div key={section.id} className="border-b border-line last:border-b-0">
                   <button
-                    onClick={() => setActiveSection(section.id)}
+                    onClick={() => setActiveSection(isActive ? null : section.id)}
                     className="w-full flex items-center gap-[14px] text-left bg-transparent border-none py-[18px] px-[4px] text-[16.5px] font-semibold text-text"
                     aria-expanded={isActive}
                   >
