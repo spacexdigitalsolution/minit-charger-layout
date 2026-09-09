@@ -1,38 +1,24 @@
 import React from 'react';
-import StandardHero from '@/components/sections/StandardHero';
-import AltusGalleryIntro from './AltusGalleryIntro';
-import AltusEngineeringStrip from './AltusEngineeringStrip';
-import AltusQuickAnswer from './AltusQuickAnswer';
-import AltusPainPoints from './AltusPainPoints';
-import AltusValueProp from './AltusValueProp';
-import AltusInfrastructureDiagram from './AltusInfrastructureDiagram';
-import AltusFeatureDeepDive from './AltusFeatureDeepDive';
-import AltusCableRetractionVideo from './AltusCableRetractionVideo';
-import AltusUspGraphicsGrid from './AltusUspGraphicsGrid';
-import AltusTechSpecsTable from './AltusTechSpecsTable';
-import AltusTrustBand from './AltusTrustBand';
-import RelatedProducts from '@/components/sections/RelatedProducts';
-import AltusContactForm from './AltusContactForm';
+import AltusHero from './AltusHero';
+import AltusCloserLook from './AltusCloserLook';
+import AltusPhotoSection from './AltusPhotoSection';
+import AltusRampReality from './AltusRampReality';
+import AltusBpm from './AltusBpm';
+import AltusCompare from './AltusCompare';
 import AltusFaqAccordion from './AltusFaqAccordion';
 import AltusFinalCta from './AltusFinalCta';
 
 export default function AltusPage({ data }) {
   return (
-    <main>
-      <StandardHero {...data.hero} />
-      <AltusGalleryIntro data={data.intro} />
-      <AltusEngineeringStrip data={data.engineeringStrip} />
-      <AltusQuickAnswer data={data.quickAnswer} />
-      <AltusPainPoints data={data.failureModes} />
-      <AltusValueProp data={data.valueProp} />
-      <AltusInfrastructureDiagram data={data.infrastructure} />
-      <AltusFeatureDeepDive data={data.featureDeepDive} />
-      <AltusCableRetractionVideo data={data.cableVideo} />
-      <AltusUspGraphicsGrid data={data.uspGraphics} />
-      <AltusTechSpecsTable data={data.specs} />
-      <AltusTrustBand data={data.trustBand} />
-      <RelatedProducts heading={data.relatedProducts.heading} products={data.relatedProducts.products} theme="light" columns={3} />
-      <AltusContactForm data={data.form} />
+    <main className="bg-white">
+      <AltusHero data={data.hero} />
+      <AltusCloserLook data={data.closerLook} />
+      <AltusPhotoSection data={data.turnaround} />
+      <AltusPhotoSection data={data.mixedFleets} />
+      <AltusRampReality data={data.rampReality} />
+      <AltusPhotoSection data={data.fleetIntelligence} />
+      <AltusBpm data={data.bpm} />
+      <AltusCompare data={data.compare} />
       <AltusFaqAccordion data={data.faq} />
       <AltusFinalCta data={data.finalCta} />
     </main>

@@ -22,7 +22,7 @@ export default function AboutPage() {
   return (
     <>
       <Navbar />
-      <main>
+      <main className="bg-white">
         <AboutHero {...aboutPageData.hero} />
         <OriginSection {...aboutPageData.origin} />
         <StatsGrid stats={aboutPageData.stats} />

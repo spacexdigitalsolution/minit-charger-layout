@@ -1,33 +1,54 @@
-import React from 'react';
+'use client';
+
+import React, { useState } from 'react';
+
+const Plus = ({ size, strokeWidth }) => (
+  <svg viewBox="0 0 24 24" fill="none" width={size} height={size}>
+    <path d="M12 5v14M5 12h14" stroke="currentColor" strokeWidth={strokeWidth || "2.2"} strokeLinecap="round" />
+  </svg>
+);
 
 export default function AltusFaqAccordion({ data }) {
-  return (
-    <section className="py-[88px] max-md:py-[56px] bg-paper-dim">
-      <div className="container mx-auto max-w-[1180px] px-6">
-        <div className="max-w-[680px] mb-[44px]">
-          <span className="inline-flex items-center gap-2 font-mono text-xs font-semibold tracking-[0.14em] uppercase text-volt-dim">
-            <span className="inline-block w-4 h-[2px] bg-copper"></span>
-            {data.eyebrow}
-          </span>
-          <h2 className="text-[clamp(28px,4vw,42px)] font-display font-bold text-ink-950 mt-3.5 leading-[1.02]">
-            {data.heading}
-          </h2>
-        </div>
+  const [openId, setOpenId] = useState(null);
 
-        <div className="flex flex-col gap-3">
-          {data.items.map((item, idx) => (
-            <details key={idx} className="bg-white border border-[#D7DECB] rounded-xl overflow-hidden group">
-              <summary className="flex items-center justify-between gap-4 p-[20px_22px] cursor-pointer font-semibold text-[15.5px] list-none [&::-webkit-details-marker]:hidden">
-                {item.q}
-                <svg viewBox="0 0 24 24" className="w-[18px] h-[18px] flex-none transition-transform duration-200 text-volt-dim group-open:rotate-45">
-                  <path d="M12 5v14M5 12h14" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" />
-                </svg>
-              </summary>
-              <div className="px-[22px] pb-[20px] text-[14.5px] text-[#5B6A5C] max-w-[820px]">
-                {item.a}
+  const toggle = (id) => {
+    setOpenId(openId === id ? null : id);
+  };
+
+  return (
+    <section className="bg-paper py-[64px] md:py-[96px]">
+      <div className="mx-auto px-[24px] max-w-[720px]">
+        <h2 className="font-display font-bold text-[clamp(28px,4vw,40px)] leading-[1.02] text-text mb-[30px]">
+          {data.heading}
+        </h2>
+        
+        <div className="flex flex-col">
+          {data.faqs.map((faq) => {
+            const isOpen = openId === faq.id;
+            return (
+              <div key={faq.id} className="border-t border-line last:border-b">
+                <button
+                  onClick={() => toggle(faq.id)}
+                  className="w-full flex justify-between items-center gap-[20px] bg-transparent border-none text-left py-[22px] px-[2px] text-[16.5px] font-semibold text-text"
+                  aria-expanded={isOpen}
+                >
+                  {faq.question}
+                  <span className={`shrink-0 text-green-deep transition-transform duration-250 ease-out ${isOpen ? 'rotate-45' : ''}`}>
+                    <Plus size={16} strokeWidth={2.5} />
+                  </span>
+                </button>
+                <div 
+                  className={`overflow-hidden transition-[height] duration-280 ease-out`}
+                  style={{ height: isOpen ? 'auto' : 0 }}
+                  role="region"
+                >
+                  <div className={`px-[2px] pb-[24px] text-muted text-[15.5px] max-w-[66ch] ${isOpen ? 'block' : 'hidden'}`}>
+                    {faq.answer}
+                  </div>
+                </div>
               </div>
-            </details>
-          ))}
+            );
+          })}
         </div>
       </div>
     </section>

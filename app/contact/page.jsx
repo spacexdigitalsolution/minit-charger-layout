@@ -18,7 +18,7 @@ export default function ContactPage() {
   return (
     <>
       <Navbar />
-      <main>
+      <main className="bg-white">
         <CompactPageHeader {...contactPageData.header} />
         <TabbedContactForms formsData={contactPageData.forms} />
         <DirectContactStrip directContact={contactPageData.directContact} />

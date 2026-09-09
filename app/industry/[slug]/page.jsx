@@ -19,7 +19,7 @@ export async function generateMetadata({ params }) {
   const resolvedParams = await params;
   const data = await getIndustryData(resolvedParams.slug);
   if (!data) return { title: 'Industry Not Found' };
-  
+
   return {
     title: `${data.hero?.title || data.heroBanner?.heading || 'Industry'} Charging Solutions | Minit Charger`,
     description: data.hero?.description || data.heroBanner?.description || '',
@@ -29,7 +29,7 @@ export async function generateMetadata({ params }) {
 export default async function IndustryPage({ params }) {
   const resolvedParams = await params;
   const data = await getIndustryData(resolvedParams.slug);
-  
+
   if (!data) {
     notFound();
   }
@@ -49,7 +49,7 @@ export default async function IndustryPage({ params }) {
 
   const renderContent = () => {
     if (resolvedParams.slug === 'warehouse-manufacturing') return <WarehousePage data={data} />;
-    if (resolvedParams.slug === 'aviation-ground-support-equipment') return <AviationPage data={data} />;
+    if (resolvedParams.slug === 'aviation-ground-support-equipment') return null;
     if (resolvedParams.slug === 'aviation-gse') return <AviationGsePage data={data} />;
     if (resolvedParams.slug === 'low-speed-vehicles') return <LsvPage data={data} />;
     return <DefaultIndustryPage data={data} />;

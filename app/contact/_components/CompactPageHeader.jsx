@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function CompactPageHeader({ eyebrow, heading, sub }) {
   return (
-    <section className="pt-[150px] pb-[40px] max-md:pt-[120px] max-md:pb-[30px]">
+    <section className="pt-[50px] pb-[40px] max-md:pt-[120px] max-md:pb-[30px]">
       <div className="container">
         <span className="font-mono text-[12.5px] font-semibold tracking-[0.18em] uppercase text-green-deep flex items-center gap-[10px] before:content-[''] before:w-[18px] before:h-[1.5px] before:bg-amber before:inline-block">
           {eyebrow}
