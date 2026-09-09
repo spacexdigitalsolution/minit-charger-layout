@@ -278,6 +278,11 @@
     "1600": "/assets/Products/Altus II/Altus II Listing-1600.webp",
     "original": "/assets/Products/Altus II/Altus II Listing.webp"
   },
+  "Products/Altus II/ALTUSII_FRONT.png": {
+    "480": "/assets/Products/Altus II/ALTUSII_FRONT-480.webp",
+    "768": "/assets/Products/Altus II/ALTUSII_FRONT-768.webp",
+    "original": "/assets/Products/Altus II/ALTUSII_FRONT.webp"
+  },
   "Products/Cumulus/Cumulus Software Lisitng.png": {
     "480": "/assets/Products/Cumulus/Cumulus Software Lisitng-480.webp",
     "768": "/assets/Products/Cumulus/Cumulus Software Lisitng-768.webp",
@@ -313,10 +318,11 @@
     "1600": "/assets/Products/Momentus/MOMENTUs Hardware Listing-1600.webp",
     "original": "/assets/Products/Momentus/MOMENTUs Hardware Listing.webp"
   },
-  "Products/Altus II/Banner/ALTUS II.mp4": {
-    "original": "/assets/Products/Altus II/Banner/ALTUS II.mp4"
-  },
-  "Products/Altus II/Banner/ALTUS II2.mp4": {
-    "original": "/assets/Products/Altus II/Banner/ALTUS II2.mp4"
+  "Products/Altus II/Features/Turnaround Banner.png": {
+    "480": "/assets/Products/Altus II/Features/Turnaround Banner-480.webp",
+    "768": "/assets/Products/Altus II/Features/Turnaround Banner-768.webp",
+    "1200": "/assets/Products/Altus II/Features/Turnaround Banner-1200.webp",
+    "1600": "/assets/Products/Altus II/Features/Turnaround Banner-1600.webp",
+    "original": "/assets/Products/Altus II/Features/Turnaround Banner.webp"
   }
 }

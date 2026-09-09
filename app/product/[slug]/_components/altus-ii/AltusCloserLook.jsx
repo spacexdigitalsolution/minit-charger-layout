@@ -42,7 +42,7 @@ export default function AltusCloserLook({ data }) {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-[1.1fr_0.9fr] gap-[44px] items-start">
-          <div className="bg-paper border border-line rounded-[26px] p-[clamp(16px,2.4vw,28px)]">
+          <div className="bg-white border border-line rounded-[26px] p-[clamp(16px,2.4vw,28px)]">
             {data.sections.map((section) => {
               const isActive = activeSection === section.id;
 
@@ -99,7 +99,7 @@ export default function AltusCloserLook({ data }) {
             })}
           </div>
 
-          <div className="hidden md:block sticky top-[100px] rounded-[26px] overflow-hidden bg-[#EAEFE1] aspect-[3/4]">
+          <div className="hidden md:block sticky top-[100px] rounded-[26px] overflow-hidden bg-[#EAEFE1] aspect-square w-full max-w-[512px] ml-auto">
             {data.sections.map((section) => (
               <div 
                 key={`img-${section.id}`}
@@ -111,7 +111,7 @@ export default function AltusCloserLook({ data }) {
                   src={section.imageSrc} 
                   alt={section.imageAlt} 
                   fill 
-                  className="object-cover"
+                  className="object-contain p-4 md:p-8"
                 />
               </div>
             ))}

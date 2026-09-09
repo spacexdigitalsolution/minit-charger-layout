@@ -73,7 +73,7 @@ export default function AltusPhotoSection({ data }) {
           <div 
             ref={bgRef}
             className="absolute -inset-[3%] bg-cover bg-center scale-[1.06]"
-            style={{ backgroundImage: `url(${data.bgImageSrc})` }}
+            style={{ backgroundImage: `url('${data.bgImageSrc}')` }}
           ></div>
           <div className={`absolute inset-0 ${getScrimStyle()}`}></div>
         </>

@@ -37,7 +37,7 @@ export const productAltusData = {
           { label: "Max efficiency", value: "Up to 95%" }
         ],
         note: "Configuration dependent. Final output and voltage range are confirmed against your fleet during the site survey.",
-        imageSrc: "/assets/img/altus-ii-power-detail.jpg",
+        imageSrc: "/assets/Products/Altus II/ALTUSII_FRONT.webp",
         imageAlt: "Altus II power module detail"
       },
       {
@@ -127,9 +127,9 @@ export const productAltusData = {
     kicker: "Turnaround",
     heading: "Charge between turns, not after shift.",
     description: "DC fast charging on both ports means a tug plugs in during the gap it already has, instead of waiting on a bay overnight.",
-    bgImageSrc: "/assets/img/altus-ii-plugging-in.jpg",
+    bgImageSrc: "/assets/Products/Altus II/Features/Turnaround Banner.webp",
     alignment: "left",
-    scrim: "side"
+    scrim: "dark"
   },
 
   mixedFleets: {
